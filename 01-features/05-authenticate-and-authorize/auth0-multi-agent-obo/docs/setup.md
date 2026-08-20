@@ -17,7 +17,7 @@ Complete step-by-step instructions for setting up the AgentCore Identity sample 
    - Access to Auth0 dashboard
 
 3. **Development Environment**
-   - Python 3.9 or higher
+   - Python 3.13 or higher
    - Node.js 18+ (for CDK)
    - Git
    - Code editor (VS Code recommended)

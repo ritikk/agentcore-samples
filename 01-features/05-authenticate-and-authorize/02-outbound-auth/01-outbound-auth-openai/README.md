@@ -77,7 +77,7 @@ and injects it into the function as a keyword argument. The LLM never sees the r
 
 ## Prerequisites
 
-- Python 3.10+
+- Python 3.13+
 - AWS CLI configured with credentials
 - Azure OpenAI or OpenAI API key
 - Required permissions:

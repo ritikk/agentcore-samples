@@ -6,7 +6,7 @@ build-backend = "hatchling.build"
 name = "private-idp-ping-agent"
 version = "0.1.0"
 description = "AgentCore runtime demonstrating outbound OAuth with a private PingFederate IdP via VPC Lattice"
-requires-python = ">=3.10"
+requires-python = ">=3.13"
 dependencies = [
     "aws-opentelemetry-distro",
     "bedrock-agentcore >= 1.0.3",

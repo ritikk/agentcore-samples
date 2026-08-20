@@ -109,7 +109,7 @@ The `privateEndpoint` attribute on the OAuth2 credential provider tells AgentCor
 - [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) v2.27+
 - [AWS CDK](https://docs.aws.amazon.com/cdk/v2/guide/getting-started.html) v2 (`npm install -g aws-cdk`)
 - [uv](https://docs.astral.sh/uv/) for Python dependency management
-- [Python 3.12+](https://www.python.org/downloads/)
+- [Python 3.13+](https://www.python.org/downloads/)
 - [Docker](https://docs.docker.com/get-docker/) (for building/pushing the PingFederate container image)
 - [agentcore-cli](https://github.com/aws/agentcore-cli) (`npm install -g @aws/agentcore`)
 - [Node.js 20+](https://nodejs.org/) (for agentcore-cli and CDK)

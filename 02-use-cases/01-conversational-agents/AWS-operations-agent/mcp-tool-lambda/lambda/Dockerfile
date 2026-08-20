@@ -1,4 +1,4 @@
-FROM public.ecr.aws/lambda/python:3.11
+FROM public.ecr.aws/lambda/python:3.13
 
 # Set environment variable for python_repl to use writable directory
 ENV PYTHON_REPL_PERSISTENCE_DIR=/tmp/repl_state

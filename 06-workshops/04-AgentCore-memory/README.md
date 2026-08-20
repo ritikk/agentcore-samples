@@ -145,7 +145,7 @@ AgentCore Memory supports five strategy types:
 
 ## Prerequisites
 
-- Python 3.10 or higher
+- Python 3.13 or higher
 - AWS account with Amazon Bedrock access
 - Jupyter Notebook environment
 - Required Python packages (see individual sample `requirements.txt` files)

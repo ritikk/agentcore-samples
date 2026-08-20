@@ -21,7 +21,7 @@ AgentCore runtime appear as a single connected trace in CloudWatch.
 
 ## Prerequisites
 
-- Python 3.10+, uv, Docker (not required — uv builds for arm64)
+- Python 3.13+, uv, Docker (not required — uv builds for arm64)
 - AWS credentials configured
 - Amazon Bedrock Claude model enabled in your account
 

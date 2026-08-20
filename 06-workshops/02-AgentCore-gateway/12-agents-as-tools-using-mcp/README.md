@@ -147,7 +147,7 @@ The demo shows:
 
 Before starting, ensure you have:
 
-- Python 3.10 or higher
+- Python 3.13 or higher
 - Jupyter Notebook or JupyterLab installed
 - AWS Account with permissions for EC2, DynamoDB, Lambda, CloudWatch, Bedrock
 - AWS credentials configured locally (or will be set up in Lab 1)

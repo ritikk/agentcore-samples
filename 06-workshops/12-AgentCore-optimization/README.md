@@ -85,7 +85,7 @@ Target-Based A/B Architecture (Phased Rollout):
   - `bedrock-agentcore:StartABTest`, `StopABTest`, `GetABTest`, `DeleteABTest`, `ListABTests` (ABTesting)
   - `logs:GetLogEvents`, `FilterLogEvents`, `StartQuery`, `GetQueryResults` on `runtimes/*` log groups (CloudWatchLogs)
   - `iam:CreateRole`, `AttachRolePolicy`, `PassRole` to create the execution role for the A/B test
-- Python 3.10 or later
+- Python 3.13 or later
 
 ### Option 1: Jupyter Notebook
 

@@ -13,7 +13,7 @@
 
 ## Prerequisites
 
-- Python 3.12+, AWS CLI configured with credentials (account with IAM, Lambda, Bedrock AgentCore access)
+- Python 3.13+, AWS CLI configured with credentials (account with IAM, Lambda, Bedrock AgentCore access)
 - Region must be one of the supported regions above 
 - Amazon Bedrock model access in your region
 

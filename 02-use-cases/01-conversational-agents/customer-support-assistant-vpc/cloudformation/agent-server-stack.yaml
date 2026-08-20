@@ -409,7 +409,7 @@ RepositoryName: !Sub 'csvpc-${Environment}-agent-repository'
     Type: AWS::Lambda::Function
     Properties:
       FunctionName: !Sub 'csvpc-${Environment}-agent-ecr-notification'
-      Runtime: python3.12
+      Runtime: python3.13
       Handler: index.lambda_handler
       Role: !GetAtt ECRImageNotificationLambdaRole.Arn
       Timeout: 300
@@ -643,7 +643,7 @@ RepositoryName: !Sub 'csvpc-${Environment}-agent-repository'
     Type: AWS::Lambda::Function
     Properties:
       FunctionName: !Sub 'csvpc-${Environment}-agent-codebuild'
-      Runtime: python3.12
+      Runtime: python3.13
       Handler: index.lambda_handler
       Role: !GetAtt CodeBuildTriggerLambdaRole.Arn
       Timeout: 900
@@ -1002,7 +1002,7 @@ LogGroupClass: STANDARD
     Type: AWS::Lambda::Function
     Properties:
       FunctionName: !Sub 'csvpc-${Environment}-agent-xray-traces-setup'
-      Runtime: python3.12
+      Runtime: python3.13
       Handler: index.lambda_handler
       Role: !GetAtt XRayTracesSetupLambdaRole.Arn
       Timeout: 300

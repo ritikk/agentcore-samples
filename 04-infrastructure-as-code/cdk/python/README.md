@@ -4,7 +4,7 @@ Deploy Amazon Bedrock AgentCore resources using AWS CDK with Python.
 
 ## Prerequisites
 
-- Python 3.8+
+- Python 3.13+
 - AWS CDK v2.218.0 or later (for BedrockAgentCore support)
 - AWS CLI configured
 - Access to Amazon Bedrock AgentCore

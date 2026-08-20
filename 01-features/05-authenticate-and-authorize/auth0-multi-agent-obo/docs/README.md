@@ -194,7 +194,7 @@ JWT tokens include custom claims in the `https://agentcore.example.com/` namespa
 
 - AWS Account with AgentCore access
 - Auth0 account (or Okta account)
-- Python 3.9+
+- Python 3.13+
 - AWS CLI configured
 - Node.js (for CDK deployment)
 

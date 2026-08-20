@@ -69,7 +69,7 @@ These labs are tested in **us-west-2** (primary region). Ensure AgentCore Gatewa
 - **Node.js** v18+ and **npm** — [Download](https://nodejs.org/en/download)
 - **AWS CDK CLI** — [Getting started](https://docs.aws.amazon.com/cdk/v2/guide/getting-started.html)
 - **Docker** — [Install Docker](https://docs.docker.com/engine/install/)
-- **Python 3.12+** — For running Jupyter notebooks
+- **Python 3.13+** — For running Jupyter notebooks
 - **IAM permissions** — Your IAM identity needs permissions for Amazon Bedrock AgentCore, Amazon VPC Lattice, Amazon EC2, and AWS CloudFormation. See the [IAM permissions guide](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/security-iam.html) for details.
 - Make sure you have correct IAM permissions for [AgentCore Gateway - Amazon VPC Lattice](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/vpc-egress-private-endpoints.html)
 

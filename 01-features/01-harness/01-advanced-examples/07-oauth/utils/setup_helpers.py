@@ -284,7 +284,7 @@ def deploy_lambda(region: str, prefix: str) -> dict:
 
         fn_arn = lam.create_function(
             FunctionName=fn_name,
-            Runtime="python3.12",
+            Runtime="python3.13",
             Role=role_arn,
             Handler="lambda_function.lambda_handler",
             Code={"ZipFile": buf.read()},

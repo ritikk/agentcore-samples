@@ -31,7 +31,7 @@ the diagram).
 ## Prerequisites
 
 1. AWS CLI configured with appropriate permissions
-2. Python 3.10+ with virtual environment
+2. Python 3.13+ with virtual environment
 3. Docker running (for AgentCore Runtime deployments)
 4. `bedrock-agentcore-starter-toolkit` installed
 

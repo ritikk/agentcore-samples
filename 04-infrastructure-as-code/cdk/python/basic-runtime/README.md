@@ -64,7 +64,7 @@ The architecture consists of:
    aws configure
    ```
 
-3. **Python 3.10+** and **AWS CDK v2** installed
+3. **Python 3.13+** and **AWS CDK v2** installed
    ```bash
    # Install CDK
    npm install -g aws-cdk

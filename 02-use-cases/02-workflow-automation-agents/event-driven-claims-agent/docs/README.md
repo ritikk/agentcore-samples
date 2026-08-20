@@ -19,7 +19,7 @@ The Event-Driven Claims Agent is an insurance claims processor built on Amazon B
 - AgentCore CLI (`agentcore --version` ≥ 1.0.0-preview.13)
 - Node.js 18+ (for CDK)
 - Docker or Finch (for container builds)
-- Python 3.12+ with uv
+- Python 3.13+ with uv
 - AWS CLI v2 configured
 
 ## Documentation Index

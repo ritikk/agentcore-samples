@@ -78,7 +78,7 @@ Before running, create a GitHub OAuth App:
 
 ## Prerequisites
 
-- Python 3.10+
+- Python 3.13+
 - AWS CLI configured with credentials
 - GitHub account and a GitHub OAuth App
 - Required AWS permissions:

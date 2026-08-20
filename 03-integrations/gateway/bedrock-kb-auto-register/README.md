@@ -38,7 +38,7 @@ The system uses EventBridge to detect Knowledge Base lifecycle events (create/de
 1. AWS credentials configured (`aws configure`) with permissions to create AgentCore resources, Lambda functions, IAM roles, EventBridge rules, and Cognito user pools
 2. CloudTrail enabled in the account (required for EventBridge to detect KB lifecycle events)
 3. Bedrock model access enabled (Claude Sonnet 4, Titan Embeddings v2)
-4. Python 3.10+
+4. Python 3.13+
 
 ## Tutorial
 

@@ -87,7 +87,7 @@ def deploy():
     try:
         response = lambda_client.create_function(
             FunctionName=LAMBDA_FUNCTION_NAME,
-            Runtime="python3.12",
+            Runtime="python3.13",
             Role=role_arn,
             Handler="travel_tools.lambda_handler",
             Code={"ZipFile": zip_buffer.read()},

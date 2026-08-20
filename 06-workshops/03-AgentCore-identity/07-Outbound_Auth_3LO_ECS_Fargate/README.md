@@ -91,7 +91,7 @@ Before deploying this sample, ensure you have:
 - [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) v2.27+ configured with appropriate credentials
 - [AWS CDK](https://docs.aws.amazon.com/cdk/v2/guide/getting-started.html) v2 installed (`npm install -g aws-cdk`)
 - [uv](https://docs.astral.sh/uv/)
-- [Python 3.12+](https://www.python.org/downloads/)
+- [Python 3.13+](https://www.python.org/downloads/)
 - [Docker](https://docs.docker.com/get-docker/) for building container images
 - An [Amazon Route 53](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/Welcome.html) hosted zone for your domain
 - Access to [Amazon Bedrock](https://docs.aws.amazon.com/bedrock/latest/userguide/getting-started.html) with the Claude model enabled

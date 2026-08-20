@@ -41,7 +41,7 @@ All examples use **Claude Sonnet 4.6** on Amazon Bedrock — `global.anthropic.c
 
 ## Prerequisites
 
-- Python 3.10+
+- Python 3.13+
 - AWS credentials with **both** AgentCore Memory permissions and Amazon Bedrock model-invocation permissions.
 - **Amazon Bedrock model access for Claude Sonnet 4.6** in your region (request it in the Bedrock console under *Model access*; `us-west-2` is a safe default).
 

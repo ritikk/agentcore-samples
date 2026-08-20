@@ -58,7 +58,7 @@ This project showcases enterprise-grade AI agents with persistent memory capabil
 
 ## 🛠️ Prerequisites
 
-- Python 3.10+
+- Python 3.13+
 - AWS account with Bedrock AgentCore Memory permissions
 - AWS CLI configured with appropriate credentials
 - Access to Claude 3.7 Sonnet inference profile (`us.anthropic.claude-3-7-sonnet-20250219-v1:0`)

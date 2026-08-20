@@ -106,7 +106,7 @@ Before running, configure Google OAuth2:
 
 ## Prerequisites
 
-- Python 3.10+
+- Python 3.13+
 - AWS CLI configured with credentials
 - Google OAuth2 client ID and secret from Google Developer Console
 - Required AWS permissions:

@@ -61,7 +61,7 @@ A comprehensive implementation of the [Agent-to-Agent (A2A)](https://a2a-protoco
    aws configure set region us-west-2
    ```
 
-3. **Python 3.8+**: Required to run the deployment scripts
+3. **Python 3.13+**: Required to run the deployment scripts
 
 4. **uv**: Install uv package manager using [guide](https://docs.astral.sh/uv/getting-started/installation/)
 

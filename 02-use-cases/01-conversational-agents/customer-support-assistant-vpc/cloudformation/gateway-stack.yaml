@@ -393,7 +393,7 @@ Resources:
     Type: AWS::Lambda::Function
     Properties:
       FunctionName: !Sub 'csvpc-${Environment}-customer-support-gateway-xray-traces-setup'
-      Runtime: python3.12
+      Runtime: python3.13
       Handler: index.lambda_handler
       Role: !GetAtt XRayTracesSetupLambdaRole.Arn
       Timeout: 300
@@ -633,7 +633,7 @@ LogGroupClass: STANDARD
     Type: AWS::Lambda::Function
     Properties:
       FunctionName: !Sub 'csvpc-${Environment}-gateway-management'
-      Runtime: python3.12
+      Runtime: python3.13
       Handler: index.lambda_handler
       Role: !GetAtt GatewayManagementLambdaRole.Arn
       Timeout: 300
@@ -745,7 +745,7 @@ LogGroupClass: STANDARD
     Type: AWS::Lambda::Function
     Properties:
       FunctionName: !Sub 'csvpc-${Environment}-populate-data'
-      Runtime: python3.12
+      Runtime: python3.13
       Handler: index.lambda_handler
       Role: !GetAtt PopulateDataLambdaRole.Arn
       Timeout: 120
@@ -1024,7 +1024,7 @@ LogGroupClass: STANDARD
     Type: AWS::Lambda::Function
     Properties:
       FunctionName: !Sub 'csvpc-${Environment}-customer-support'
-      Runtime: python3.12
+      Runtime: python3.13
       Handler: index.lambda_handler
       Role: !GetAtt CustomerSupportLambdaRole.Arn
       Timeout: 30

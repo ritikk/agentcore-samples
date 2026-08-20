@@ -352,7 +352,7 @@ def create_lambda_function(lambda_role_arn: str, runtime_arn: str) -> str:
 
     config = {
         "FunctionName": LAMBDA_FUNCTION_NAME,
-        "Runtime": "python3.12",
+        "Runtime": "python3.13",
         "Role": lambda_role_arn,
         "Handler": LAMBDA_HANDLER,
         "Code": {"ZipFile": zip_bytes},

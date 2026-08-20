@@ -125,7 +125,7 @@ Results → Frontend → Formatted Display
 | | Monaco Editor | Code editing capabilities |
 | **Backend** | FastAPI | High-performance API framework |
 | | Strands-Agents | AI agent orchestration |
-| | Python 3.8+ | Runtime environment |
+| | Python 3.13+ | Runtime environment |
 | **AI Services** | AWS Bedrock | AI model hosting |
 | | Claude Haiku 4.5 | Primary language model |
 | | Nova Premier | Fallback language model |

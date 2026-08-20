@@ -171,7 +171,7 @@ waf_acl = CfnWebACL(
    ```bash
    npm install -g aws-cdk
    ```
-3. **Python 3.12+**: Python runtime
+3. **Python 3.13+**: Python runtime
 4. **AWS CLI**: Configured with credentials
    ```bash
    aws configure

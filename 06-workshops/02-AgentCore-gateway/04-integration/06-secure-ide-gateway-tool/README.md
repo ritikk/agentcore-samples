@@ -140,7 +140,7 @@ The Figma credential provider and gateway target are created via the [setup note
 ### Prerequisites
 
 - Node.js 18+ and pnpm (for CDK)
-- Python 3.10+ (for the notebook and Lambda code)
+- Python 3.13+ (for the notebook and Lambda code)
 - Docker (required for Lambda bundling during `cdk deploy`)
 - AWS credentials with permissions for Lambda, API Gateway, Cognito, IAM, DynamoDB, and Bedrock AgentCore
 - Figma account

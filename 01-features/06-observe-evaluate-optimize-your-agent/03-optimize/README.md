@@ -40,7 +40,7 @@ End-to-end optimization workflow for an HR Assistant agent on Amazon Bedrock Age
   - `logs:GetLogEvents`, `FilterLogEvents`, `StartQuery`, `GetQueryResults` on `runtimes/*` log groups
   - `iam:CreateRole`, `AttachRolePolicy`, `PassRole` to create the execution role for the A/B test
   - `bedrock:InvokeModel`, `s3:*`, `ecr:*`, `xray:*`
-- Python 3.10+
+- Python 3.13+
 - Access to Amazon Bedrock models (Nova Lite) in your region
 
 > **Timing note:** CloudWatch ingestion takes 2-3 minutes after invoking the agent. Batch evaluations take 1-5 minutes. Recommendations take 2-5 minutes. Budget ~45 minutes for the full workflow.

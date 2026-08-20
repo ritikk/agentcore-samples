@@ -248,7 +248,7 @@ def create_or_update_lambda(session, role, sub_value, children=""):
     # Create Lambda function
     response = lambda_client.create_function(
         FunctionName=LAMBDA_FUNCTION_NAME,
-        Runtime="python3.12",
+        Runtime="python3.13",
         Role=role_arn,
         Handler="lambda_function.lambda_handler",
         Code={"ZipFile": zip_content},

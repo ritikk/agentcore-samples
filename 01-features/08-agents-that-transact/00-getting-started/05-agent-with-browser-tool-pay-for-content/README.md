@@ -74,7 +74,7 @@ Use the plugin pattern for API calls. Use the browser pattern when you must keep
 - **Wallet funded + delegated signing granted** — the instrument must be `ACTIVE` (the script asserts
   this before starting the browser). Fund with testnet USDC and grant delegated signing in Tutorial 00
   (or Tutorial 03).
-- **Python 3.10+** and AWS CLI configured (`aws sts get-caller-identity`).
+- **Python 3.13+** and AWS CLI configured (`aws sts get-caller-identity`).
 - **Python deps + Playwright Chromium:**
   ```bash
   pip install -r requirements.txt

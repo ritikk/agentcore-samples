@@ -35,7 +35,7 @@ Amazon Bedrock AgentCore gateway provides unified connectivity between agents an
 
 ## Prerequisites
 
-- Python 3.12+
+- Python 3.13+
 - [uv](https://docs.astral.sh/uv/getting-started/installation/) installed
 - Node.js >= 22.7.5
 - [AgentCore CLI](https://www.npmjs.com/package/@aws/agentcore): `npm install -g @aws/agentcore`

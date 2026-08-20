@@ -38,7 +38,7 @@ observe token injection → clean up.
 
 ## Prerequisites
 
-- Python 3.10+
+- Python 3.13+
 - AWS CLI configured with credentials
 - `bedrock-agentcore` package: `pip install bedrock-agentcore`
 - An active Cognito User Pool (for tutorials that use Cognito inbound auth)

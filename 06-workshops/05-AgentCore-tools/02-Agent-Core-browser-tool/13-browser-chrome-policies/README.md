@@ -24,7 +24,7 @@ Custom root CA certificates let you:
 
 ### Prerequisites
 
-- Python 3.10 or later
+- Python 3.13 or later
 - An AWS account with Amazon Bedrock AgentCore access enabled
 - AWS credentials configured (`aws sts get-caller-identity`)
 - An AWS Region where Amazon Bedrock AgentCore is available

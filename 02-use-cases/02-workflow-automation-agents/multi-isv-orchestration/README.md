@@ -36,7 +36,7 @@ This tutorial series demonstrates how to connect multiple ISV SaaS platforms (Sa
 
 - An AWS account with access to Amazon Bedrock AgentCore
 - Model access enabled for `anthropic.claude-sonnet-4-6` in your region (see [Manage model access](https://docs.aws.amazon.com/bedrock/latest/userguide/model-access.html))
-- Python 3.11–3.13 (Python 3.14 is not yet supported — the AWS CRT library lacks a 3.14 wheel)
+- Python 3.13–3.13 (Python 3.14 is not yet supported — the AWS CRT library lacks a 3.14 wheel)
 - A Salesforce Developer Edition org with a Connected App configured for OAuth2 `client_credentials` flow
 - Access to an AWS for SAP MCP Server deployment (see [documentation](https://docs.aws.amazon.com/mcp-sap/latest/awsforsapmcp/introduction.html))
 - AWS CLI configured with appropriate credentials

@@ -129,7 +129,7 @@ This is the exact shape the SDK's `MemoryClient.add_custom_semantic_strategy()` 
 
 ## Prerequisites
 
-- Python 3.10+
+- Python 3.13+
 - AWS credentials with **all three** of: AgentCore Memory permissions, Amazon Bedrock model-invocation permissions, and IAM permissions to create a role (`iam:CreateRole`, `iam:PutRolePolicy`, `iam:GetRole`). The `AnthropicBedrock` client, `MemoryClient`, and `boto3` IAM/STS clients all resolve credentials from the standard AWS chain.
 - **Amazon Bedrock model access for Claude Sonnet 4.6** in your region — both for the conversation and for the override extraction/consolidation model. Request it in the Bedrock console under *Model access*. (`us-west-2` is a safe default.)
 - An **IAM execution role is required** for override strategies. The script creates one named `AgentCoreMemoryOverrideExecutionRole`; to reuse an existing role instead, set `MEMORY_EXECUTION_ROLE_ARN` and the script skips all IAM writes.

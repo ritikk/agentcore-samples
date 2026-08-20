@@ -267,7 +267,7 @@ USER bedrock_agentcore
 EXPOSE 8080
 
 # Use OpenTelemetry instrumentation to run the application
-CMD ["opentelemetry-instrument", "python3.12", "-m", "strands-agent-runtime"]
+CMD ["opentelemetry-instrument", "python3.13", "-m", "strands-agent-runtime"]
 EOF
 
 # Update .bedrock_agentcore.yaml to ensure observability is enabled

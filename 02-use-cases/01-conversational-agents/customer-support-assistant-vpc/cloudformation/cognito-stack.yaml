@@ -313,7 +313,7 @@ Resources:
     Type: AWS::Lambda::Function
     Properties:
       FunctionName: !Sub 'csvpc-${Environment}-client-secret-handler'
-      Runtime: python3.12
+      Runtime: python3.13
       Handler: index.lambda_handler
       Role: !GetAtt ClientSecretLambdaRole.Arn
       Timeout: 60
@@ -464,7 +464,7 @@ Resources:
     Type: AWS::Lambda::Function
     Properties:
       FunctionName: !Sub 'csvpc-${Environment}-user-creation'
-      Runtime: python3.12
+      Runtime: python3.13
       Handler: index.lambda_handler
       Role: !GetAtt UserCreationLambdaRole.Arn
       Timeout: 60

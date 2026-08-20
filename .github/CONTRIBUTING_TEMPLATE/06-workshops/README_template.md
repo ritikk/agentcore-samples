@@ -38,7 +38,7 @@ Any functionality of your tutorial that you want to highlight
 ## Prerequisites
 
 Prerequisites to execute your tutorial in a list format. For instance:
-* Python 3.10+
+* Python 3.13+
 * AWS credentials
 * boto3 or Amazon Bedrock AgentCore SDK
 * ...

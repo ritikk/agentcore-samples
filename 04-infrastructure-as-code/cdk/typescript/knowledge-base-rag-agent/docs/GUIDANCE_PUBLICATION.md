@@ -102,7 +102,7 @@ The Memory service provides:
 ### Technical Prerequisites
 - Node.js 24.8.0 or later
 - npm 10.0.0 or later
-- Python 3.12 or later (for agent development)
+- Python 3.13 or later (for agent development)
 - Docker installed and running (for building the AgentCore Runtime container)
 - AWS CLI configured with appropriate credentials
 - AWS CDK CLI installed (`npm install -g aws-cdk`)

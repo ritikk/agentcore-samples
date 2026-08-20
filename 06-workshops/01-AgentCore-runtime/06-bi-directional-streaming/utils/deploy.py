@@ -330,7 +330,7 @@ class AgentCoreDeployer:
             "agent_name": self.agent_name,
             "region": self.aws_region,
             "entry_point": "server.py",
-            "runtime": "python3.12",
+            "runtime": "python3.13",
             "bedrock_agentcore": {
                 "agent_runtime_name": self.agent_name,
                 "network_mode": "PUBLIC",
@@ -467,7 +467,7 @@ class AgentCoreDeployer:
                     self.agent_name: {
                         "name": self.agent_name,
                         "entrypoint": "server.py",
-                        "runtime": "python3.12",
+                        "runtime": "python3.13",
                         "aws": {
                             "account": self.account_id,
                             "region": self.aws_region,

@@ -10,7 +10,7 @@ For more information, visit [AWS documentation](https://docs.aws.amazon.com/bedr
 
 - AWS account with access to Amazon Bedrock AgentCore
 - AWS CLI v2 configured with credentials
-- Python 3.10+
+- Python 3.13+
 
 Install dependencies:
 

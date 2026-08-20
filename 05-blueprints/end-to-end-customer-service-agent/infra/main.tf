@@ -212,7 +212,7 @@ resource "aws_lambda_function" "gateway_interceptor" {
   function_name    = "cx-gateway-interceptor"
   role             = aws_iam_role.interceptor_lambda_role.arn
   handler          = "gateway_interceptor.lambda_handler"
-  runtime          = "python3.12"
+  runtime          = "python3.13"
   timeout          = 10 # keep low — interceptor is on the hot path
 
   reserved_concurrent_executions = 100

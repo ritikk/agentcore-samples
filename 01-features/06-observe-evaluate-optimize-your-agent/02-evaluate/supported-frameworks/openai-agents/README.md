@@ -59,7 +59,7 @@ This trace was captured from the deployed sample and sanitized for publication. 
 
 ## Prerequisites
 
-- Python 3.10+
+- Python 3.13+
 - AWS CLI configured with credentials
 - Access to `openai.gpt-5.5` on Amazon Bedrock. GPT-5.5 is served from `us-east-1` / `us-east-2` (see [the model card](https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-55.html)); the runtime can be deployed in any region and calls the model cross-region via `BEDROCK_OPENAI_MODEL_REGION` (default `us-east-1`).
 - Permissions for: `bedrock-agentcore:*`, `bedrock-agentcore-control:*`, `logs:*`, `iam:CreateRole`, `iam:PutRolePolicy`, `s3:PutObject`, `bedrock:InvokeModel`

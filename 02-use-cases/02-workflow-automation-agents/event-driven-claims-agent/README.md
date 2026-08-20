@@ -52,7 +52,7 @@ See [docs/ARCHITECTURE.md](./docs/ARCHITECTURE.md) for full component diagrams, 
 - [AgentCore CLI](https://docs.aws.amazon.com/bedrock/latest/userguide/agentcore.html) (`npm install -g @aws/bedrock-agentcore-cli`, ≥ 1.0.0-preview.13)
 - [AWS CDK CLI](https://docs.aws.amazon.com/cdk/v2/guide/getting-started.html) (`npm install -g aws-cdk`)
 - [Docker](https://www.docker.com/products/docker-desktop/) or [Finch](https://github.com/runfinch/finch) (container runtime)
-- Python 3.12+ with [uv](https://docs.astral.sh/uv/getting-started/installation/) (`pip install uv` or `brew install uv`)
+- Python 3.13+ with [uv](https://docs.astral.sh/uv/getting-started/installation/) (`pip install uv` or `brew install uv`)
 - [AWS CLI v2](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) configured (`aws configure`)
 - Node.js 18+
 
@@ -160,7 +160,7 @@ event-driven-claims-agent/
 ├── app/claimsagent/           # Agent runtime (Strands SDK, dual-agent logic)
 │   ├── main.py                # Entrypoint: prompts, agents, routing, Identity-managed Gateway OAuth
 │   ├── config.py              # Centralized env var reads
-│   ├── Dockerfile             # Container image (Python 3.12, multi-stage)
+│   ├── Dockerfile             # Container image (Python 3.13, multi-stage)
 │   ├── memory/session.py      # AgentCore Memory (graceful degradation)
 │   └── tools/                 # Co-located tools (structured output)
 ├── agentcore/

@@ -41,7 +41,7 @@ jupyter notebook evaluation_analyzer.ipynb
 
 ## Requirements
 
-- Python 3.9+
+- Python 3.13+
 - AWS credentials configured for Amazon Bedrock
 - Evaluation data from [Strands Evals](https://github.com/strands-agents/strands-evals) or [AWS AgentCore](https://docs.aws.amazon.com/agentcore/)
 

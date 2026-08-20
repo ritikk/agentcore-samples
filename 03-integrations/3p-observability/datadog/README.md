@@ -19,7 +19,7 @@ semantic conventions required for Datadog LLM observability views.
 
 ## Prerequisites
 
-- Python 3.10+, uv
+- Python 3.13+, uv
 - AWS credentials configured
 - Datadog account with API key
 

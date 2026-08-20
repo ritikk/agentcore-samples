@@ -134,7 +134,7 @@ Browse to https://developer.okta.com/signup/ → Select "Sign up for Integrator 
 
 ## Prerequisites
 
-- Python 3.10+
+- Python 3.13+
 - AWS CLI configured with credentials
 - Okta developer account (see setup above)
 - Required AWS permissions:

@@ -139,7 +139,7 @@ else
     echo "✨ Creating new Lambda function"
     aws lambda create-function \
         --function-name $LAMBDA_NAME \
-        --runtime python3.11 \
+        --runtime python3.13 \
         --role $ROLE_ARN \
         --handler post_auth_lambda.lambda_handler \
         --zip-file fileb:///tmp/post-auth-lambda.zip \

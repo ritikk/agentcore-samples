@@ -2,7 +2,7 @@
 
 ## Overview
 
-[Amazon Bedrock AgentCore Code Interpreter](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/code-interpreter-overview.html) is a fully managed, sandboxed Python execution environment that your agents can use at runtime. The sandbox includes a Python 3.12 interpreter, a writable file system, a shell, and the AWS CLI — all isolated per session.
+[Amazon Bedrock AgentCore Code Interpreter](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/code-interpreter-overview.html) is a fully managed, sandboxed Python execution environment that your agents can use at runtime. The sandbox includes a Python 3.13 interpreter, a writable file system, a shell, and the AWS CLI — all isolated per session.
 
 ![AgentCore code interpreter](images/code-interpreter.png)
 

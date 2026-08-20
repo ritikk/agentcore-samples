@@ -134,7 +134,7 @@ agentcore logs --follow
 
 ## Prerequisites
 
-- Python 3.12+
+- Python 3.13+
 - [uv](https://docs.astral.sh/uv/getting-started/installation/) — required for building arm64 deployment packages
 - AWS account with Amazon Bedrock AgentCore access
 - AWS CLI configured with credentials

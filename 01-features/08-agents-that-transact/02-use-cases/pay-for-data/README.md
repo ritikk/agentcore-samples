@@ -93,7 +93,7 @@ SESSION + INVOKE  (pay_for_data.py Step 6, ManagementRole)
 
 ## Prerequisites
 
-- Python 3.10+
+- Python 3.13+
 - Node.js 20+ (for AgentCore CLI)
 - AWS CLI v2 configured
 - AWS CDK v2 installed

@@ -116,7 +116,7 @@ Results are also visible in:
 
 ## Prerequisites
 
-- Python 3.10+
+- Python 3.13+
 - Node.js 18+
 - AWS CLI configured with credentials (`aws sts get-caller-identity` should work). Recommended region: **us-east-1** (`export AWS_DEFAULT_REGION=us-east-1`)
 - Model access enabled for Claude Haiku 4.5 in Amazon Bedrock

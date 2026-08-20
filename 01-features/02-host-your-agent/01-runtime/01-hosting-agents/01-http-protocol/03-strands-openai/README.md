@@ -32,7 +32,7 @@ Without valid credentials, the agent will deploy successfully but fail when invo
 
 ## Prerequisites
 
-- Python 3.12+
+- Python 3.13+
 - [uv](https://docs.astral.sh/uv/getting-started/installation/) installed (for building the arm64 deployment package)
 - AWS CLI configured with credentials
 - Azure OpenAI API credentials (API key, base URL, API version)

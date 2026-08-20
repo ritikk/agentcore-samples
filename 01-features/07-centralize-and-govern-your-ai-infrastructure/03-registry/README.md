@@ -41,7 +41,7 @@ by concern: authentication (OAuth, DCR), automation (Lambda sync), runtime integ
 
 ## Prerequisites
 
-- Python 3.10+
+- Python 3.13+
 - AWS account with Bedrock AgentCore access
 - AWS CLI configured with credentials
 - `boto3` installed (`pip install boto3`)

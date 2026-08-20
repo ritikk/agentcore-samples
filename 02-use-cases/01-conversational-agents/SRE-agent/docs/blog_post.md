@@ -169,7 +169,7 @@ Key Points:
 
 To implement this solution, you need the following:
 
-* **Python 3.12 or later** with the `uv` package manager for Python dependency management
+* **Python 3.13 or later** with the `uv` package manager for Python dependency management
 * **AWS account** with appropriate permissions to create resources
 * **EC2 instance** (recommended: `t3.xlarge` or larger) for hosting the demo backend servers and as the development machine for building this solution
 * **SSL certificates** for HTTPS endpoints (required by Amazon Bedrock AgentCore Gateway)
@@ -450,7 +450,7 @@ AgentCore Runtime requires ARM64 containers. Here's the complete [Dockerfile](ht
 
 ```dockerfile
 # Use uv's ARM64 Python base image
-FROM --platform=linux/arm64 ghcr.io/astral-sh/uv:python3.12-bookworm-slim
+FROM --platform=linux/arm64 ghcr.io/astral-sh/uv:python3.13-bookworm-slim
 
 WORKDIR /app
 

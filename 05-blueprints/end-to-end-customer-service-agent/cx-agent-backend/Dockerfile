@@ -1,4 +1,4 @@
-FROM --platform=linux/arm64 public.ecr.aws/docker/library/python:3.11-slim-trixie
+FROM --platform=linux/arm64 public.ecr.aws/docker/library/python:3.13-slim-trixie
 COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/
 
 # Set working directory

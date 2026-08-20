@@ -1,5 +1,5 @@
 # Multi-stage build for Streamlit frontend
-FROM python:3.11-slim as builder
+FROM python:3.13-slim as builder
 
 # Install uv
 COPY --from=ghcr.io/astral-sh/uv:latest /uv /bin/uv
@@ -14,7 +14,7 @@ COPY pyproject.toml ./
 RUN uv sync --frozen --no-dev
 
 # Production stage
-FROM python:3.11-slim as production
+FROM python:3.13-slim as production
 
 # Install uv
 COPY --from=ghcr.io/astral-sh/uv:latest /uv /bin/uv

@@ -20,7 +20,7 @@ This sample demonstrates how to deploy an A2A (Agent-to-Agent) agent on Amazon B
 
 ## Prerequisites
 
-* Python 3.10+
+* Python 3.13+
 * AWS CLI configured with credentials
 * Docker running
 * pip installed

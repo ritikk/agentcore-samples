@@ -22,7 +22,7 @@ A customer-support agent built with **Strands Agents** that uses AgentCore's **b
 
 ## Prerequisites
 
-- Python 3.10+
+- Python 3.13+
 - AWS credentials with AgentCore Memory permissions
 - Amazon Bedrock AgentCore SDK with `MemoryManager` support
 

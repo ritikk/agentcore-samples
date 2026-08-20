@@ -12,7 +12,7 @@ Complete deployment guide for the RTP Overlay System to AWS. This guide covers i
 - Node.js 18+ installed
 - **CDK CLI 2.102.0+** installed: `npm install -g aws-cdk@latest` (verify: `cdk --version`)
 - Docker installed and running (required for Lambda layer)
-- **Python 3.8+** installed
+- **Python 3.13+** installed
 - AWS account with appropriate permissions
 
 **Note:** If you see "Cloud assembly schema version mismatch" error, upgrade CDK CLI: `npm install -g aws-cdk@latest`

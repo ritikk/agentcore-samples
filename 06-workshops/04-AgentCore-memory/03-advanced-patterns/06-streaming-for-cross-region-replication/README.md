@@ -29,7 +29,7 @@ AgentCore Memory stores long-term knowledge for AI agents — user preferences, 
 ## Prerequisites
 
 - AWS CLI v2 configured with appropriate permissions
-- Python 3.10+
+- Python 3.13+
 - Access to Amazon Bedrock AgentCore in `us-east-1` and `us-west-2`
 - Permissions for: CloudFormation, Kinesis, Lambda, IAM, SQS, DynamoDB, S3
 

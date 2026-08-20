@@ -82,7 +82,7 @@ The CloudFormation stack creates:
   - IAM roles and policies
   - Lambda functions
   - Bedrock AgentCore Runtime
-- Python 3.8+ (for testing)
+- Python 3.13+ (for testing)
 - `boto3` and `mcp` Python packages (installed automatically by test script)
 
 ## Quick Start
@@ -161,7 +161,7 @@ def greet_user(name: str) -> str:
 #### Docker Image Build
 
 CodeBuild automatically:
-1. Creates a Python 3.12 ARM64 environment
+1. Creates a Python 3.13 ARM64 environment
 2. Installs dependencies
 3. Creates the MCP server code
 4. Builds the Docker image

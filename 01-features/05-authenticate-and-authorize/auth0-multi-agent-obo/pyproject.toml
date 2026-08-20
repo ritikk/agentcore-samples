@@ -9,7 +9,7 @@ name = "agentcore-identity-sample"
 version = "1.0.0"
 description = "Reference implementation for AWS AgentCore Runtime with Auth0 identity integration"
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.13"
 license = {text = "Apache-2.0"}
 authors = [
     {name = "AWS AgentCore Team", email = "agentcore@example.com"}

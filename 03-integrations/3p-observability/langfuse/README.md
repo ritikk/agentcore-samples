@@ -43,7 +43,7 @@ AgentCore runtime → travel_agent.py
 
 ## Prerequisites
 
-- Python 3.10+
+- Python 3.13+
 - AWS credentials configured with Bedrock and AgentCore permissions
 - [`uv`](https://docs.astral.sh/uv/) installed (used to build the arm64 deployment package)
 - [Langfuse](https://langfuse.com/) account with API keys (public and secret keys)

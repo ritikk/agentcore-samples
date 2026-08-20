@@ -30,7 +30,7 @@ A Gateway **REQUEST interceptor** (Lambda, ~30 lines) bridges the gap:
 4. Microsoft Entra ID tenant with an app registration
 5. Databricks [federation policy](https://docs.databricks.com/aws/en/dev-tools/auth/oauth-federation-policy) trusting the Entra tenant
 6. Databricks user matching the Entra `email` claim (via SCIM or manual)
-7. Python 3.10+
+7. Python 3.13+
 
 ### Databricks Federation Policy
 

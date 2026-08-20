@@ -20,7 +20,7 @@ standard OTel pipeline.
 
 ## Prerequisites
 
-- Python 3.10+
+- Python 3.13+
 - AWS credentials configured
 - Amazon Bedrock model access (Claude Haiku 4.5)
 - **CloudWatch Transaction Search enabled** — required before traces appear:

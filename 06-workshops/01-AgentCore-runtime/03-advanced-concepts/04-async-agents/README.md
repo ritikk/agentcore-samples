@@ -40,7 +40,7 @@ The agent orchestrates 16 different tools to create comprehensive weekly status 
 ## Prerequisites
 
 - AWS Account with access to Amazon Bedrock AgentCore
-- Python 3.12+
+- Python 3.13+
 - AWS CLI configured with appropriate credentials
 - S3 bucket for storing demo data and reports
 

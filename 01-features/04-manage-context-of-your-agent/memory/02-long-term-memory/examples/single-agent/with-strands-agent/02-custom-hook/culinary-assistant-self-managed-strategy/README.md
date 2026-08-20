@@ -20,7 +20,7 @@ A culinary assistant demonstrating AgentCore's **self-managed memory strategy** 
 
 ## Prerequisites
 
-- Python 3.11+
+- Python 3.13+
 - AWS credentials with access to Lambda, S3, SNS, SQS, and Bedrock
 - Amazon Bedrock model access (Claude)
 

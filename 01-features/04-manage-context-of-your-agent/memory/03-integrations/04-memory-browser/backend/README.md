@@ -11,7 +11,7 @@ The **FastAPI** backend for the [AgentCore Memory Dashboard](../README.md). It w
 
 ## Prerequisites
 
-- Python 3.8+
+- Python 3.13+
 - AWS credentials configured
 - The IAM permissions listed above
 

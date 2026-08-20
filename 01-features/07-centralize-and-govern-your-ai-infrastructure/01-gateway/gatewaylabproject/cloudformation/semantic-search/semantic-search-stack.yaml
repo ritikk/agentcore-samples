@@ -54,7 +54,7 @@ Resources:
     Type: AWS::Lambda::Function
     Properties:
       FunctionName: calc_lambda_gateway
-      Runtime: python3.12
+      Runtime: python3.13
       Handler: calc_lambda.lambda_handler
       Role: !GetAtt CalcRole.Arn
       Timeout: 30
@@ -73,7 +73,7 @@ Resources:
     Type: AWS::Lambda::Function
     Properties:
       FunctionName: restaurant_lambda_gateway
-      Runtime: python3.12
+      Runtime: python3.13
       Handler: restaurant_lambda.lambda_handler
       Role: !GetAtt RestaurantRole.Arn
       Timeout: 30

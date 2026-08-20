@@ -13,7 +13,7 @@ This example demonstrates how to integrate a LlamaIndex agent with AWS Bedrock A
 
 ## Prerequisites
 
-- Python 3.10+
+- Python 3.13+
 - [uv](https://github.com/astral-sh/uv) - Fast Python package installer and resolver
 - AWS account with Bedrock access
 - OpenAI API key (for the model client)

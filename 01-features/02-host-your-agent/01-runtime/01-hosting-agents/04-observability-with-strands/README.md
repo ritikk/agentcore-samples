@@ -17,7 +17,7 @@ User ──> AgentCore runtime ──> Strands Travel Agent
 
 ## Prerequisites
 
-- Python 3.12+
+- Python 3.13+
 - [uv](https://docs.astral.sh/uv/getting-started/installation/) installed
 - AWS CLI configured with credentials
 - Amazon Bedrock model access (Claude Haiku 4.5 in your region)

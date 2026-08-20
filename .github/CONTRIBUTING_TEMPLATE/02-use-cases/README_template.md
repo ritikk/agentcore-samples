@@ -38,7 +38,7 @@ Any functionality of your use case that you want to highlight
 ## Prerequisites
 
 Prerequisites to execute your use case in a list format. For instance:
-* Python 3.10+
+* Python 3.13+
 * AWS credentials
 * boto3 or Amazon Bedrock AgentCore SDK
 * ...

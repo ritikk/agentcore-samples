@@ -25,7 +25,7 @@ my-project/
 ### Prerequisites
 
 - **Node.js** 20.x or later
-- **Python 3.10+** and **uv** for Python agents ([install uv](https://docs.astral.sh/uv/getting-started/installation/))
+- **Python 3.13+** and **uv** for Python agents ([install uv](https://docs.astral.sh/uv/getting-started/installation/))
 - **AWS credentials** configured (`aws configure` or environment variables)
 - **Docker** (only for Container build agents)
 

@@ -36,7 +36,7 @@ The `InvokeBrowser` API accepts SigV4-signed requests and translates them into O
 
 ### Prerequisites
 
-- Python 3.10 or later
+- Python 3.13 or later
 - An AWS account with Amazon Bedrock AgentCore access enabled
 - AWS credentials configured (`aws sts get-caller-identity`)
 - An AWS Region where Amazon Bedrock AgentCore is available

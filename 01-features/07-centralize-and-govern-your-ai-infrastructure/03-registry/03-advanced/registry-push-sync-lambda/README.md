@@ -20,7 +20,7 @@ See the [Known Limitations](#known-limitations) section for details on versionin
 - An AWS account with IAM credentials that have permissions to create Lambda functions, IAM roles, and EventBridge rules. It should also have a policy which allows required AWS Agent registry fucntions. 
 - An MCP server deployed on AgentCore runtime with Cognito OAuth configured for authentication.
 - The notebook helps create Agent registry and MCP server record in it. In case the registry or MCP record is already existing, those cells can be skipped. 
-- Python 3.10+ with boto3 installed (the notebook handles installation via `requirements.txt`).
+- Python 3.13+ with boto3 installed (the notebook handles installation via `requirements.txt`).
 - For cross-account setups, AWS CLI profiles configured for both Account A and Account B.
 
 ## Architecture
@@ -132,7 +132,7 @@ The Lambda function is deployed with the following configuration:
 
 | Setting       | Value                                                                 |
 |---------------|-----------------------------------------------------------------------|
-| runtime       | Python 3.12                                                           |
+| runtime       | Python 3.13                                                           |
 | Handler       | `handler.handler`                                                     |
 | memory        | 128 MB                                                                |
 | Timeout       | 30 seconds                                                            |

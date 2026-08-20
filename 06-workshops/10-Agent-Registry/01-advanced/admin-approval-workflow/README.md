@@ -79,7 +79,7 @@ As an Administrator, you can use the **AWS CLI** commands included in the notifi
   | **Amazon DynamoDB** | `CreateTable`, `DeleteTable`, `DescribeTable` |
   | **AWS CloudWatch Logs** | `CreateLogGroup`, `CreateLogStream`, `PutLogEvents`, `DeleteLogGroup` |
 
-- Python 3.9+ with `boto3` installed
+- Python 3.13+ with `boto3` installed
 - [uv](https://docs.astral.sh/uv/getting-started/installation/) package manager (for installing python dependencies)
 - A Slack workspace with an [incoming webhook](https://docs.slack.dev/messaging/sending-messages-using-incoming-webhooks/) configured. Note down the webhook URL and channel name.
 - AWS CLI configured with a default region (`us-west-2`)

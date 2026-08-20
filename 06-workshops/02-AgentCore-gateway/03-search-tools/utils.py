@@ -6,7 +6,7 @@ import boto3
 from botocore.exceptions import ClientError
 
 LAMBDA_EXECUTION_ROLE_POLICY = "arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
-LAMBDA_RUNTIME = "python3.12"
+LAMBDA_RUNTIME = "python3.13"
 LAMBDA_HANDLER = "lambda_function_code.lambda_handler"
 LAMBDA_PACKAGE_TYPE = "Zip"
 

@@ -112,9 +112,9 @@ The `mcp-server-code/` directory contains your MCP server's source files:
    aws configure
    ```
 
-3. **Python 3.11+** (for testing scripts)
+3. **Python 3.13+** (for testing scripts)
    ```bash
-   python --version  # Verify Python 3.11 or later
+   python --version  # Verify Python 3.13 or later
    pip install boto3 mcp
    ```
 

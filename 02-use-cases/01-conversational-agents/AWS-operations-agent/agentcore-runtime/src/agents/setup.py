@@ -17,7 +17,7 @@ setup(
     packages=find_packages(),
     py_modules=["sdk_agent"],
     install_requires=["strands-agents", "bedrock-agentcore", "pyyaml", "requests"],
-    python_requires=">=3.11",
+    python_requires=">=3.13",
     package_data={"": ["*.yaml", "*.json"]},
     include_package_data=True,
 )

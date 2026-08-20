@@ -19,7 +19,7 @@ A personal assistant built with **Strands Agents**, wired to AgentCore short-ter
 
 ## Prerequisites
 
-- Python 3.10+
+- Python 3.13+
 - AWS credentials with AgentCore Memory permissions
 - Access to Amazon Bedrock models
 

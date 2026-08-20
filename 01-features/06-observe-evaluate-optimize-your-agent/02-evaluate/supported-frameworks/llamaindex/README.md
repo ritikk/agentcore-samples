@@ -70,7 +70,7 @@ This trace was captured from the deployed sample and sanitized for publication. 
 
 ## Prerequisites
 
-- Python 3.10+
+- Python 3.13+
 - AWS CLI configured with credentials
 - Access to `us.amazon.nova-lite-v1:0` on Amazon Bedrock in your region
 - Permissions for: `bedrock-agentcore:*`, `bedrock-agentcore-control:*`, `logs:*`, `iam:CreateRole`, `iam:PutRolePolicy`, `s3:PutObject`, `bedrock:InvokeModel`

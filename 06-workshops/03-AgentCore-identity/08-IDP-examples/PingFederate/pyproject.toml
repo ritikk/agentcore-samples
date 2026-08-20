@@ -3,7 +3,7 @@ name = "agentcore-private-idp-ping-federate"
 version = "0.1.0"
 description = "Private IdP connectivity from AgentCore Identity to PingFederate via VPC Lattice"
 readme = "README.md"
-requires-python = ">=3.12"
+requires-python = ">=3.13"
 dependencies = [
     "aws-cdk-lib>=2.237.1",
     "cdk-ecr-deployment>=3.0.0",

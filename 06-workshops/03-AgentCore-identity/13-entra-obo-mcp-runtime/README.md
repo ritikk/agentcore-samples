@@ -34,7 +34,7 @@ This sample covers the Runtime-hosted MCP variant of OBO. The Gateway variant, w
 
 - AWS account with Bedrock AgentCore access. The notebook defaults to `us-west-2`.
 - Microsoft Entra ID tenant with admin rights to register applications and grant admin consent.
-- Python 3.11+ with the Jupyter stack (`ipykernel`, `jupyter`).
+- Python 3.13+ with the Jupyter stack (`ipykernel`, `jupyter`).
 - AWS credentials available to the notebook kernel (for example, `AWS_PROFILE` exported before launching Jupyter).
 - Model access to Claude Sonnet 4.5 on Amazon Bedrock.
 

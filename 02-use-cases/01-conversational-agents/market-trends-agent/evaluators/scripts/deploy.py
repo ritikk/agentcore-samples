@@ -228,7 +228,7 @@ def _deploy_lambda(lam, folder_name: str, function_name: str, timeout: int, lamb
         LOG.info("Creating Lambda %s", function_name)
         lam.create_function(
             FunctionName=function_name,
-            Runtime="python3.12",
+            Runtime="python3.13",
             Role=lambda_role_arn,
             Handler="lambda_function.lambda_handler",
             Code={"ZipFile": zip_bytes},

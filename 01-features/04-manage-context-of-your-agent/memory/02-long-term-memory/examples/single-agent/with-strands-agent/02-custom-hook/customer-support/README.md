@@ -23,7 +23,7 @@ The same customer-support agent as the [built-in version](../../01-built-in-hook
 
 ## Prerequisites
 
-- Python 3.10+
+- Python 3.13+
 - AWS credentials with AgentCore Memory permissions
 - An IAM execution role for custom-strategy model invocation
 - Amazon Bedrock AgentCore SDK with `MemoryManager` support

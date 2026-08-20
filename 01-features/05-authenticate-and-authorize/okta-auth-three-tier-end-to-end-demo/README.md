@@ -81,7 +81,7 @@ Each tool response includes a `_security_context` field so callers can verify th
 
 ## Prerequisites
 
-- Python 3.10+
+- Python 3.13+
 - AWS credentials configured with AgentCore permissions
 - Okta developer account with:
   - 1 custom Authorization Server

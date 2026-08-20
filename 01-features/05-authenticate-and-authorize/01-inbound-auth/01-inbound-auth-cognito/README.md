@@ -81,7 +81,7 @@ The Cognito access token is valid for **2 hours**. Use `reauthenticate_user()` t
 
 ## Prerequisites
 
-- Python 3.10+
+- Python 3.13+
 - AWS CLI configured with credentials
 - AWS account with AgentCore runtime access
 - `uv` installed: `curl -LsSf https://astral.sh/uv/install.sh | sh`

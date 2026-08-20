@@ -160,7 +160,7 @@ cd dist && zip -r ../response-interceptor-lambda.zip . && cd ..
 # Deploy to Lambda
 aws lambda create-function \
   --function-name lakehouse-gateway-response-interceptor \
-  --runtime python3.11 \
+  --runtime python3.13 \
   --role <LAMBDA_ROLE_ARN> \
   --halakehouse-agent/cognito-app-client-id`
    - `/app/lakehouse-agent/tenant-role-mapping-table`

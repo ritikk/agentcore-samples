@@ -153,7 +153,7 @@ CLEANUP
 
 ## Prerequisites
 
-- Python 3.10+
+- Python 3.13+
 - Node.js 20+ (for AgentCore CLI and content-provider CDK)
 - AWS CLI v2 configured with credentials
 - AWS CDK v2 installed

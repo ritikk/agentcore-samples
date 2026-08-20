@@ -16,7 +16,7 @@ By the end of the 6 labs, you will have built the following architecture:
 ## Prerequisites
 
 - You need an AWS account with access to Amazon Bedrock.
-- Python 3.10+ must be installed locally.
+- Python 3.13+ must be installed locally.
 - The AWS CLI must be configured with appropriate credentials.
 - Amazon Nova 2 Lite must be enabled in your [Amazon Bedrock model access](https://docs.aws.amazon.com/bedrock/latest/userguide/model-access.html) settings.
 

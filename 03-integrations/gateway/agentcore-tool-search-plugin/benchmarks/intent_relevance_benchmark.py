@@ -343,7 +343,7 @@ def setup_infra(session, region: str) -> tuple[str, str]:
         lambda_client.update_function_code(FunctionName=_LAMBDA_NAME, ZipFile=_get_lambda_zip())
     except lambda_client.exceptions.ResourceNotFoundException:
         resp = lambda_client.create_function(
-            FunctionName=_LAMBDA_NAME, Runtime="python3.10", Role=role_arn,
+            FunctionName=_LAMBDA_NAME, Runtime="python3.13", Role=role_arn,
             Handler="lambda_function.lambda_handler", Code={"ZipFile": _get_lambda_zip()},
             Timeout=30)
         lambda_arn = resp["FunctionArn"]

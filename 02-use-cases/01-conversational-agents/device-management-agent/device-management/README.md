@@ -22,7 +22,7 @@ The Device Management Module is the core backend component that implements all d
 ## Prerequisites
 
 ### Required Software
-- **Python 3.10+**
+- **Python 3.13+**
 - **AWS CLI** (configured with appropriate permissions)
 - **Boto3** (AWS SDK for Python)
 
@@ -91,7 +91,7 @@ python dynamodb_models.py
 zip -r function.zip . -x "*.env" "__pycache__/*" "*.pyc"
 aws lambda create-function \
   --function-name DeviceManagementLambda \
-  --runtime python3.10 \
+  --runtime python3.13 \
   --role arn:aws:iam::ACCOUNT:role/DeviceManagementLambdaRole \
   --handler lambda_function.lambda_handler \
   --zip-file fileb://function.zip

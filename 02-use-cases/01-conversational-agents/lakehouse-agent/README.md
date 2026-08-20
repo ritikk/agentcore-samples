@@ -265,7 +265,7 @@ Key Points:
 ### Development Environment
 
 ```bash
-# Python 3.10 or later
+# Python 3.13 or later
 python --version
 
 # Create virtual environment

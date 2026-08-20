@@ -55,7 +55,7 @@ All resources are created in **us-east-1** by default.
 
 ## Prerequisites
 
-- **Python 3.10+**
+- **Python 3.13+**
 - **Node.js 18+**
 - **Docker Desktop** (must be running — required for runtime deployment)
 - **AWS CLI** configured with a profile that has `BedrockAgentCoreFullAccess` permissions

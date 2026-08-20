@@ -56,7 +56,7 @@ Before you begin, ensure you have:
 
 * AWS Account and appropriate IAM permissions for services deployment
 * **Development Environment**:
-  * Python 3.10 or later installed
+  * Python 3.13 or later installed
   * Node.js and [pnpm](https://pnpm.io/installation) installed
   * Docker installed and running (required for building the agent container image)
   * **[AWS CDK Installed](https://docs.aws.amazon.com/cdk/v2/guide/getting-started.html)**

@@ -83,7 +83,7 @@ agent = Agent(
 
 ## Prerequisites
 
-- Python 3.8 or higher
+- Python 3.13 or higher
 - Node.js 16 or higher
 - AWS Account with Bedrock access
 - AWS CLI configured or AWS credentials

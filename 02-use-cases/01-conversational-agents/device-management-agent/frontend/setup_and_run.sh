@@ -139,9 +139,9 @@ run_locally() {
     echo "🐍 Using local Python deployment..."
     
     # Check if Python 3.12 is installed
-    if command -v python3.12 &>/dev/null; then
+    if command -v python3.13 &>/dev/null; then
         echo "✅ Python 3.12 found"
-        PYTHON_CMD=python3.12
+        PYTHON_CMD=python3.13
     elif command -v python3 &>/dev/null; then
         PYTHON_VERSION=$(python3 --version | cut -d' ' -f2)
         echo "🔍 Found Python $PYTHON_VERSION"

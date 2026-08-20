@@ -63,7 +63,7 @@ where it left off.
 
 ## Prerequisites
 
-- Python 3.10+
+- Python 3.13+
 - AWS credentials with **both** AgentCore Memory permissions and Amazon Bedrock
   model-invocation permissions (resolved from the standard AWS chain).
 - **Amazon Bedrock model access for Claude Haiku 4.5** in your region (request it in the

@@ -84,7 +84,7 @@ The evaluation service reads these spans, extracts the user prompt and agent res
    - `us.anthropic.claude-sonnet-4-5-20250929-v1:0` (agent model)
    - `us.amazon.nova-lite-v1:0` (judge model for evaluation)
 3. **AgentCore CLI** installed: `npm install -g @aws/agentcore`
-4. **Python 3.12+** with pip
+4. **Python 3.13+** with pip
 
 ## Quick start (< 15 minutes)
 

@@ -4,7 +4,7 @@
 
 Before setting up the AgentCore Code Interpreter, ensure you have:
 
-- **Python 3.8+** with pip
+- **Python 3.13+** with pip
 - **Node.js 16+** with npm
 - **AWS Account** with Bedrock access
 - **AWS CLI** configured or credentials available

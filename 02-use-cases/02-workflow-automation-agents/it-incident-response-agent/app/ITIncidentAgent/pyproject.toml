@@ -7,7 +7,7 @@ name = "ITIncidentAgent"
 version = "0.1.0"
 description = "AgentCore Runtime Application using Strands SDK"
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.13"
 dependencies = [
     "aws-opentelemetry-distro >= 0.8.0, < 1.0",
     "bedrock-agentcore >= 1.0.3, < 2.0",

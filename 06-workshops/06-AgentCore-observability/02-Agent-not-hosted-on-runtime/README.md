@@ -38,7 +38,7 @@ This section demonstrates AgentCore Observability for popular open-source agent 
 ## Prerequisites
 
 - AWS account with Bedrock and CloudWatch access with the right permissions
-- Python 3.10+
+- Python 3.13+
 - AWS CloudWatch Transaction Search enabled
 - Framework-specific dependencies
 

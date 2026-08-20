@@ -31,7 +31,7 @@ This document explains:
 
 ### AgentCore Runtime
 
-- **Build type:** Container (ARM64/Graviton, Python 3.12)
+- **Build type:** Container (ARM64/Graviton, Python 3.13)
 - **Framework:** Strands Agents SDK
 - **Auth (inbound):** AWS_IAM (SigV4) — callers sign requests with AWS credentials (Lambda execution role or IAM user)
 - **Auth (outbound to Gateway):** Cognito M2M JWT via `@requires_access_token` decorator — secrets managed by AgentCore Identity vault (no env vars)

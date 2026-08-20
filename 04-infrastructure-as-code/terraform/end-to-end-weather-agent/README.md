@@ -120,9 +120,9 @@ This Terraform configuration creates:
    aws configure
    ```
 
-3. **Python 3.11+** (for testing scripts and memory initialization)
+3. **Python 3.13+** (for testing scripts and memory initialization)
    ```bash
-   python --version  # Verify Python 3.11 or later
+   python --version  # Verify Python 3.13 or later
    pip install boto3
    ```
    

@@ -1,4 +1,4 @@
-#!/usr/bin/env python3.11
+#!/usr/bin/env python3.13
 """
 Local Backend Server for Testing Visa Card Onboarding UI
 
@@ -6,7 +6,7 @@ This server runs locally and provides the same API endpoints that would
 normally be provided by AWS Lambda + API Gateway in production.
 
 Usage:
-    python3.11 local_backend_server.py
+    python3.13 local_backend_server.py
 
 Then your React UI at http://localhost:3000 can call:
     - http://localhost:5001/api/visa/secure-token

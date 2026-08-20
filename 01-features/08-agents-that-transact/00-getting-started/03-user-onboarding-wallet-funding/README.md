@@ -94,7 +94,7 @@ Backend                     End User UI (WalletHub / Privy frontend)
   `utils.load_tutorial_env()`.
 - **Testnet USDC** from [faucet.circle.com](https://faucet.circle.com/) for the network in your
   `.env` (Base Sepolia for `ETHEREUM`, Solana Devnet for `SOLANA`).
-- **Python 3.10+** and AWS CLI configured (`aws sts get-caller-identity`).
+- **Python 3.13+** and AWS CLI configured (`aws sts get-caller-identity`).
 - **Python deps:**
   ```bash
   pip install -r requirements.txt

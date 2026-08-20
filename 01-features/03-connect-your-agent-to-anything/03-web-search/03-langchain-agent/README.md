@@ -8,7 +8,7 @@ This demo shows the same Web Search Tool integration using LangChain and LangGra
 
 ## Prerequisites
 
-- Python 3.10+
+- Python 3.13+
 - AWS account with Amazon Bedrock enabled in **us-east-1**
 - AWS credentials with IAM, Cognito, and AgentCore gateway permissions
 - Claude Sonnet 4 model access enabled in Bedrock

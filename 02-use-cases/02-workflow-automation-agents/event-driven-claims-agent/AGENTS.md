@@ -38,7 +38,7 @@ event-driven-claims-agent/
 ├── README.md                          # Full project documentation
 ├── deploy.sh                          # One-command deploy (runs CDK)
 ├── app/claimsagent/
-│   ├── Dockerfile                     # Multi-stage, Python 3.12, ARM64
+│   ├── Dockerfile                     # Multi-stage, Python 3.13, ARM64
 │   ├── main.py                        # All agent logic: prompts, agents, Identity-managed Gateway OAuth
 │   ├── config.py                      # Centralized env var reads (Gateway, Memory, Model)
 │   ├── routing.py                     # Phase-3 routing: decide_action, resolve_decision/routing

@@ -32,7 +32,7 @@ See `architecture.png` in this folder for a visual overview of the branching flo
 
 - An AgentCore Memory resource (created once, reused across runs)
 - AWS credentials with permission for `bedrock-agentcore` and `bedrock-agentcore-control`
-- Python 3.10+ and dependencies from `requirements.txt`
+- Python 3.13+ and dependencies from `requirements.txt`
 
 ## Getting started
 

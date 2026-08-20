@@ -1,4 +1,4 @@
-FROM public.ecr.aws/docker/library/python:3.12-slim AS builder
+FROM public.ecr.aws/docker/library/python:3.13-slim AS builder
 
 WORKDIR /app
 
@@ -12,7 +12,7 @@ COPY pyproject.toml requirements.txt ./
 RUN uv pip install --system --no-cache -r requirements.txt
 
 # --- Runtime stage ---
-FROM public.ecr.aws/docker/library/python:3.12-slim
+FROM public.ecr.aws/docker/library/python:3.13-slim
 
 WORKDIR /app
 
@@ -20,7 +20,7 @@ WORKDIR /app
 RUN groupadd -r appuser && useradd -r -g appuser -d /app -s /sbin/nologin appuser
 
 # Copy installed packages from builder
-COPY --from=builder /usr/local/lib/python3.12/site-packages /usr/local/lib/python3.12/site-packages
+COPY --from=builder /usr/local/lib/python3.13/site-packages /usr/local/lib/python3.13/site-packages
 COPY --from=builder /usr/local/bin /usr/local/bin
 
 # Copy application code

@@ -73,7 +73,7 @@ For direct control over memory resources, use the AWS CLI — see [`00-getting-s
 
 ## Prerequisites
 
-- Python 3.10 or higher
+- Python 3.13 or higher
 - AWS account with Amazon Bedrock and AgentCore access
 - Per-tutorial `requirements.txt` where present
 

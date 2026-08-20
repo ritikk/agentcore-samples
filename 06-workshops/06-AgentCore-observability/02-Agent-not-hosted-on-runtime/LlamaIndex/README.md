@@ -19,7 +19,7 @@ The following diagram illustrates the architecture of this LlamaIndex agent impl
 
 ## Prerequisites
 
-- Python 3.9+
+- Python 3.13+
 - AWS account with access to Bedrock service (specifically Claude models)
 - AWS credentials configured locally
 - Appropriate IAM permissions for AWS Bedrock and CloudWatch

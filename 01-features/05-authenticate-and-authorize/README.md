@@ -133,7 +133,7 @@ followed by combined multi-flow examples in `03-m2m-3lo/` and `04-entra-obo-mcp-
 
 ## Prerequisites
 
-- Python 3.10+
+- Python 3.13+
 - AWS CLI configured with credentials
 - Node.js 20+ and `@aws/agentcore` npm package (for `03-m2m-3lo/` only)
 - AWS CDK (`npm install -g aws-cdk`) for `04-inbound-auth-pingfederate/` only

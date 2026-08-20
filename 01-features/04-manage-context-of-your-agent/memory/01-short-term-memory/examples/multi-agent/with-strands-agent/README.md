@@ -19,7 +19,7 @@ A travel-planning system where a coordinator agent delegates to specialized **fl
 
 ## Prerequisites
 
-- Python 3.10+
+- Python 3.13+
 - AWS account with AgentCore Memory permissions (and an IAM role for memory)
 - Access to Amazon Bedrock models
 

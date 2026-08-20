@@ -54,7 +54,7 @@ For more details on subagents, see the [Claude Agent SDK subagents documentation
 
 ## Prerequisites
 
-- Python 3.10+
+- Python 3.13+
 - [uv](https://github.com/astral-sh/uv) - Fast Python package installer and resolver
 - AWS account with Bedrock AgentCore access
 - Node.js and npm (for Claude Code CLI)

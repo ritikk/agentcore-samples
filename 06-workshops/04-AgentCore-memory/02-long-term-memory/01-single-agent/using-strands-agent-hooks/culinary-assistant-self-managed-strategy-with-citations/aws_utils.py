@@ -298,7 +298,7 @@ class AWSUtils:
                     LayerName=layer_name,
                     Description="Layer with latest boto3 for AgentCore",
                     Content={"ZipFile": zip_file.read()},
-                    CompatibleRuntimes=["python3.9"],
+                    CompatibleRuntimes=["python3.13"],
                 )
 
             # Clean up
@@ -332,7 +332,7 @@ class AWSUtils:
             # Prepare function parameters
             function_params = {
                 "FunctionName": function_name,
-                "Runtime": "python3.9",
+                "Runtime": "python3.13",
                 "Role": role_arn,
                 "Handler": "lambda_function.lambda_handler",
                 "Code": {"ZipFile": zip_buffer.read()},

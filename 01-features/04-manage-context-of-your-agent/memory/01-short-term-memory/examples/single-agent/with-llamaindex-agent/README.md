@@ -32,7 +32,7 @@ The long-term counterparts live in [`../../../../02-long-term-memory/examples/si
 
 ## Prerequisites
 
-- Python 3.10+
+- Python 3.13+
 - AWS credentials with AgentCore memory permissions
 - Bedrock model access (default: `us.anthropic.claude-3-7-sonnet-20250219-v1:0`)
 - `pip install -r requirements.txt`

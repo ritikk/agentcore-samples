@@ -46,7 +46,7 @@ Resources:
     Type: AWS::Lambda::Function
     Properties:
       FunctionName: agentcore-fgac-request-interceptor
-      Runtime: python3.12
+      Runtime: python3.13
       Handler: index.lambda_handler
       Role: !GetAtt InterceptorRole.Arn
       Timeout: 10
@@ -149,7 +149,7 @@ Resources:
     Type: AWS::Lambda::Function
     Properties:
       FunctionName: agentcore-fgac-response-interceptor
-      Runtime: python3.12
+      Runtime: python3.13
       Handler: index.lambda_handler
       Role: !GetAtt InterceptorRole.Arn
       Timeout: 10

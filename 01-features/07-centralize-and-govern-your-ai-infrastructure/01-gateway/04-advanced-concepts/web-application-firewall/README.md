@@ -38,7 +38,7 @@ AWS WAF evaluates every inbound request inline. When no web ACL is associated wi
 
 ## Prerequisites
 
-- Python 3.12+
+- Python 3.13+
 - [uv](https://docs.astral.sh/uv/getting-started/installation/) installed
 - [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) configured with credentials (`aws configure`)
 - A regional AWS WAF web ACL is created in the same Region as your gateway (this tutorial creates one). CloudFront (global) web ACLs are not supported.

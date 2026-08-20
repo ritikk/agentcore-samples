@@ -142,7 +142,7 @@ The CDK stack creates:
   - IAM roles and policies
   - Lambda functions
   - Bedrock AgentCore Runtime
-- Python 3.10+ and AWS CDK v2 installed
+- Python 3.13+ and AWS CDK v2 installed
 - CDK version 2.220.0 or later (for BedrockAgentCore support)
 
 ## Deployment

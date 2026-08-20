@@ -414,7 +414,7 @@ def lambda_handler(event, context):
     try:
         resp = lambda_client.create_function(
             FunctionName=CLAIMS_LAMBDA_NAME,
-            Runtime="python3.12",
+            Runtime="python3.13",
             Role=role_arn,
             Handler="lambda_function.lambda_handler",
             Code={"ZipFile": zip_bytes},

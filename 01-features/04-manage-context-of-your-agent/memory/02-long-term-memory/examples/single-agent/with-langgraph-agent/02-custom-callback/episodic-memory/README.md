@@ -23,7 +23,7 @@ A nutrition assistant built with **LangGraph** that uses the **episodic memory s
 
 ## Prerequisites
 
-- Python 3.10+
+- Python 3.13+
 - AWS account with AgentCore Memory permissions and an IAM execution role
 - Access to Amazon Bedrock models
 

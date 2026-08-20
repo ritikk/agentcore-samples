@@ -23,7 +23,7 @@ A travel-planning system where a coordinator delegates to specialized **flight**
 
 ## Prerequisites
 
-- Python 3.10+
+- Python 3.13+
 - AWS credentials with AgentCore Memory permissions
 - Amazon Bedrock AgentCore SDK
 
