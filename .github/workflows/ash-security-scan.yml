@@ -49,7 +49,7 @@ jobs:
         if: steps.changed-files.outputs.any_changed == 'true'
         uses: actions/setup-python@v4
         with:
-          python-version: '3.10'
+          python-version: '3.13'
 
       - name: Install ASH
         if: steps.changed-files.outputs.any_changed == 'true'

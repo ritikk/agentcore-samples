@@ -135,7 +135,7 @@ Resources:
     Type: AWS::Lambda::Function
     Properties:
       FunctionName: agentcore-data-masking-interceptor
-      Runtime: python3.12
+      Runtime: python3.13
       Handler: interceptor.lambda_handler
       Role: !GetAtt InterceptorRole.Arn
       Timeout: 60
@@ -158,7 +158,7 @@ Resources:
     Type: AWS::Lambda::Function
     Properties:
       FunctionName: agentcore-data-masking-employee-tool
-      Runtime: python3.12
+      Runtime: python3.13
       Handler: employee_data_tool.lambda_handler
       Role: !GetAtt ToolRole.Arn
       Timeout: 30

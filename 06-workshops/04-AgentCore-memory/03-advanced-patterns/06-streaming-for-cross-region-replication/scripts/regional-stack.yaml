@@ -105,7 +105,7 @@ Resources:
     Type: AWS::Lambda::Function
     Properties:
       FunctionName: agentcore-replication-consumer
-      Runtime: python3.12
+      Runtime: python3.13
       Handler: handler.lambda_handler
       MemorySize: 256
       Timeout: 60

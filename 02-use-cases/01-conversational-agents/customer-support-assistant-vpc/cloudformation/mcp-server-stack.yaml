@@ -391,7 +391,7 @@ RepositoryName: !Sub 'csvpc-${Environment}-mcp-repository'
     DependsOn: MCPDynamoDBRuntime
     Properties:
       FunctionName: !Sub 'csvpc-${Environment}-mcp-ecr-notification'
-      Runtime: python3.12
+      Runtime: python3.13
       Handler: index.lambda_handler
       Role: !GetAtt ECRImageNotificationLambdaRole.Arn
       Timeout: 300
@@ -609,7 +609,7 @@ RepositoryName: !Sub 'csvpc-${Environment}-mcp-repository'
     Type: AWS::Lambda::Function
     Properties:
       FunctionName: !Sub 'csvpc-${Environment}-mcp-codebuild'
-      Runtime: python3.12
+      Runtime: python3.13
       Handler: index.lambda_handler
       Role: !GetAtt CodeBuildTriggerLambdaRole.Arn
       Timeout: 900
@@ -928,7 +928,7 @@ RepositoryName: !Sub 'csvpc-${Environment}-mcp-repository'
     Type: AWS::Lambda::Function
     Properties:
       FunctionName: !Sub 'csvpc-${Environment}-mcp-dynamodb-xray-traces-setup'
-      Runtime: python3.12
+      Runtime: python3.13
       Handler: index.lambda_handler
       Role: !GetAtt XRayTracesSetupLambdaRole.Arn
       Timeout: 300

@@ -238,7 +238,7 @@ Resources:
   PopulateDataFunction:
     Type: AWS::Lambda::Function
     Properties:
-      Runtime: python3.12
+      Runtime: python3.13
       Handler: index.lambda_handler
       Role: !GetAtt PopulateDataRole.Arn
       Timeout: 120
@@ -603,7 +603,7 @@ Resources:
     Type: AWS::Lambda::Function
     Properties:
       FunctionName: !Sub '${AWS::StackName}-customer-support'
-      Runtime: python3.12
+      Runtime: python3.13
       Handler: index.lambda_handler
       Role: !GetAtt CustomerSupportLambdaRole.Arn
       Timeout: 30

@@ -4,7 +4,7 @@ version = "0.1.0"
 description = "Intelligent financial analysis agent using Amazon Bedrock AgentCore"
 
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.13"
 dependencies = [
     "langgraph",
     "langchain-aws",

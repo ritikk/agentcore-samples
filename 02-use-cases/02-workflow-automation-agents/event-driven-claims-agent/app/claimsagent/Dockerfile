@@ -1,4 +1,4 @@
-FROM --platform=linux/arm64 public.ecr.aws/docker/library/python:3.12-trixie AS builder
+FROM --platform=linux/arm64 public.ecr.aws/docker/library/python:3.13-trixie AS builder
 
 WORKDIR /app
 
@@ -12,7 +12,7 @@ COPY pyproject.toml uv.lock ./
 RUN uv sync --frozen --no-dev --no-install-project
 
 # --- Runtime stage ---
-FROM --platform=linux/arm64 public.ecr.aws/docker/library/python:3.12-slim-trixie
+FROM --platform=linux/arm64 public.ecr.aws/docker/library/python:3.13-slim-trixie
 
 WORKDIR /app
 

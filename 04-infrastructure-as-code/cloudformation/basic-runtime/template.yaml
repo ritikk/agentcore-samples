@@ -288,7 +288,7 @@ Resources:
       Description: "Triggers CodeBuild projects as CloudFormation custom resource"
       Handler: index.handler
       Role: !GetAtt CustomResourceRole.Arn
-      Runtime: python3.9
+      Runtime: python3.13
       Timeout: 900
       Code:
         ZipFile: |

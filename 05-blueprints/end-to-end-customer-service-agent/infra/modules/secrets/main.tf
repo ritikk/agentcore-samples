@@ -20,7 +20,7 @@ resource "aws_lambda_function" "rotation_lambda" {
   function_name    = "secrets-rotation-lambda"
   role            = aws_iam_role.rotation_lambda_role.arn
   handler         = "rotation_lambda.lambda_handler"
-  runtime         = "python3.9"
+  runtime          = "python3.13"
   timeout         = 30
 
   tracing_config {

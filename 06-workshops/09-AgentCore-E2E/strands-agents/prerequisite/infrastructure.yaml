@@ -250,7 +250,7 @@ Resources:
   PopulateDataFunction:
     Type: AWS::Lambda::Function
     Properties:
-      Runtime: python3.12
+      Runtime: python3.13
       Handler: index.lambda_handler
       Role: !GetAtt PopulateDataRole.Arn
       Timeout: 120
@@ -666,7 +666,7 @@ Resources:
         S3Bucket: !Ref  LambdaS3Bucket
         S3Key: !Ref LayerS3Key
       CompatibleRuntimes:
-        - python3.12
+        - python3.13
       CompatibleArchitectures:
         - x86_64
 
@@ -679,7 +679,7 @@ Resources:
         S3Bucket: !Ref LambdaS3Bucket
         S3Key: !Ref LambdaS3Key
       Role: !GetAtt CustomerSupportLambdaRole.Arn
-      Runtime: python3.12
+      Runtime: python3.13
       PackageType: Zip
       Architectures:
         - x86_64
@@ -763,7 +763,7 @@ Resources:
     Type: AWS::Lambda::Function
     Properties:
       FunctionName: !Sub '${AWS::AccountId}-${AWS::Region}-kb-boto3-layer-creator'
-      Runtime: python3.9
+      Runtime: python3.13
       Handler: index.handler
       Role: !GetAtt Boto3LayerCreatorRole.Arn
       Timeout: 900
@@ -810,7 +810,7 @@ Resources:
                           response = lambda_client.publish_layer_version(
                               LayerName=f"{account_id}-{region}-kb-boto3-layer",
                               Content={'ZipFile': f.read()},
-                              CompatibleRuntimes=['python3.9', 'python3.10', 'python3.11'],
+                              CompatibleRuntimes=['python3.13'],
                               CompatibleArchitectures=['x86_64']
                           )
                       
@@ -896,7 +896,7 @@ Resources:
     Type: AWS::Lambda::Function
     Properties:
       FunctionName: !Sub '${AWS::AccountId}-${AWS::Region}-kb-setup-function'
-      Runtime: python3.9
+      Runtime: python3.13
       Handler: index.lambda_handler
       Role: !GetAtt KnowledgeBaseSetupRole.Arn
       Timeout: 600

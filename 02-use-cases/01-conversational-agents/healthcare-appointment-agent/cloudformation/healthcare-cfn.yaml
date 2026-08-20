@@ -160,7 +160,7 @@ Resources:
             - !Split
               - '/'
               - !Ref 'AWS::StackId'
-      Runtime: python3.11
+      Runtime: python3.13
       PackageType: Zip
       Environment:
         Variables:
@@ -172,7 +172,7 @@ Resources:
     Type: AWS::Lambda::Function
     Properties:
       Handler: index.handler
-      Runtime: python3.11
+      Runtime: python3.13
       Timeout: 60
       Role: !GetAtt IAMRoleLambdaAPIGWognito.Arn
       Environment:
