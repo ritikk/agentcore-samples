@@ -71,7 +71,7 @@ def deploy_interceptor(region: str, prefix: str, gateway_arn: str = None) -> str
     # Create Lambda
     response = lambda_client.create_function(
         FunctionName=function_name,
-        Runtime="python3.11",
+        Runtime="python3.13",
         Role=role_arn,
         Handler="lambda_function.lambda_handler",
         Code={"ZipFile": zip_buffer.getvalue()},

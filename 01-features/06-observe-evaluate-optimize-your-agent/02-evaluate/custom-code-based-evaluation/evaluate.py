@@ -262,7 +262,7 @@ def _deploy_lambda(function_name: str, source_dir: str, timeout_s: int = 60) -> 
         print("  Creating new function ...")
         resp = lambda_client.create_function(
             FunctionName=function_name,
-            Runtime="python3.12",
+            Runtime="python3.13",
             Role=LAMBDA_ROLE_ARN,
             Handler="lambda_function.lambda_handler",
             Code={"ZipFile": zip_bytes},

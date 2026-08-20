@@ -56,7 +56,7 @@ COGNITO_USERNAME = "testuser"
 COGNITO_TEMP_PASSWORD = "Temp123!"  # pragma: allowlist secret
 COGNITO_PASSWORD = "MyPassword123!"  # pragma: allowlist secret
 
-LAMBDA_RUNTIME = "python3.12"
+LAMBDA_RUNTIME = "python3.13"
 LAMBDA_HANDLER = "lambda_function_code.lambda_handler"
 
 # ---------------------------------------------------------------------------

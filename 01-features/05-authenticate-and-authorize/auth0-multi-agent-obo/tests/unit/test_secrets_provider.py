@@ -525,7 +525,7 @@ class TestFactoryFunctions:
 
     def test_is_aws_environment_execution_env(self, monkeypatch):
         """Test AWS_EXECUTION_ENV detection."""
-        monkeypatch.setenv("AWS_EXECUTION_ENV", "AWS_Lambda_python3.11")
+        monkeypatch.setenv("AWS_EXECUTION_ENV", "AWS_Lambda_python3.13")
         assert is_aws_environment() is True
 
     def test_is_aws_environment_local(self, monkeypatch):

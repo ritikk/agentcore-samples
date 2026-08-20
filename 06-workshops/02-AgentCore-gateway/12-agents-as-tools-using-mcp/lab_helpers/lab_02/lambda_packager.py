@@ -537,7 +537,7 @@ def create_lambda_function_from_zip(
             # Update configuration
             config_response = lambda_client.update_function_configuration(  # noqa: F841
                 FunctionName=function_name,
-                Runtime="python3.11",
+                Runtime="python3.13",
                 Handler="app.lambda_handler",
                 Timeout=LAMBDA_CONFIG["timeout"],
                 MemorySize=LAMBDA_CONFIG["memory_size"],
@@ -554,7 +554,7 @@ def create_lambda_function_from_zip(
 
             response = lambda_client.create_function(
                 FunctionName=function_name,
-                Runtime="python3.11",
+                Runtime="python3.13",
                 Role=role_arn,
                 Handler="app.lambda_handler",
                 Code=code_arg,

@@ -141,7 +141,7 @@ def create_lambda(iam: object) -> str:
     try:
         resp = lam.create_function(
             FunctionName=LAMBDA_NAME,
-            Runtime="python3.12",
+            Runtime="python3.13",
             Role=lambda_role_arn,
             Handler="lambda_function.lambda_handler",
             Code={"ZipFile": buf.read()},

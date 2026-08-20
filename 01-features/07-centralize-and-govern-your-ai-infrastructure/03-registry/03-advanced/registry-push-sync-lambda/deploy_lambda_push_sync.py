@@ -365,7 +365,7 @@ with open(ZIP_PATH, "rb") as f:
 try:
     resp = lambda_client.create_function(
         FunctionName=LAMBDA_NAME,
-        Runtime="python3.12",
+        Runtime="python3.13",
         Role=ROLE_ARN,
         Handler="handler.handler",
         Code={"ZipFile": zip_bytes},

@@ -337,7 +337,7 @@ class InfraManager:
         except self.lambda_client.exceptions.ResourceNotFoundException:
             pass
         resp = self.lambda_client.create_function(
-            FunctionName=_LAMBDA_NAME, Runtime="python3.10", Role=self.role_arn,
+            FunctionName=_LAMBDA_NAME, Runtime="python3.13", Role=self.role_arn,
             Handler="lambda_function.lambda_handler", Code={"ZipFile": _get_lambda_zip()},
             Timeout=30, Description="Benchmark Lambda",
         )

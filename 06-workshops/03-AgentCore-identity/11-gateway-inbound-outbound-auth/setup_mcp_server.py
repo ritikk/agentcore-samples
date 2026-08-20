@@ -176,7 +176,7 @@ def main():
         print(f"  Creating function '{FUNCTION_NAME}'...")
         lam.create_function(
             FunctionName=FUNCTION_NAME,
-            Runtime="python3.12",
+            Runtime="python3.13",
             Role=role_arn,
             Handler="lambda_function.lambda_handler",
             Code={"ZipFile": zip_bytes},

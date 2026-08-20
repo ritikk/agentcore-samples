@@ -532,7 +532,7 @@ def create_gateway_lambda(lambda_function_code_path) -> dict[str, int]:
             lambda_response = lambda_client.create_function(
                 FunctionName=lambda_function_name,
                 Role=role_arn,
-                Runtime="python3.12",
+                Runtime="python3.13",
                 Handler="lambda_function_code.lambda_handler",
                 Code={"ZipFile": lambda_function_code},
                 Description="Lambda function example for Bedrock AgentCore Gateway",
