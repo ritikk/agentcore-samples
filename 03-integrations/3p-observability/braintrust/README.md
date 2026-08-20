@@ -17,7 +17,7 @@ Braintrust auth uses a Bearer token header.
 
 ## Prerequisites
 
-- Python 3.10+, uv
+- Python 3.13+, uv
 - AWS credentials configured
 - Braintrust account with API key and project ID
 

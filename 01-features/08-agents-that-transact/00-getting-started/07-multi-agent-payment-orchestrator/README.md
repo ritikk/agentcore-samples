@@ -91,7 +91,7 @@ specialist receives its own plugin scoped to its own budget.
   `utils.load_tutorial_env()`.
 - **Both wallets funded** with testnet USDC from [faucet.circle.com](https://faucet.circle.com/)
   (Base Sepolia), with delegated signing granted — both instruments must be `ACTIVE`.
-- **Python 3.10+** and AWS CLI configured (`aws sts get-caller-identity`).
+- **Python 3.13+** and AWS CLI configured (`aws sts get-caller-identity`).
 - **Node.js 20+ and the AgentCore CLI** (the runtime deploy uses it):
   ```bash
   npm install -g @aws/agentcore

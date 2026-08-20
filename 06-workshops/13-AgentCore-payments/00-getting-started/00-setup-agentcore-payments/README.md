@@ -47,7 +47,7 @@ You don't need separate managers per wallet provider. One manager, multiple conn
 
 ## Prerequisites
 
-* Python 3.10+
+* Python 3.13+
 * AWS credentials configured (`aws sts get-caller-identity` to verify)
 * AWS account allowlisted for AgentCore payments preview
 * For Coinbase: CDP API keys from https://portal.cdp.coinbase.com/

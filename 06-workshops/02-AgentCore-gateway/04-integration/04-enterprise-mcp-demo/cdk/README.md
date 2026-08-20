@@ -17,7 +17,7 @@ The stack provisions:
 - AWS CDK v2 installed (`npm install -g aws-cdk`)
 - Node.js 18+
 - An ACM certificate and Route 53 hosted zone for the custom domain
-- Python 3.12 (for Lambda bundling)
+- Python 3.13 (for Lambda bundling)
 
 ## Configuration
 

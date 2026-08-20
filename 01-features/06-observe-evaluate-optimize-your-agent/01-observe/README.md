@@ -31,7 +31,7 @@ The travel agent scripts (`custom_span_creation.py`, `span_filters.py`, `attribu
 
 ## Prerequisites
 
-- Python 3.12+
+- Python 3.13+
 - [uv](https://docs.astral.sh/uv/getting-started/installation/) installed
 - AWS CLI configured with credentials
 - Amazon Bedrock model access (Claude Haiku 4.5)

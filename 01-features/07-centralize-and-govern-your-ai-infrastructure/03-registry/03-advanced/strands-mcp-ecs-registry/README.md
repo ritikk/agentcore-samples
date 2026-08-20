@@ -185,7 +185,7 @@ User prompt
 
 ### Required Software
 
-- **Python 3.11+**
+- **Python 3.13+**
 - **Docker** (for building and pushing container images)
 - **AWS CLI v2** (configured with appropriate credentials)
 

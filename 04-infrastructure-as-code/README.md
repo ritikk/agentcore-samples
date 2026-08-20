@@ -91,7 +91,7 @@ Before deploying any sample, ensure you have:
    - S3 buckets (for weather agent)
 
 For CDK samples, also install:
-- Python 3.8+
+- Python 3.13+
 - AWS CDK v2.218.0 or later
 
 For Terraform samples, also install:

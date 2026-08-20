@@ -46,7 +46,7 @@ Pay for API:
 
 ```bash
 cd pay-for-api-agent
-python3.12 -m venv .venv && source .venv/bin/activate
+python3.13 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 cp env-sample.txt .env                 # fill in values
 bash test/integration/setup-roles.sh   # once per account

@@ -18,7 +18,7 @@ User/Agent → Gateway (Custom JWT auth) → Policy Engine (Cedar) → FHIR Tool
 
 Before running this sample, verify the following:
 
-- Python 3.12 or later
+- Python 3.13 or later
 - AWS CLI v2, configured with a named profile (`policy`)
 - A deployed healthcare appointment agent (see the parent project README)
 - An active Amazon Bedrock AgentCore Gateway with a custom JWT authorizer backed by Amazon Cognito

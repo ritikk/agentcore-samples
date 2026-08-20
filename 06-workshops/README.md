@@ -9,7 +9,7 @@ AgentCore services work independently or together, with any agentic framework (S
 ## Prerequisites
 
 - An AWS account with Amazon Bedrock access
-- Python 3.10+ and Jupyter Notebook (or JupyterLab)
+- Python 3.13+ and Jupyter Notebook (or JupyterLab)
 - AWS CLI configured with appropriate credentials
 - Basic familiarity with AI agents and AWS services
 

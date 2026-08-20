@@ -22,7 +22,7 @@ The Gateway Module creates and configures the Amazon Bedrock AgentCore Gateway, 
 ## Prerequisites
 
 ### Required Software
-- **Python 3.10+**
+- **Python 3.13+**
 - **AWS CLI** (configured with appropriate permissions)
 - **Boto3** (AWS SDK for Python)
 

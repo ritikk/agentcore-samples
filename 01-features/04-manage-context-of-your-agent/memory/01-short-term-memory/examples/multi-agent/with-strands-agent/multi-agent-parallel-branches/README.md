@@ -23,7 +23,7 @@ The coordinator delegates to the specialists, which execute in parallel while ea
 
 ## Prerequisites
 
-- Python 3.10+
+- Python 3.13+
 - AWS account with AgentCore Memory permissions
 - Access to Amazon Bedrock models
 

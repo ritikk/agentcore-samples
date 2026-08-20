@@ -109,7 +109,7 @@ with Amazon Bedrock AgentCore:
 
 ## Prerequisites
 
-- Python 3.10+
+- Python 3.13+
 - AWS CLI configured with credentials
 - Microsoft Entra ID tenant with App Registrations (see setup above)
 - Required AWS permissions:

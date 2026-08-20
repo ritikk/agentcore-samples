@@ -13,7 +13,7 @@ Deployment and runtime scripts backing the [cross-region replication tutorial](.
 ## Prerequisites
 
 - AWS CLI v2 with permissions for CloudFormation, Kinesis, Lambda, IAM, SQS, DynamoDB, S3
-- Python 3.10+
+- Python 3.13+
 - AgentCore access in both target regions
 
 See the [cross-region replication README](../README.md) for the full architecture, RPO/RTO, and failover walkthrough.

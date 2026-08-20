@@ -282,7 +282,7 @@ if [ -z "$FUNCTION_EXISTS" ]; then
     echo "Creating Lambda function..."
     aws lambda create-function \
         --function-name $LAMBDA_FUNCTION_NAME \
-        --runtime python3.12 \
+        --runtime python3.13 \
         --handler lambda_function.lambda_handler \
         --role $ROLE_ARN \
         --zip-file fileb://$ZIP_FILE \

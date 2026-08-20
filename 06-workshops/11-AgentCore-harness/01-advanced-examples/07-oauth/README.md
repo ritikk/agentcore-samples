@@ -37,7 +37,7 @@ For full harness documentation, see the [AgentCore harness Developer Guide](http
 
 - AWS account with Bedrock AgentCore access
 - AWS credentials configured (`aws configure` or env vars)
-- Python 3.10+, `boto3 >= 1.42.80`, `requests`, `jupyter`
+- Python 3.13+, `boto3 >= 1.42.80`, `requests`, `jupyter`
 - Bedrock model access enabled
 
 ## How to run

@@ -23,7 +23,7 @@ bedrock-iam-policy.json - Minimal IAM policy for Nova Sonic
 
 ## Requirements
 
-- **Python 3.12+** (required for aws-sdk-bedrock-runtime)
+- **Python 3.13+** (required for aws-sdk-bedrock-runtime)
 - AWS credentials configured
 - **VPC with internet egress** for AgentCore runtime deployment (see setup below)
 
@@ -58,7 +58,7 @@ You'll use these in the `agentcore configure` step below.
 
 ```bash
 cd agent
-python3.12 -m venv venv
+python3.13 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 cp .env.example .env  # Edit with your AWS credentials
@@ -173,7 +173,7 @@ agentcore destroy
 
 | Package | Purpose |
 |---------|---------|
-| `aws-sdk-bedrock-runtime` | Nova Sonic streaming (requires Python 3.12+) |
+| `aws-sdk-bedrock-runtime` | Nova Sonic streaming (requires Python 3.13+) |
 | `aiortc` | WebRTC peer connections |
 | `av` | Audio resampling and frame buffering (FFmpeg) |
 | `boto3` | KVS signaling channel and TURN servers |
@@ -188,7 +188,7 @@ Additionally, the agent needs `bedrock:InvokeModelWithBidirectionalStream` permi
 ## Troubleshooting
 
 **Python version error** (`Could not find aws-sdk-bedrock-runtime`):
-Use Python 3.12+.
+Use Python 3.13+.
 
 **Audio not working:**
 - Check microphone permissions in browser

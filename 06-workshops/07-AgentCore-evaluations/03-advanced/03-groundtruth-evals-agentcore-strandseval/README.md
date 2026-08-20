@@ -279,7 +279,7 @@ EVALUATION_CONFIG_ID = "your-evaluation-config-id"
 
 ## Requirements
 
-- Python 3.9+
+- Python 3.13+
 - AWS credentials with CloudWatch Logs access
 - `strands-evals` package
 - `boto3`

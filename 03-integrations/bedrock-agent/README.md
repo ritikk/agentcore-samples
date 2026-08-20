@@ -80,7 +80,7 @@ Traditionally, connecting AI agents to existing backend systems requires complex
 
 ## Prerequisites
 
-* Python 3.9 or higher
+* Python 3.13 or higher
 * AWS Account with appropriate permissions
 * AWS CLI 2.x configured with credentials
 * Jupyter Notebook or JupyterLab

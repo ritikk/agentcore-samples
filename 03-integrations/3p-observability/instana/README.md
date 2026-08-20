@@ -15,7 +15,7 @@ AgentCore runtime → travel_agent.py
 
 ## Prerequisites
 
-- Python 3.10+, uv
+- Python 3.13+, uv
 - AWS credentials configured
 - Instana account with agent key and OTLP endpoint
 

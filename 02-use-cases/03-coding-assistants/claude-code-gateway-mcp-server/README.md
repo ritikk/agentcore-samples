@@ -38,7 +38,7 @@ In this architecture, the [AWS Knowledge MCP Server](https://aws.amazon.com/abou
 
 ### Environment
 
-- Python 3.10+
+- Python 3.13+
 - Jupyter Notebook (Python kernel)
 - [Claude Code](https://docs.anthropic.com/en/docs/claude-code) CLI installed and authenticated (`claude` available in your terminal)
 

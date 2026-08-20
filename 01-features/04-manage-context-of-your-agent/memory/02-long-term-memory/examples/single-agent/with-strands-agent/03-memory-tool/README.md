@@ -26,7 +26,7 @@ Long-term memory exposed as **tools the agent decides to call**. Instead of hook
 
 ## Prerequisites
 
-- Python 3.10+
+- Python 3.13+
 - AWS credentials with AgentCore Memory permissions
 - Amazon Bedrock AgentCore SDK
 

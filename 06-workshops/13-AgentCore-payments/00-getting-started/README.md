@@ -10,7 +10,7 @@ AgentCore payments is an Amazon Bedrock AgentCore capability that provides secur
 
 ## Prerequisites
 
-- Python 3.10+
+- Python 3.13+
 - AWS CLI configured (`aws sts get-caller-identity` to verify) with minimum required set of permissions
 - AWS account with access to AgentCore payments
 - Jupyter (`pip install jupyter`)

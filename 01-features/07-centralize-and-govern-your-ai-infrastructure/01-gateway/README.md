@@ -43,7 +43,7 @@ What makes AgentCore gateway compelling for these teams is the consolidation of 
 
 ## Prerequisites
 
-- Python 3.12+
+- Python 3.13+
 - [uv](https://docs.astral.sh/uv/getting-started/installation/) installed (for building arm64 deployment packages)
 - AWS account with Bedrock AgentCore access
 - AWS CLI configured with credentials

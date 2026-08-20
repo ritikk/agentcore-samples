@@ -11,7 +11,7 @@ A React + FastAPI dashboard for browsing AgentCore memory resources (events, tur
 ## Prerequisites
 
 - Node.js 16+
-- Python 3.8+
+- Python 3.13+
 - AWS credentials configured (see the [AWS CLI setup docs](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html))
 - IAM permissions: `bedrock-agentcore:ListMemoryRecords`, `ListEvents`, `GetLastKTurns`, `RetrieveMemories`, `GetMemoryStrategies`
 

@@ -36,7 +36,7 @@ AWS registry access — completely removing the need to manually copy and paste 
 ## Prerequisites
 
 - **Auth0 account** with a tenant configured (see Step 1 below)
-- Python 3.10+ with `boto3`, `python-dotenv`, `requests`
+- Python 3.13+ with `boto3`, `python-dotenv`, `requests`
 - **Kiro IDE** (for the MCP integration step)
 - `.env` file configured from `.env.example`
 

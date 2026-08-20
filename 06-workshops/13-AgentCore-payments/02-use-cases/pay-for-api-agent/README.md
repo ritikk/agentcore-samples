@@ -129,7 +129,7 @@ picks the right signer from the connector tied to the instrument.
 
 - **AWS account** with Amazon Bedrock AgentCore Payments available in your chosen region
 - **Amazon Bedrock access** enabled for **Anthropic Claude Sonnet 4.5** in your chosen region (cross-region inference profile `us.anthropic.claude-sonnet-4-5-20250929-v1:0`)
-- **Python 3.10+** with a Jupyter kernel. If you hit "Running cells requires the ipykernel package", install it once: `python3 -m pip install ipykernel --user`. Any Jupyter frontend works — JupyterLab (4.0+), classic Jupyter Notebook (7.0+), VS Code, or Kiro.
+- **Python 3.13+** with a Jupyter kernel. If you hit "Running cells requires the ipykernel package", install it once: `python3 -m pip install ipykernel --user`. Any Jupyter frontend works — JupyterLab (4.0+), classic Jupyter Notebook (7.0+), VS Code, or Kiro.
 - **AWS Command Line Interface (AWS CLI) v2** configured with credentials (`aws configure`)
 - **AWS Cloud Development Kit (CDK) v2** installed globally (`npm install -g aws-cdk`); used by the notebook to deploy the seller
 - **Node.js 18+** — required by CDK
@@ -227,7 +227,7 @@ python3 -m ipykernel install --user --name pay-for-api-venv --display-name "Pyth
    Python version indicator in the bottom status bar).
 3. Choose **Python: Create Environment...**.
 4. Choose **Venv**.
-5. Pick a Python 3.10+ interpreter. The IDE creates `.venv/` and selects
+5. Pick a Python 3.13+ interpreter. The IDE creates `.venv/` and selects
    it automatically.
 6. When prompted to install kernel dependencies (`ipykernel`), accept.
 

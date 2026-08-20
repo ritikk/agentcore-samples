@@ -62,7 +62,7 @@ Two AgentCore building blocks make this work:
 ## Prerequisites
 
 * AWS CLI v2, configured for an account with AgentCore access in **both** regions.
-* Python 3.10+ and `pip install -r requirements.txt` (`boto3 >= 1.43.36`).
+* Python 3.13+ and `pip install -r requirements.txt` (`boto3 >= 1.43.36`).
 * IAM permissions to create CloudFormation stacks, Lambda functions, IAM roles,
   Kinesis streams, and S3 buckets in the source region.
 

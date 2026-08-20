@@ -38,7 +38,7 @@ Policy for Amazon Bedrock AgentCore enables fine-grained access control for AI a
 - AWS account with appropriate IAM permissions
 - Amazon Bedrock AgentCore Gateway with OAuth authorizer
 - Amazon Cognito User Pool (M2M client, **Essentials** or **Plus** tier)
-- Python 3.8+
+- Python 3.13+
 
 ## Getting Started
 

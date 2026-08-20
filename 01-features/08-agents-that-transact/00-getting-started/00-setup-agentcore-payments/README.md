@@ -71,7 +71,7 @@ Management / ProcessPayment / ResourceRetrieval **4-role separation**, see the b
 
 - **AWS account + region** where AgentCore payments is available (`us-east-1`, `us-west-2`,
   `eu-central-1`, `ap-southeast-2`), and AWS CLI configured (`aws sts get-caller-identity`).
-- **Python 3.10+** and dependencies:
+- **Python 3.13+** and dependencies:
   ```bash
   pip install -r requirements.txt
   ```

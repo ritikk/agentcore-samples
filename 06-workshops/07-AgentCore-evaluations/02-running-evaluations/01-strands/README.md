@@ -18,7 +18,7 @@ Before starting these tutorials, ensure you have:
 - Completed [Tutorial 01: Creating Custom Evaluators](../../01-creating-custom-evaluators) and created a custom evaluator
 - Your Strands agent deployed on AgentCore Runtime
 - Generated at least one session with traces by invoking your agent
-- Python 3.10+ installed
+- Python 3.13+ installed
 - AWS credentials configured with appropriate permissions
 
 ## Tutorial Structure

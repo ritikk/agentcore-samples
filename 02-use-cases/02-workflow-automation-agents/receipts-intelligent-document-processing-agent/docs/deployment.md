@@ -4,7 +4,7 @@ One command deploys everything — the AgentCore resources (Runtime, Gateway, Po
 
 ## Prerequisites
 
-- The **`@aws/agentcore` CLI**, Node + TypeScript, Python 3.12 + `uv`.
+- The **`@aws/agentcore` CLI**, Node + TypeScript, Python 3.13 + `uv`.
 - A **container engine** — Docker or [Finch](https://runfinch.com). The Runtime is a `Container` build ([ADR-0005](decisions/0005-container-build-over-codezip.md)); the image builds in the cloud (CodeBuild + ECR), so the engine is only needed locally to assemble the build context. Using Finch? `finch vm start` once, and `deploy.sh` auto-selects it (`CDK_DOCKER=finch`).
 - The **four ladder global inference profiles** enabled in the account: `aws bedrock list-inference-profiles` should list `global.anthropic.claude-opus-4-8`, `...-opus-4-7`, `...-opus-4-6-v1`, `...-sonnet-4-6`. Copy the ids verbatim — the suffix convention is not uniform.
 - AWS credentials for the target account (a dev account; the sample provisions real resources).

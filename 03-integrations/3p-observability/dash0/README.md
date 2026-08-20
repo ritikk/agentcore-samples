@@ -18,7 +18,7 @@ AgentCore runtime → utils/travel_agent.py
 
 ## Prerequisites
 
-- Python 3.10+, [uv](https://docs.astral.sh/uv/)
+- Python 3.13+, [uv](https://docs.astral.sh/uv/)
 - AWS credentials configured
 - [Dash0 account](https://www.dash0.com/)
 

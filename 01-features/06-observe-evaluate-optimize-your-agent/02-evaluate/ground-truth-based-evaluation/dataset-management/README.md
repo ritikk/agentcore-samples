@@ -108,7 +108,7 @@ CreateDataset ──► DRAFT (mutable, always present)
 
 ## Prerequisites
 
-- Python 3.10+
+- Python 3.13+
 - AWS CLI configured with credentials (`aws configure` or environment variables)
 - Permissions for: `bedrock-agentcore:*`, `bedrock-agentcore-control:*`
 - For Part C (evaluation integration): the HR Assistant agent must be deployed (`../utils/deploy.py`)

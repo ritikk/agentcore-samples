@@ -103,7 +103,7 @@ else
     while [ $RETRY_COUNT -lt $MAX_RETRIES ]; do
         if aws lambda create-function \
             --function-name lakehouse-gateway-response-interceptor \
-            --runtime python3.11 \
+            --runtime python3.13 \
             --role $LAMBDA_ROLE_ARN \
             --handler lambda_function.lambda_handler \
             --zip-file fileb://response-interceptor-lambda.zip \

@@ -28,7 +28,7 @@ A LlamaIndex arithmetic agent that can:
 
 - AWS account with appropriate permissions
 - Amazon Bedrock model access (Claude Haiku)
-- Python 3.10+
+- Python 3.13+
 - AWS credentials configured
 - Enable [transaction search](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Enable-TransactionSearch.html) on Amazon CloudWatch
 

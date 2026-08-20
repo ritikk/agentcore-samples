@@ -61,7 +61,7 @@ tests/                 Unit + integration tests (pytest)
 ## Prerequisites
 
 - AWS account with Bedrock AgentCore access (us-east-1)
-- Python 3.12+, AWS CLI v2, AWS CDK CLI (`npm install -g aws-cdk`)
+- Python 3.13+, AWS CLI v2, AWS CDK CLI (`npm install -g aws-cdk`)
 - Bedrock model access: Claude Opus 4, Claude Haiku
 - Docker with buildx (for local builds) or CodeBuild (recommended)
 

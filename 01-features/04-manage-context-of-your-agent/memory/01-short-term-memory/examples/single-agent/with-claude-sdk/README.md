@@ -53,7 +53,7 @@ The two integration points are just functions, because the SDK gives you nowhere
 
 ## Prerequisites
 
-- Python 3.10+
+- Python 3.13+
 - AWS credentials with **both** AgentCore Memory permissions and Amazon Bedrock model-invocation permissions. The `AnthropicBedrock` client and `MemoryClient` both resolve credentials from the standard AWS chain (environment variables, `~/.aws/credentials`, or an instance/role profile).
 - **Amazon Bedrock model access for Claude Sonnet 4.6** in your region. Request it in the Bedrock console under *Model access*. (Model availability varies by region; `us-west-2` is a safe default.)
 

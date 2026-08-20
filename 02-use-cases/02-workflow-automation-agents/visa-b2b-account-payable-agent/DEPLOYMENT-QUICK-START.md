@@ -8,7 +8,7 @@ Before starting deployment, ensure you have:
 - Node.js 18+ installed
 - **CDK CLI 2.102.0+** installed: `npm install -g aws-cdk@latest`
 - Docker installed and running
-- **Python 3.8+** installed
+- **Python 3.13+** installed
 
 **Verify CDK version:**
 ```bash

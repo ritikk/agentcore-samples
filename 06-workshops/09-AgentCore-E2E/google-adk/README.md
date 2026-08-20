@@ -31,7 +31,7 @@ By the end of the 6 labs of this tutorial you will have created the following ar
 ## Prerequisites
 
 - AWS account with Bedrock access
-- Python 3.10+
+- Python 3.13+
 - AWS CLI configured
 - Claude 3.7 Sonnet enabled in Bedrock
 

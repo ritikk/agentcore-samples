@@ -7,7 +7,7 @@ This guide walks you through the complete deployment process for the SRE Agent, 
 - AWS CLI configured with appropriate permissions
 - Docker installed and running
 - UV package manager installed
-- Python 3.12+
+- Python 3.13+
 - Access to Amazon Bedrock AgentCore Runtime
 - IAM role with `BedrockAgentCoreFullAccess` policy and appropriate trust policy (see [Authentication Setup](auth.md))
 

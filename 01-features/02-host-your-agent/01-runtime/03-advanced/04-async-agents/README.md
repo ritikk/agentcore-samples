@@ -84,5 +84,5 @@ python cleanup.py   # Clean up all resources
 ## Prerequisites
 
 - AWS account with access to Amazon Bedrock AgentCore
-- Python 3.12+
+- Python 3.13+
 - AWS CLI configured with appropriate credentials

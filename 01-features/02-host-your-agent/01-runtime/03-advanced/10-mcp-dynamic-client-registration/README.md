@@ -129,6 +129,6 @@ python cleanup.py
 ## Prerequisites
 
 - Auth0 account with DCR enabled
-- Python 3.12+
+- Python 3.13+
 - AWS CLI configured with appropriate credentials
 - Browser access for the OAuth authorization flow

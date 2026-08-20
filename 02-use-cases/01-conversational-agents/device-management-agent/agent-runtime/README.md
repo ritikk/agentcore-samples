@@ -22,7 +22,7 @@ The Agent Runtime module is the core conversational AI component of the Device M
 ## Prerequisites
 
 ### Required Software
-- **Python 3.10+**
+- **Python 3.13+**
 - **Docker** (for containerized deployment)
 - **AWS CLI** (configured with appropriate permissions)
 

@@ -141,7 +141,7 @@ cd deployment
 ## Technology Stack
 
 ### Backend
-- **Python 3.11** - Runtime
+- **Python 3.13** - Runtime
 - **Flask** - Web framework
 - **Strands SDK** - Agentic AI framework
 - **psycopg2** - PostgreSQL driver
@@ -191,7 +191,7 @@ DATABASE_URL=postgresql://postgres:postgres@localhost:5432/sales_db
 - AWS CLI configured with credentials
 - Brave Search API key (get one at https://brave.com/search/api/)
 - Node.js 18+ (for local frontend development)
-- Python 3.11+ (for local backend development)
+- Python 3.13+ (for local backend development)
 
 **IAM Permissions:**
 

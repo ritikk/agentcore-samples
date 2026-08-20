@@ -105,7 +105,7 @@ This sample requires **two app registrations**. See `ENTRA_SETUP.md` for the det
 
 ## Prerequisites
 
-- Python 3.10+
+- Python 3.13+
 - AWS CLI configured with credentials
 - Docker daemon running locally with `buildx` enabled (the script builds
   `linux/arm64` container images for AgentCore Runtime)

@@ -29,7 +29,7 @@ This sample shows how to expose a Bedrock **Managed Knowledge Base (FMKB)** as a
 
 ## Prerequisites
 
-1. **Python 3.10+** (`bedrock-agentcore` and `strands-agents` require it).
+1. **Python 3.13+** (`bedrock-agentcore` and `strands-agents` require it).
 2. **AWS account in a region where AgentCore is available** (`us-west-2` recommended).
 3. **Bedrock model access** to a Sonnet inference profile, e.g. `us.anthropic.claude-sonnet-4-5-20250929-v1:0`.
 4. **An existing Managed Knowledge Base** with at least one ingested document. If you don't have one, create one with [`bedrock-samples / rag / managed-knowledge-bases / 01-getting-started/01-create-bmkb-s3.ipynb`](https://github.com/aws-samples/amazon-bedrock-samples/tree/main/rag/managed-knowledge-bases/01-getting-started). Note its `KB_ID`.

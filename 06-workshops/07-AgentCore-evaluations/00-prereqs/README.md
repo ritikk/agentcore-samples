@@ -25,7 +25,7 @@ The architecture looks as following:
 
 ## Pre-requisites
 Before deploying the agent you need:
-* Python 3.10+
+* Python 3.13+
 * AWS access
 
 

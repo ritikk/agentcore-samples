@@ -32,7 +32,7 @@ This demo showcases how to write authorization requirements in natural language 
 Before starting, ensure you have:
 
 - AWS CLI configured with appropriate credentials
-- Python 3.10+ with boto3 1.42.0+ installed
+- Python 3.13+ with boto3 1.42.0+ installed
 - `bedrock_agentcore_starter_toolkit` package installed
 - Access to AWS Lambda (for target functions)
 - Completed the **01-Getting-Started** tutorial (or let the notebook set it up automatically)

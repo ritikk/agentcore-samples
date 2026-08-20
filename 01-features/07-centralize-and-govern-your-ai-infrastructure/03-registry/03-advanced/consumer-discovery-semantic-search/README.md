@@ -20,7 +20,7 @@ via semantic search, filtered search, and detailed descriptor inspection.
 
 ## Prerequisites
 
-- Python 3.10+
+- Python 3.13+
 - AWS credentials configured
 - `boto3` installed: `pip install boto3`
 

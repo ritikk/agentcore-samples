@@ -94,7 +94,7 @@ didn't match the write target, so retrieval returned nothing). **Read from where
 
 ## Prerequisites
 
-- Python 3.10+
+- Python 3.13+
 - AWS credentials with **both** AgentCore Memory permissions and Amazon Bedrock model access
 - IAM permissions: `bedrock-agentcore:CreateMemory`, `:DeleteMemory`, `:GetMemory`,
   `:CreateEvent`, `:RetrieveMemoryRecords`

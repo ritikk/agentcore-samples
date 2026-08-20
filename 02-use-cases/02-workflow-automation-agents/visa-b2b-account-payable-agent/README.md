@@ -384,7 +384,7 @@ Found a bug or have a feature request?
 
 1. **Prerequisites**
    - Node.js 18+
-   - Python 3.9+
+   - Python 3.13+
    - AWS CLI configured
    - AWS CDK installed
 

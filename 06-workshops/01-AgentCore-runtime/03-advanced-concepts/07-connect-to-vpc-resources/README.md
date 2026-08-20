@@ -137,7 +137,7 @@ The container:
 - Exposes port **8080**
 - Runs as a non-root user (`bedrock_agentcore`)
 - Includes a health check on the `/ping` endpoint
-- Uses Python 3.11 with Flask
+- Uses Python 3.13 with Flask
 
 ## Cleanup
 

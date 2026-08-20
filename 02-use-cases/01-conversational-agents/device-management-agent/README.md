@@ -52,7 +52,7 @@ The Device Management System follows a modular, cloud-native architecture:
 ## Prerequisites
 
 ### Required Software
-- **Python 3.10+**
+- **Python 3.13+**
 - **AWS CLI** (configured with appropriate permissions)
 - **Git** (for cloning the repository)
 

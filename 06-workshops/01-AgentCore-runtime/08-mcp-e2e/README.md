@@ -159,7 +159,7 @@ from helpers.dynamo_utils import FinanceDB
 ## Prerequisites
 
 - AWS CLI configured with appropriate permissions
-- Python 3.12+ (3.13 recommended for Runtime deployments)
+- Python 3.13+ (3.13 recommended for Runtime deployments)
 - Jupyter Notebook environment
 - Access to Amazon Bedrock AgentCore Runtime
 - AWS services: DynamoDB, Cognito, IAM

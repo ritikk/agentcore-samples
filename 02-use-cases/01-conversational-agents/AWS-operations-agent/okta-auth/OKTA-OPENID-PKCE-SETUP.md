@@ -11,7 +11,7 @@ This guide configures Okta OAuth2 authentication for the AgentCore system, suppo
 - **Okta Developer Account** (free at [developer.okta.com](https://developer.okta.com))
 - **AWS Account** with Bedrock AgentCore access
 - **nginx** installed locally (for testing)
-- **Python 3.11+** for running the system
+- **Python 3.13+** for running the system
 
 ## Okta Application Setup 
 

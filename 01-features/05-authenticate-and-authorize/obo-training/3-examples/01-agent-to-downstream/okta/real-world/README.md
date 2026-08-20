@@ -83,7 +83,7 @@ The Strands agent is deployed via the Node.js AgentCore CLI (`agentcore create`,
 
 | Tool | Why | How to install |
 |---|---|---|
-| **Python 3.10+** | Frontend, helper scripts, agent | Your package manager |
+| **Python 3.13+** | Frontend, helper scripts, agent | Your package manager |
 | **Node.js 20+** | AgentCore CLI (`@aws/agentcore`) is a Node CLI | `brew install node` / nvm |
 | **AWS CLI v2** | Credentials, bootstrap verification | [docs](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) |
 | **AWS CDK CLI** | AgentCore CLI deploys via CDK under the hood | `npm install -g aws-cdk` |

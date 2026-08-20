@@ -17,7 +17,7 @@ The project includes:
 
 ## Prerequisites
 
-- Python 3.11+
+- Python 3.13+
 - [uv](https://github.com/astral-sh/uv) - Fast Python package installer and resolver
 - Docker (for containerization)
 - AWS account access with Bedrock AgentCore permissions

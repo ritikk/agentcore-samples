@@ -218,7 +218,7 @@ def lambda_handler(input: EvaluatorInput, context) -> EvaluatorOutput:
 
 ## Prerequisites
 
-- **Python 3.10+** with the `agentcore-evals` Jupyter kernel (see parent README)
+- **Python 3.13+** with the `agentcore-evals` Jupyter kernel (see parent README)
 - **Docker** running locally (for agent container image build)
 - **AWS credentials** with permissions for:
   - `bedrock-agentcore:*` — runtime and evaluations

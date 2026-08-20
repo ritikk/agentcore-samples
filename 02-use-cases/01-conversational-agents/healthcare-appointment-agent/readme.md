@@ -88,7 +88,7 @@ As a quick start, you may use the combination of AWS managed IAM policies and an
 }
 ```
 ### Others
-* Python 3.12
+* Python 3.13
 * GIT
 * AWS CLI 2.x
 * Claude 3.5 Sonnet model enabled on Amazon Bedrock. Please follow this [guide](https://docs.aws.amazon.com/bedrock/latest/userguide/model-access-modify.html) to set up the same.

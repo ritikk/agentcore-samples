@@ -89,7 +89,7 @@ Each agent operates on its own memory branch:
 ```
 
 ### Python Environment
-- Python 3.10+
+- Python 3.13+
 - Jupyter Notebook or JupyterLab
 
 ## Installation

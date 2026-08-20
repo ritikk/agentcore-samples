@@ -125,7 +125,7 @@ When a tool requires user OAuth consent, the gateway returns error code `-32042`
 ## Setup
 
 ### Prerequisites
-- Python 3.10+
+- Python 3.13+
 - AWS credentials configured with permissions for Lambda, API Gateway, Cognito, IAM, and Bedrock AgentCore
 - Atlassian Cloud account with Confluence
 - VS Code 1.107+ with GitHub Copilot - This version adds support for the 3LO URL elicitation

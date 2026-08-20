@@ -87,7 +87,7 @@ return deterministic mock data, making evaluation results fully reproducible.
 
 ## Prerequisites
 
-- **Python 3.10+** with the packages in `requirements.txt`
+- **Python 3.13+** with the packages in `requirements.txt`
 - **AWS credentials** configured (e.g. via `aws configure` or environment variables) with
   permissions for:
   - `bedrock-agentcore:*`: invoke agent runtime and call Evaluate API

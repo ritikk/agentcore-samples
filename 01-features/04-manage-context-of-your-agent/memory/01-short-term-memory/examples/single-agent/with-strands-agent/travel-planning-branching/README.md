@@ -22,7 +22,7 @@ A travel-planning assistant that uses AgentCore Memory **branching** to fork con
 
 ## Prerequisites
 
-- Python 3.10+
+- Python 3.13+
 - AWS credentials with AgentCore Memory permissions
 - Access to Amazon Bedrock models
 

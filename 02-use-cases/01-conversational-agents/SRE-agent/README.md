@@ -55,7 +55,7 @@ For comprehensive information about the SRE Agent system, please refer to the fo
 
 | Requirement | Description |
 |-------------|-------------|
-| Python 3.12+ and `uv` | Python runtime and package manager. See [use-case setup](#use-case-setup) |
+| Python 3.13+ and `uv` | Python runtime and package manager. See [use-case setup](#use-case-setup) |
 | Amazon EC2 Instance | Recommended: `t3.xlarge` or larger |
 | Valid SSL certificates | **⚠️ IMPORTANT:** Amazon Bedrock AgentCore Gateway **only works with HTTPS endpoints**. For example, you can register your Amazon EC2 with [no-ip.com](https://www.noip.com/) and obtain a certificate from [letsencrypt.org](https://letsencrypt.org/), or use any other domain registration and SSL certificate provider. You'll need the domain name as `BACKEND_DOMAIN` and certificate paths in the [use-case setup](#use-case-setup) section |
 | EC2 instance port configuration | Required inbound ports (443, 8011-8014). See [EC2 instance port configuration](docs/ec2-port-configuration.md) |

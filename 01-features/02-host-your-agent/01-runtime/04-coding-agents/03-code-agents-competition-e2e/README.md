@@ -108,7 +108,7 @@ git_mcp_skill/                 # MCP Gateway Proxy (stdio-to-HTTP bridge with Si
 
 - AWS CLI v2 configured with valid credentials
 - Docker running locally (with `buildx` for arm64)
-- Python 3.10+
+- Python 3.13+
 - `jq` installed
 - `gh` CLI installed and authenticated (`gh auth login`)
 - `awscurl` for testing: `pip install awscurl`

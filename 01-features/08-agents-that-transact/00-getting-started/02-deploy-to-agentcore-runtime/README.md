@@ -53,7 +53,7 @@ App Backend                          AgentCore Runtime
 - **Funded wallet** — the instrument from Tutorial 00 has testnet USDC and delegated signing granted ([faucet.circle.com](https://faucet.circle.com/)).
 - **AgentCore CLI** (Node.js 20+): `npm install -g @aws/agentcore`
 - **AWS CDK** (used by `agentcore deploy`): `npm install -g aws-cdk`
-- **Python 3.10+** and AWS CLI configured (`aws sts get-caller-identity`).
+- **Python 3.13+** and AWS CLI configured (`aws sts get-caller-identity`).
 
 ```bash
 pip install -r requirements.txt

@@ -85,7 +85,7 @@ strip so you can see its inputs and outputs at a glance.
 
 ## Prerequisites
 
-- Python 3.10+ and AWS CLI configured (`aws sts get-caller-identity`)
+- Python 3.13+ and AWS CLI configured (`aws sts get-caller-identity`)
 - AWS account with access to AgentCore payments, in a supported region: `us-east-1`, `us-west-2`,
   `eu-central-1`, `ap-southeast-2`
 - Node.js 20+ and the AgentCore CLI (`npm install -g @aws/agentcore`) for Tutorials 00, 02, 04, 07

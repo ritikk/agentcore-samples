@@ -136,7 +136,7 @@ Learn how to invoke AgentCore Runtime agents from AWS Lambda functions with full
 ## Prerequisites
 
 - AWS account with appropriate permissions
-- Python 3.10+
+- Python 3.13+
 - Jupyter notebook environment
 - AWS CLI configured with your credentials
 - Enable Transaction Search

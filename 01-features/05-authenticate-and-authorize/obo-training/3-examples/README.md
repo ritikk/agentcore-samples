@@ -18,7 +18,7 @@ Each use case has its own folder and is available in **two flavors** — one per
 
 All examples expect:
 
-- **Python 3.10+**
+- **Python 3.13+**
 - **AWS credentials** configured locally with access to the target AWS account (env vars, `~/.aws/credentials`, or `AWS_PROFILE`).
 - **Boto3** with AgentCore Identity + Gateway support: `boto3 >= 1.43.2`.
 - **IdP setup** — app registrations, scopes, access policies. Each example folder has its own `IDP_SETUP.md` with the specific steps.

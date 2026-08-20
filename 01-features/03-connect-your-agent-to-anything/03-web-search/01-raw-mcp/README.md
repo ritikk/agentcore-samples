@@ -10,7 +10,7 @@ This example calls the AgentCore gateway directly over the MCP protocol — no a
 
 ## Prerequisites
 
-- Python 3.10+
+- Python 3.13+
 - AWS account with Amazon Bedrock enabled in **us-east-1**
 - AWS credentials with IAM, Cognito, and AgentCore gateway permissions
 

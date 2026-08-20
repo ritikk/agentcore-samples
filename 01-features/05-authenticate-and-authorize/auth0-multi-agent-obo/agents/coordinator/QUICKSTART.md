@@ -6,7 +6,7 @@ This guide helps you get the Coordinator Agent up and running quickly.
 
 - AWS Account with AgentCore access
 - Auth0 tenant configured
-- Python 3.11+
+- Python 3.13+
 - Docker (for containerization)
 - AWS CLI configured
 

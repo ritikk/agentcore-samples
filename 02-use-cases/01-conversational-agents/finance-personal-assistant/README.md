@@ -55,7 +55,7 @@ Our multi-agent system consists of three core components:
 Participants should have:
 
 - AWS credentials configured for Amazon Bedrock access
-- Python 3.8+ installed on their development machine
+- Python 3.13+ installed on their development machine
 - AWS account with Amazon Bedrock access. In an AWS-conducted event, you will have a provisioned account
 - Enable [Model access](https://docs.aws.amazon.com/bedrock/latest/userguide/model-access-modify.html) for Claude Haiku 4.5 on Amazon Bedrock.
 - Jupyter Notebook or compatible IDE

@@ -20,7 +20,7 @@ The notebook walks you through two deployment paths:
 1. AWS credentials configured (`aws configure`) with permissions to create AgentCore resources, IAM roles, and Cognito user pools
 2. Databricks workspace with Unity Catalog enabled
 3. Databricks service principal with an OAuth secret ([docs](https://docs.databricks.com/en/dev-tools/auth/oauth-m2m.html))
-4. Python 3.10+
+4. Python 3.13+
 
 ## Getting Started
 

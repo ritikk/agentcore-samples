@@ -18,7 +18,7 @@ Deploy a [Strands Agents](https://strandsagents.com/) agent using an Amazon Bedr
 
 ## Prerequisites
 
-- Python 3.12+
+- Python 3.13+
 - [uv](https://docs.astral.sh/uv/getting-started/installation/) installed (for building the arm64 deployment package)
 - AWS CLI configured with credentials
 - Access to Amazon Bedrock models (Claude) in your region

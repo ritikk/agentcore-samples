@@ -85,7 +85,7 @@ The system implements a **supervisor pattern** where:
 
 ### Required Software
 
-- Python 3.10+
+- Python 3.13+
 - AWS CLI v2
 - Docker (for container builds)
 - Git

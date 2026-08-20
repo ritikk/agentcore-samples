@@ -16,7 +16,7 @@ Code Interpreter and Browser follow the same pattern: AgentCore provisions an is
 
 ### Code Interpreter
 
-- **What it is**: A Python 3.12 sandbox with a writable filesystem, shell, and AWS CLI
+- **What it is**: A Python 3.13 sandbox with a writable filesystem, shell, and AWS CLI
 - **Use it for**: Agents that need to write and run code, perform data analysis, install packages, or make authenticated AWS API calls
 - **Entry point**: `from bedrock_agentcore.tools.code_interpreter_client import code_session`
 

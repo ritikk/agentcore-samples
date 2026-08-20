@@ -82,7 +82,7 @@ sees the final `200`.
 - **Funded wallet with delegated signing granted** — the instrument's wallet must hold testnet USDC
   ([faucet.circle.com](https://faucet.circle.com/)) and have delegated signing enabled (done in
   Tutorial 00). Without it, the 402 payment step fails.
-- **Python 3.10+** and AWS credentials configured (`aws sts get-caller-identity`).
+- **Python 3.13+** and AWS credentials configured (`aws sts get-caller-identity`).
 - **Python deps:**
   ```bash
   pip install -r requirements.txt

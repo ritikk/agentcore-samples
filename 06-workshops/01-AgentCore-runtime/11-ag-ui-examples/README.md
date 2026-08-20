@@ -64,7 +64,7 @@ During agent execution, the backend emits a stream of typed events:
 
 ## Prerequisites
 
-- Python 3.12+
+- Python 3.13+
 - AWS credentials with Bedrock model access (`us.anthropic.claude-sonnet-4-20250514-v1:0`)
 - `bedrock-agentcore-starter-toolkit` (installed by notebook)
 

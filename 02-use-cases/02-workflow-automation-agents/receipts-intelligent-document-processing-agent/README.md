@@ -56,7 +56,7 @@ python3 scripts/test_invoke.py --region us-west-2
 ./destroy.sh us-west-2    # leaves nothing billable
 ```
 
-Prerequisites: the `@aws/agentcore` CLI, Node + TypeScript, Python 3.12 + `uv`, a
+Prerequisites: the `@aws/agentcore` CLI, Node + TypeScript, Python 3.13 + `uv`, a
 container engine (**Docker or [Finch](https://runfinch.com)** — the Runtime is a
 `Container` build, ADR-0005), and the four ladder global inference profiles enabled
 in the account (`aws bedrock list-inference-profiles`).

@@ -122,7 +122,7 @@ AgentCore/
 
 - **AWS CLI** configured with appropriate permissions
 - **Docker** and Docker Compose installed
-- **Python 3.11+** installed
+- **Python 3.13+** installed
 - **Okta developer account** and application configured
 - **yq** tool for YAML processing (optional, fallback available)
 

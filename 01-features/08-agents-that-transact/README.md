@@ -45,7 +45,7 @@ Tutorials in `00-getting-started/` build on each other — start with Tutorial 0
 
 ## Prerequisites
 
-- Python 3.10+
+- Python 3.13+
 - AWS CLI configured (`aws sts get-caller-identity` to verify)
 - AWS account with access to AgentCore payments preview
 - Wallet provider credentials — Coinbase CDP or Stripe (Privy) — see `00-getting-started/00-setup-agentcore-payments/providers/`

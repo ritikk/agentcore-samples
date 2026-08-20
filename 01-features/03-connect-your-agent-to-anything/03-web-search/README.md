@@ -25,7 +25,7 @@
 ## Prerequisites
 
 - AWS account with Amazon Bedrock enabled in **us-east-1**
-- Python 3.10+
+- Python 3.13+
 - AWS credentials with IAM, Cognito, and AgentCore gateway permissions
 - Model access enabled for Claude Sonnet 4 (cross-region inference profile)
 

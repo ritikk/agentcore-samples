@@ -129,7 +129,7 @@ picks the right signer from the connector tied to the instrument.
 
 - **AWS account** with Amazon Bedrock AgentCore Payments available in your chosen region
 - **Amazon Bedrock access** enabled for **Anthropic Claude Sonnet 4.5** in your chosen region (cross-region inference profile `us.anthropic.claude-sonnet-4-5-20250929-v1:0`)
-- **Python 3.10+**
+- **Python 3.13+**
 - **AWS Command Line Interface (AWS CLI) v2** configured with credentials (`aws configure`)
 - **AWS Cloud Development Kit (CDK) v2** installed globally (`npm install -g aws-cdk`); used to deploy the seller and the agent runtime
 - **Node.js 18+** — required by CDK
@@ -217,7 +217,7 @@ The script requires Python **3.10+**, so create the venv with an explicit
 3.10+ binary (the macOS system `python3` is 3.9):
 
 ```bash
-python3.12 -m venv .venv     # or python3.10 / python3.11; any 3.10+
+python3.13 -m venv .venv     # or python3.13 / python3.13; any 3.10+
 source .venv/bin/activate    # On Windows: .venv\Scripts\activate
 python3 -m pip install -r requirements.txt
 ```

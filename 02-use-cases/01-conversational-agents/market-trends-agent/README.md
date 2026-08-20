@@ -46,7 +46,7 @@ See [Systematic Agent Quality Improvement](#systematic-agent-quality-improvement
 
 ### Prerequisites
 
-- Python 3.10+
+- Python 3.13+
 - Node.js 20+ and the [AgentCore CLI](https://github.com/aws/agentcore-cli) — required on a brand-new account to bootstrap the CodeBuild project and S3 source bucket (run `agentcore deploy` once; subsequent re-deploys are handled by `deploy.py`)
 - AWS CLI configured with appropriate credentials
 - boto3 ≥ 1.42 — required for the Evaluations control-plane APIs (`list_evaluators`, `create_evaluator`, `create_online_evaluation_config`). `uv sync` installs a compatible version.

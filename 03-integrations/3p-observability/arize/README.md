@@ -18,7 +18,7 @@ Arize TracerProvider is used instead.
 
 ## Prerequisites
 
-- Python 3.10+, uv, Docker (not required — uses code deployment)
+- Python 3.13+, uv, Docker (not required — uses code deployment)
 - AWS credentials configured
 - Arize account with API key and space ID
 

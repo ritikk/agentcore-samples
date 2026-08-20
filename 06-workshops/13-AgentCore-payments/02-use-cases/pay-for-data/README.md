@@ -89,7 +89,7 @@ Override with the `HEURIST_AGENT_IDS` environment variable.
 - An **AgentCore payment manager** created in your AWS account
 - A **payment instrument** created and funded — embedded crypto wallet with USDC on **Base mainnet** (default; the notebook walks through this in Step 4)
 - Coinbase CDP project with **Delegated signing** enabled, and a per-wallet delegation grant approved via the WalletHub URL returned at instrument creation
-- Python 3.11+
+- Python 3.13+
 - AWS credentials with Bedrock and AgentCore access in `us-west-2`
 - Node.js 20+ (for the `@aws/agentcore` CLI)
 - Docker (running, for `agentcore deploy` container build)

@@ -62,7 +62,7 @@ This citation-enhanced version is particularly useful for:
 ## Prerequisites
 
 Same as the base culinary assistant example:
-- Python 3.11+
+- Python 3.13+
 - AWS credentials configured
 - Amazon Bedrock access with Claude models
 - Required AWS services: Lambda, S3, SNS, SQS

@@ -14,7 +14,7 @@ AgentCore runtime → travel_agent.py
 
 ## Prerequisites
 
-- Python 3.10+, uv
+- Python 3.13+, uv
 - AWS credentials configured
 - OpenLIT deployed and accessible from AgentCore runtime
 

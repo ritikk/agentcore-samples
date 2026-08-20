@@ -34,7 +34,7 @@ Each sub-folder focuses on a single identity provider and contains self-containe
 
 ## Prerequisites
 
-- Python 3.10+
+- Python 3.13+
 - AWS CLI configured with credentials
 - `bedrock-agentcore` package: `pip install bedrock-agentcore`
 - An account at the relevant identity provider (Cognito, Entra ID, Okta, or PingFederate)

@@ -69,7 +69,7 @@ AWS Agent registry provides a governance-first approach where every record must 
   | **AWS IAM** | `CreateUser`, `DeleteUser`, `PutUserPolicy`, `DeleteUserPolicy`, `CreateAccessKey`, `DeleteAccessKey`, `ListAccessKeys` |
   | **AWS STS** | `GetCallerIdentity` |
 
-- Python 3.8+ with `boto3 >= 1.42.87` installed
+- Python 3.13+ with `boto3 >= 1.42.87` installed
 - AWS CLI configured with a default region (`us-west-2`)
 
 ## AWS Resources Created

@@ -8,7 +8,7 @@ Before starting this tutorial, ensure you have:
 
 - **AWS Account** with appropriate permissions for Bedrock AgentCore
 - **AWS CLI** configured with credentials
-- **Python 3.12+** installed
+- **Python 3.13+** installed
 - **Jupyter Notebook** or JupyterLab
 - **Access to Amazon Bedrock AgentCore** in your AWS region
 

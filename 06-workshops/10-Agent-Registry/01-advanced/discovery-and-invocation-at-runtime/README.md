@@ -68,7 +68,7 @@ The orchestrator is deployed to Amazon Bedrock AgentCore Runtime. On each reques
   - Instance type: `ml.t3.xlarge` or larger
 - AWS account with Amazon Bedrock model access (Claude Sonnet 4.6)
 - IAM role attached to the notebook instance with the required permissions (see below)
-- Python 3.10+
+- Python 3.13+
 - boto3 >= 1.42.87
 
 ### Required IAM Permissions

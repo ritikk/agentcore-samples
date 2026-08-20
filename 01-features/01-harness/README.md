@@ -67,7 +67,7 @@ The tutorials in this folder use **boto3 directly** for full visibility into eve
 
 ## Prerequisites
 
-- Python 3.10+
+- Python 3.13+
 - AWS CLI v2 configured with credentials
 - `AWS_DEFAULT_REGION` environment variable set (or boto3 default region configured)
 - Model access enabled for Claude Haiku 4.5 and Claude Sonnet 4.6 in Amazon Bedrock

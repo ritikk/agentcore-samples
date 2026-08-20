@@ -6,7 +6,7 @@ Local development server for Visa card onboarding and payment integration.
 
 ### Prerequisites
 
-1. **Python 3.11+** with `uv` package manager
+1. **Python 3.13+** with `uv` package manager
 2. **AWS credentials** with access to Visa secrets in Secrets Manager
 3. **Hosts file entry** for Visa iframe CSP (see below)
 

@@ -61,7 +61,7 @@ AgentCore Gateway uses [credential providers](https://docs.aws.amazon.com/bedroc
 ## Prerequisites
 
 - An AWS account with access to Amazon Bedrock AgentCore
-- Python 3.11+
+- Python 3.13+
 - An OAuth app registered with the target MCP server provider (GitHub, Atlassian, or Salesforce)
 - AWS CLI configured with appropriate credentials
 

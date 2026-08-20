@@ -313,7 +313,7 @@ blob:
 │  │  Strands      │  │ SUMMARIZATION │  │  Protocol: MCP (StreamableHTTP)  │  │
 │  │  agent in     │  │ strategy      │  │  Auth: AWS_IAM / CUSTOM_JWT      │  │
 │  │  container    │  │               │  │  Semantic Search: enabled        │  │
-│  │  (Python 3.12)│  │  Episodes per │  │                                  │  │
+│  │  (Python 3.13)│  │  Episodes per │  │                                  │  │
 │  │               │  │  user/incident│  │  ┌────────┐┌────────┐┌────────┐  │  │
 │  │  Cost routing:│  │               │  │  │lookup- ││get-    ││create- │  │  │
 │  │  Haiku (LOW)  │  │  Namespace:   │  │  │user    ││process-││change- │  │  │

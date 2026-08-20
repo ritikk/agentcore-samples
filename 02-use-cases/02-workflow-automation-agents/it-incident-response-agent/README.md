@@ -250,7 +250,7 @@ into the same CDK stack via `InfraConstruct` — deployed together with a single
    - If using KB: the embedding model (`amazon.titan-embed-text-v2:0`).
    See [Bedrock model access](https://docs.aws.amazon.com/bedrock/latest/userguide/model-access.html).
 3. **Node.js 20+** and AgentCore CLI: `npm install -g @aws/agentcore`
-4. **Python 3.11+** and **uv** ([install](https://docs.astral.sh/uv/getting-started/installation/))
+4. **Python 3.13+** and **uv** ([install](https://docs.astral.sh/uv/getting-started/installation/))
 5. **Docker** (for building the agent container image)
 6. **CDK bootstrapped**: `cdk bootstrap aws://ACCOUNT/REGION`
 

@@ -6,7 +6,7 @@ Attach a pre-existing MCP server to AgentCore gateway using OAuth 2.0 client cre
 
 ## Prerequisites
 
-- Python 3.12+
+- Python 3.13+
 - [uv](https://docs.astral.sh/uv/getting-started/installation/) installed
 - Node.js >= 22.7.5
 - [AgentCore CLI](https://www.npmjs.com/package/@aws/agentcore): `npm install -g @aws/agentcore`

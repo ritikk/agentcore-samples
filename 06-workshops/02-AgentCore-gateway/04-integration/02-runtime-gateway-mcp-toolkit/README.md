@@ -22,7 +22,7 @@ The toolkit creates a complete MCP gateway and enables multiple MCP servers (Exa
 ## Prerequisites
 
 1. AWS credentials configured
-2. Python 3.8+ installed
+2. Python 3.13+ installed
 3. (Optional) `.env` file for Cognito user configuration
 
 ## Installation

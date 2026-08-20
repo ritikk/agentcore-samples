@@ -32,7 +32,7 @@ Real-world use cases that demonstrate AgentCore payments end-to-end. See [02-use
 
 ## Prerequisites
 
-- Python 3.10+
+- Python 3.13+
 - AWS CLI configured (`aws sts get-caller-identity` to verify)
 - AWS account with access to AgentCore payments preview
 - Jupyter (`pip install jupyter`)

@@ -15,7 +15,7 @@ Covers NL2Cedar (natural language → Cedar) and hand-authored attribute-based a
 
 ## Prerequisites
 
-- Python 3.12+
+- Python 3.13+
 - AWS CLI configured with credentials
 - Amazon Bedrock model access (Nova Lite) in your region
 - Node.js (for Lambda function packaging during deploy)

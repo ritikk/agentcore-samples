@@ -23,7 +23,7 @@ The Frontend Module provides a web-based user interface for the Device Managemen
 ## Prerequisites
 
 ### Required Software
-- **Python 3.10+**
+- **Python 3.13+**
 - **Web Browser** (Chrome, Firefox, Safari, Edge)
 - **Node.js** (optional, for advanced frontend development)
 

@@ -9,7 +9,7 @@ Deploy Amazon Bedrock AgentCore resources using Terraform.
   - **Or download directly**: [terraform.io/downloads](https://www.terraform.io/downloads)
   - **Note**: `brew install terraform` provides v1.5.7 (deprecated). Use tfenv or direct download for >= 1.6
 - **AWS CLI** configured with credentials
-- **Python 3.11+** (for testing scripts)
+- **Python 3.13+** (for testing scripts)
 - **Docker** (optional, for local testing)
 - Access to Amazon Bedrock AgentCore (preview)
 

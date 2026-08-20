@@ -31,7 +31,7 @@ Each VPC is created with three subnet types:
 - **[AWS CDK CLI](https://docs.aws.amazon.com/cdk/v2/guide/getting-started.html)**
 - **[TypeScript](https://www.typescriptlang.org/download/)**
 - **[AgentCore CLI](https://www.npmjs.com/package/@aws/agentcore)**: `npm install -g @aws/agentcore`
-- Python 3.12+
+- Python 3.13+
 
 ## Deployment Steps
 

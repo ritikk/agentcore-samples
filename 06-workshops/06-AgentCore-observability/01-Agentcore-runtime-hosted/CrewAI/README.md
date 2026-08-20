@@ -8,7 +8,7 @@ Learn to host a CrewAI agent using Amazon Bedrock models with comprehensive obse
 
 ## Prerequisites
 
-* Python 3.10+
+* Python 3.13+
 * AWS credentials configured with appropriate permissions
 * Amazon Bedrock AgentCore SDK
 * CrewAI framework

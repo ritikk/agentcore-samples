@@ -43,7 +43,7 @@ This solution deploys a complete conversational AI system using Amazon Bedrock A
 - Node.js 24.8.0+ and npm 10.0.0+
 - CDK CLI installed (`npm install -g aws-cdk`)
 - Docker installed and running (required for building the AgentCore Runtime container)
-- Python 3.12+ (for agent development)
+- Python 3.13+ (for agent development)
 
 ### Deployment
 

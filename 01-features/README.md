@@ -154,7 +154,7 @@ Each feature section's README has a dedicated **AgentCore CLI** section with mor
 
 ## Prerequisites
 
-- Python 3.12+
+- Python 3.13+
 - [`uv`](https://docs.astral.sh/uv/getting-started/installation/) installed (for building arm64 deployment packages)
 - AWS account with Amazon Bedrock AgentCore access
 - AWS CLI configured with credentials

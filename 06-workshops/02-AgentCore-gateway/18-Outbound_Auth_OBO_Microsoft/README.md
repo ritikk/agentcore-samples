@@ -68,7 +68,7 @@ sequenceDiagram
 
 ## Prerequisites
 
-- Python 3.10+
+- Python 3.13+
 - AWS credentials configured
 - A Microsoft 365 **work or school account** with access to Microsoft Entra ID
 

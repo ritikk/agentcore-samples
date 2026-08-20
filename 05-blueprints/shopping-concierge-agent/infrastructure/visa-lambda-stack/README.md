@@ -41,7 +41,7 @@ npm run dev
 
 ## Stack Resources
 
-- **Lambda Function**: Python 3.11 container with Flask + Mangum
+- **Lambda Function**: Python 3.13 container with Flask + Mangum
 - **API Gateway**: REST API with `/api/visa/*` proxy routes
 - **IAM Role**: Secrets Manager access for Visa credentials
 - **CloudWatch Logs**: Automatic logging

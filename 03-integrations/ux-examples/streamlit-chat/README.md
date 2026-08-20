@@ -24,7 +24,7 @@ Amazon Bedrock AgentCore is a comprehensive service that enables you to deploy a
 
 ## Prerequisites
 
-- Python 3.11 or higher
+- Python 3.13 or higher
 - [uv package manager](https://docs.astral.sh/uv/getting-started/installation/)
 - AWS CLI configured with appropriate credentials
 - Access to Amazon Bedrock AgentCore service

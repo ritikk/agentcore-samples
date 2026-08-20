@@ -111,7 +111,7 @@ security model are detailed in the sections below.
 
 | Requirement | Description |
 |-------------|-------------|
-| Python 3.12+ | To run the `deploy.py` / `invoke.py` / `cleanup.py` scripts |
+| Python 3.13+ | To run the `deploy.py` / `invoke.py` / `cleanup.py` scripts |
 | Docker with buildx | To build the three `linux/arm64` container images |
 | AWS account + credentials | For ECR image pulls and Bedrock AgentCore Runtime invocations |
 | An Amazon ECR repository | Three repos: `egress-coding-execution/{supervisor,broker,agent}` |
