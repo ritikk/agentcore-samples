@@ -1,7 +1,7 @@
 import { DataSource } from 'typeorm';
 import { seedDatabase } from '../utils/seedData';
 import { logger } from '../utils/logger';
-import AWS from 'aws-sdk';
+import { SecretsManagerClient, GetSecretValueCommand } from '@aws-sdk/client-secrets-manager';
 import { User } from '../entities/User';
 import { Vendor } from '../entities/Vendor';
 import { PurchaseOrder } from '../entities/PurchaseOrder';
@@ -13,7 +13,7 @@ import { DocumentJob } from '../entities/DocumentJob';
 import { QCRecord } from '../entities/QCRecord';
 import { Payment } from '../entities/Payment';
 
-const secretsManager = new AWS.SecretsManager();
+const secretsManagerClient = new SecretsManagerClient({});
 
 // Lambda handler for running migrations and seeding
 export const handler = async (event: any) => {
@@ -27,9 +27,8 @@ export const handler = async (event: any) => {
     
     if (secretArn) {
       logger.info('Fetching credentials from Secrets Manager...');
-      const secret = await secretsManager
-        .getSecretValue({ SecretId: secretArn })
-        .promise();
+      const secret = await secretsManagerClient
+        .send(new GetSecretValueCommand({ SecretId: secretArn }));
 
       if (secret.SecretString) {
         const credentials = JSON.parse(secret.SecretString);

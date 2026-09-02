@@ -1,8 +1,9 @@
-import AWS from 'aws-sdk';
+import { S3Client, PutObjectCommand, PutObjectCommandInput, DeleteObjectCommand, GetObjectCommand } from '@aws-sdk/client-s3';
+import { getSignedUrl } from '@aws-sdk/s3-request-presigner';
 import { AppError } from '../middleware/errorHandler';
 import { logger } from '../utils/logger';
 
-const s3 = new AWS.S3({
+const s3Client = new S3Client({
   region: process.env.AWS_REGION || 'us-east-1',
 });
 
@@ -15,7 +16,7 @@ export class S3Service {
     }
 
     try {
-      const params: AWS.S3.PutObjectRequest = {
+      const params: PutObjectCommandInput = {
         Bucket: BUCKET_NAME,
         Key: key,
         Body: file.buffer,
@@ -23,7 +24,7 @@ export class S3Service {
         ServerSideEncryption: 'AES256',
       };
 
-      await s3.putObject(params).promise();
+      await s3Client.send(new PutObjectCommand(params));
 
       logger.info(`File uploaded to S3: ${key}`);
 
@@ -40,13 +41,12 @@ export class S3Service {
     }
 
     try {
-      const params = {
+      const command = new GetObjectCommand({
         Bucket: BUCKET_NAME,
         Key: key,
-        Expires: expiresIn,
-      };
+      });
 
-      const url = await s3.getSignedUrlPromise('getObject', params);
+      const url = await getSignedUrl(s3Client, command, { expiresIn });
       return url;
     } catch (error) {
       logger.error('S3 signed URL error:', error);
@@ -60,12 +60,10 @@ export class S3Service {
     }
 
     try {
-      const params = {
+      await s3Client.send(new DeleteObjectCommand({
         Bucket: BUCKET_NAME,
         Key: key,
-      };
-
-      await s3.deleteObject(params).promise();
+      }));
       logger.info(`File deleted from S3: ${key}`);
     } catch (error) {
       logger.error('S3 delete error:', error);

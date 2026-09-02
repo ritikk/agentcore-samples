@@ -1,6 +1,6 @@
 import { DataSource } from 'typeorm';
 import dotenv from 'dotenv';
-import AWS from 'aws-sdk';
+import { SecretsManagerClient, GetSecretValueCommand } from '@aws-sdk/client-secrets-manager';
 
 dotenv.config();
 
@@ -37,10 +37,9 @@ export const getDataSource = async (): Promise<DataSource> => {
   
   if (secretArn && !process.env.DB_USERNAME) {
     console.log('[getDataSource] Fetching credentials from Secrets Manager...');
-    const secretsManager = new AWS.SecretsManager();
-    const secret = await secretsManager
-      .getSecretValue({ SecretId: secretArn })
-      .promise();
+    const secretsManagerClient = new SecretsManagerClient({});
+    const secret = await secretsManagerClient
+      .send(new GetSecretValueCommand({ SecretId: secretArn }));
 
     if (secret.SecretString) {
       const credentials = JSON.parse(secret.SecretString);

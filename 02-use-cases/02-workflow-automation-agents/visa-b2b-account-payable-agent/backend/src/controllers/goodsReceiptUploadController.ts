@@ -12,8 +12,8 @@ export const uploadGoodsReceipt = async (req: Request, res: Response, next: Next
     }
 
     const file = req.file;
-    const AWS = require('aws-sdk');
-    const s3 = new AWS.S3({ region: process.env.AWS_REGION || 'us-east-1' });
+    const { S3Client, PutObjectCommand } = require('@aws-sdk/client-s3');
+    const s3Client = new S3Client({ region: process.env.AWS_REGION || 'us-east-1' });
 
     const inputBucket = process.env.S3_GR_INPUT_BUCKET || process.env.S3_INPUT_BUCKET;
 
@@ -56,7 +56,7 @@ export const uploadGoodsReceipt = async (req: Request, res: Response, next: Next
       },
     };
 
-    await s3.putObject(params).promise();
+    await s3Client.send(new PutObjectCommand(params));
 
     res.status(200).json({
       message: 'Goods receipt uploaded successfully',

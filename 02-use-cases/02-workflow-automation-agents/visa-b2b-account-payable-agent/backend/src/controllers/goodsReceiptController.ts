@@ -169,8 +169,9 @@ export const downloadDocument = async (req: AuthRequest, res: Response, next: Ne
     }
 
     // Generate signed S3 URL
-    const AWS = require('aws-sdk');
-    const s3 = new AWS.S3();
+    const { S3Client, GetObjectCommand } = require('@aws-sdk/client-s3');
+    const { getSignedUrl } = require('@aws-sdk/s3-request-presigner');
+    const s3Client = new S3Client({});
     
     const receiptsBucket = process.env.RECEIPTS_BUCKET;
     
@@ -178,11 +179,10 @@ export const downloadDocument = async (req: AuthRequest, res: Response, next: Ne
       throw new AppError('RECEIPTS_BUCKET environment variable not configured', 500);
     }
     
-    const signedUrl = s3.getSignedUrl('getObject', {
+    const signedUrl = await getSignedUrl(s3Client, new GetObjectCommand({
       Bucket: receiptsBucket,
       Key: goodsReceipt.sourceFileKey,
-      Expires: 3600, // 1 hour
-    });
+    }), { expiresIn: 3600 });
 
     res.json({
       url: signedUrl,
@@ -202,8 +202,9 @@ export const getUploadUrl = async (req: any, res: Response, next: NextFunction) 
       throw new AppError('fileName and fileType are required', 400);
     }
 
-    const AWS = require('aws-sdk');
-    const s3 = new AWS.S3({ region: process.env.AWS_REGION || 'us-east-1' });
+    const { S3Client, PutObjectCommand } = require('@aws-sdk/client-s3');
+    const { getSignedUrl } = require('@aws-sdk/s3-request-presigner');
+    const s3Client = new S3Client({ region: process.env.AWS_REGION || 'us-east-1' });
     
     const inputBucket = process.env.S3_GR_INPUT_BUCKET || process.env.S3_INPUT_BUCKET;
     
@@ -223,15 +224,14 @@ export const getUploadUrl = async (req: any, res: Response, next: NextFunction) 
     });
     
     // Generate pre-signed URL for upload
-    const uploadUrl = s3.getSignedUrl('putObject', {
+    const uploadUrl = await getSignedUrl(s3Client, new PutObjectCommand({
       Bucket: inputBucket,
       Key: key,
       ContentType: fileType,
-      Expires: 300, // 5 minutes
       Metadata: {
         jobId: job.id,
       },
-    });
+    }), { expiresIn: 300 });
     
     res.status(200).json({
       uploadUrl,

@@ -168,8 +168,8 @@ export const uploadInvoice = async (req: Request, res: Response, next: NextFunct
     }
 
     const file = req.file;
-    const AWS = require('aws-sdk');
-    const s3 = new AWS.S3({ region: process.env.AWS_REGION || 'us-east-1' });
+    const { S3Client, PutObjectCommand } = require('@aws-sdk/client-s3');
+    const s3Client = new S3Client({ region: process.env.AWS_REGION || 'us-east-1' });
 
     const inputBucket = process.env.S3_INPUT_BUCKET;
 
@@ -212,7 +212,7 @@ export const uploadInvoice = async (req: Request, res: Response, next: NextFunct
       },
     };
 
-    await s3.putObject(params).promise();
+    await s3Client.send(new PutObjectCommand(params));
 
     res.status(200).json({
       message: 'Invoice uploaded successfully',
@@ -239,8 +239,9 @@ export const downloadInvoice = async (req: Request, res: Response, next: NextFun
       throw new AppError('Invoice file not found', 404);
     }
 
-    const AWS = require('aws-sdk');
-    const s3 = new AWS.S3({ region: process.env.AWS_REGION || 'us-east-1' });
+    const { S3Client, GetObjectCommand } = require('@aws-sdk/client-s3');
+    const { getSignedUrl } = require('@aws-sdk/s3-request-presigner');
+    const s3Client = new S3Client({ region: process.env.AWS_REGION || 'us-east-1' });
 
     const inputBucket = process.env.S3_INPUT_BUCKET;
 
@@ -249,13 +250,12 @@ export const downloadInvoice = async (req: Request, res: Response, next: NextFun
     }
 
     // Generate signed URL (1 hour expiration)
-    const params = {
+    const command = new GetObjectCommand({
       Bucket: inputBucket,
       Key: invoice.sourceFileKey,
-      Expires: 3600, // 1 hour
-    };
+    });
 
-    const url = await s3.getSignedUrlPromise('getObject', params);
+    const url = await getSignedUrl(s3Client, command, { expiresIn: 3600 });
 
     res.status(200).json({
       url,
@@ -287,8 +287,9 @@ export const downloadIso20022 = async (req: Request, res: Response, next: NextFu
     }
 
     // Get S3 client and generate signed URL
-    const AWS = require('aws-sdk');
-    const s3 = new AWS.S3({ region: process.env.AWS_REGION || 'us-east-1' });
+    const { S3Client, GetObjectCommand } = require('@aws-sdk/client-s3');
+    const { getSignedUrl } = require('@aws-sdk/s3-request-presigner');
+    const s3Client = new S3Client({ region: process.env.AWS_REGION || 'us-east-1' });
 
     // Extract bucket and key from S3 URL or use directly
     const bucketName = process.env.ISO20022_BUCKET_NAME;
@@ -299,15 +300,14 @@ export const downloadIso20022 = async (req: Request, res: Response, next: NextFu
     
     const fileKey = invoice.iso20022FileKey.replace(`s3://${bucketName}/`, '');
 
-    const params = {
+    const command = new GetObjectCommand({
       Bucket: bucketName,
       Key: fileKey,
-      Expires: 300, // URL expires in 5 minutes
       ResponseContentDisposition: `attachment; filename="${invoice.invoiceNumber}_ISO20022.xml"`,
       ResponseContentType: 'application/xml',
-    };
+    });
 
-    const signedUrl = s3.getSignedUrl('getObject', params);
+    const signedUrl = await getSignedUrl(s3Client, command, { expiresIn: 300 });
 
     res.json({ downloadUrl: signedUrl });
   } catch (error) {
