@@ -5,10 +5,10 @@
  * Used by backend API to securely handle card details for buyer and supplier portals.
  */
 
-import * as AWS from 'aws-sdk';
+import { KMSClient, EncryptCommand, EncryptCommandInput, DecryptCommand, DecryptCommandInput } from '@aws-sdk/client-kms';
 
 // Initialize KMS client
-const kms = new AWS.KMS({ region: process.env.AWS_REGION || 'us-east-1' });
+const kmsClient = new KMSClient({ region: process.env.AWS_REGION || 'us-east-1' });
 
 // KMS Key ID from environment variable
 const KMS_KEY_ID = process.env.KMS_KEY_ID || 'alias/rtp-overlay-payment-cards';
@@ -21,19 +21,19 @@ const KMS_KEY_ID = process.env.KMS_KEY_ID || 'alias/rtp-overlay-payment-cards';
  */
 export async function encryptCardData(plaintext: string): Promise<string> {
   try {
-    const params: AWS.KMS.EncryptRequest = {
+    const params: EncryptCommandInput = {
       KeyId: KMS_KEY_ID,
-      Plaintext: plaintext,
+      Plaintext: Buffer.from(plaintext),
     };
 
-    const response = await kms.encrypt(params).promise();
+    const response = await kmsClient.send(new EncryptCommand(params));
 
     if (!response.CiphertextBlob) {
       throw new Error('KMS encryption failed: No ciphertext returned');
     }
 
     // Return base64-encoded ciphertext
-    const encrypted = response.CiphertextBlob.toString('base64');
+    const encrypted = Buffer.from(response.CiphertextBlob!).toString('base64');
     console.log(`Successfully encrypted data (length: ${encrypted.length})`);
     return encrypted;
   } catch (error) {
@@ -53,18 +53,18 @@ export async function decryptCardData(encryptedData: string): Promise<string> {
     // Decode base64
     const ciphertextBlob = Buffer.from(encryptedData, 'base64');
 
-    const params: AWS.KMS.DecryptRequest = {
+    const params: DecryptCommandInput = {
       CiphertextBlob: ciphertextBlob,
     };
 
-    const response = await kms.decrypt(params).promise();
+    const response = await kmsClient.send(new DecryptCommand(params));
 
     if (!response.Plaintext) {
       throw new Error('KMS decryption failed: No plaintext returned');
     }
 
     // Return decrypted plaintext
-    const plaintext = response.Plaintext.toString('utf-8');
+    const plaintext = Buffer.from(response.Plaintext!).toString('utf-8');
     console.log('Successfully decrypted data');
     return plaintext;
   } catch (error) {

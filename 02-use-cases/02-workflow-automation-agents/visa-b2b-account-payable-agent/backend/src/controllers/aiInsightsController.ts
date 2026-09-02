@@ -1,8 +1,8 @@
 import { Request, Response } from 'express';
-import AWS from 'aws-sdk';
+import { LambdaClient, InvokeCommand } from '@aws-sdk/client-lambda';
 import { logger } from '../utils/logger';
 
-const lambda = new AWS.Lambda({
+const lambdaClient = new LambdaClient({
   region: process.env.AWS_REGION || 'us-east-1'
 });
 
@@ -134,17 +134,17 @@ export class AIInsightsController {
         payload 
       });
 
-      const result = await lambda.invoke({
+      const result = await lambdaClient.send(new InvokeCommand({
         FunctionName: AI_INSIGHTS_LAMBDA_ARN,
         InvocationType: 'RequestResponse',
-        Payload: JSON.stringify(payload)
-      }).promise();
+        Payload: Buffer.from(JSON.stringify(payload))
+      }));
 
       if (!result.Payload) {
         throw new Error('No response from Lambda');
       }
 
-      const response = JSON.parse(result.Payload.toString());
+      const response = JSON.parse(Buffer.from(result.Payload).toString());
 
       // Check for Lambda errors
       if (response.statusCode !== 200) {

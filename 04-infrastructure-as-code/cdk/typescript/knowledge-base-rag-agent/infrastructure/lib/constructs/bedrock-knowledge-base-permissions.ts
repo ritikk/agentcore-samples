@@ -103,7 +103,7 @@ export class BedrockKnowledgeBasePermissions extends Construct {
       runtime: cdk.aws_lambda.Runtime.NODEJS_20_X,
       handler: 'index.handler',
       code: cdk.aws_lambda.Code.fromInline(`
-        const AWS = require('aws-sdk');
+        const { OpenSearchServerlessClient, GetSecurityPolicyCommand, UpdateSecurityPolicyCommand, CreateSecurityPolicyCommand } = require('@aws-sdk/client-opensearchserverless');
         
         exports.handler = async (event) => {
           console.log('Event:', JSON.stringify(event, null, 2));
@@ -123,7 +123,7 @@ export class BedrockKnowledgeBasePermissions extends Construct {
           
           if (RequestType === 'Create' || RequestType === 'Update') {
             try {
-              const opensearchserverless = new AWS.OpenSearchServerless({ region: Region });
+              const opensearchserverless = new OpenSearchServerlessClient({ region: Region });
               
               // Create the data access policy
               const policy = {
@@ -146,27 +146,27 @@ export class BedrockKnowledgeBasePermissions extends Construct {
               
               // Check if policy already exists
               try {
-                await opensearchserverless.getSecurityPolicy({
+                await opensearchserverless.send(new GetSecurityPolicyCommand({
                   name: PolicyName,
                   type: PolicyType
-                }).promise();
+                }));
                 
                 // Update existing policy
-                await opensearchserverless.updateSecurityPolicy({
+                await opensearchserverless.send(new UpdateSecurityPolicyCommand({
                   name: PolicyName,
                   type: PolicyType,
                   policy: JSON.stringify(policy)
-                }).promise();
+                }));
                 
                 console.log(\`Updated \${PolicyType} policy \${PolicyName}\`);
               } catch (e) {
-                if (e.code === 'ResourceNotFoundException') {
+                if (e.name === 'ResourceNotFoundException') {
                   // Create new policy
-                  await opensearchserverless.createSecurityPolicy({
+                  await opensearchserverless.send(new CreateSecurityPolicyCommand({
                     name: PolicyName,
                     type: PolicyType,
                     policy: JSON.stringify(policy)
-                  }).promise();
+                  }));
                   
                   console.log(\`Created \${PolicyType} policy \${PolicyName}\`);
                 } else {
