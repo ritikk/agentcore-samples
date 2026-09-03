@@ -121,7 +121,7 @@ Actions are the modern replacement for Rules and offer better performance.
 4. Configure:
    - **Name**: `Add Custom Claims`
    - **Trigger**: `Login / Post Login`
-   - **Runtime**: `Node 18 (Recommended)`
+   - **Runtime**: `Node 22 (Recommended)`
 
 5. Copy the code from `actions/post_login_action.js`
 6. Click **Deploy**

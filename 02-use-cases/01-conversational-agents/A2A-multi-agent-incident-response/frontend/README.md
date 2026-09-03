@@ -8,7 +8,7 @@ This is a single-page application that provides a chat interface for interacting
 
 ### Prerequisites
 
-- Node.js 18 or higher, use [documentation](https://nodejs.org/en/download).
+- Node.js 22 or higher, use [documentation](https://nodejs.org/en/download).
 
 ### Installation
 

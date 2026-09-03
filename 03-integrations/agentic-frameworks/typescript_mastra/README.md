@@ -27,7 +27,7 @@ Amazon Bedrock AgentCore Runtime provides a secure, serverless hosting environme
 
 ## Prerequisites
 
-- **Node.js 20 or 21**: Required by Mastra framework
+- **Node.js 22 or 21**: Required by Mastra framework
   - [Download Node.js](https://nodejs.org/en/download/)
   - Verify installation: `node --version`
 - **npm**: Package manager (comes with Node.js)

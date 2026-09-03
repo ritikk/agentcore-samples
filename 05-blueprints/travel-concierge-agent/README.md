@@ -65,7 +65,7 @@ sample-concierge-agent/
 
 ## Prerequisites
 
-- Node.js 18+ and npm
+- Node.js 22+ and npm
 - AWS CLI configured with credentials
 - Docker (for building agent containers)
 

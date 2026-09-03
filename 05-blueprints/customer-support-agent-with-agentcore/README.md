@@ -42,7 +42,7 @@ A production-ready AI customer support agent built on **Amazon Bedrock AgentCore
 | Tool | Version | Install |
 |------|---------|---------|
 | **uv** (Python + packages) | Latest | [Install guide](https://docs.astral.sh/uv/getting-started/installation/) |
-| **Node.js** | 20+ | First install [nvm](https://github.com/nvm-sh/nvm#installing-and-updating), then run: `nvm install 20 && nvm use 20` |
+| **Node.js** | 22+ | First install [nvm](https://github.com/nvm-sh/nvm#installing-and-updating), then run: `nvm install 22 && nvm use 22` |
 | **Docker** | Latest | [Docker Desktop](https://docs.docker.com/desktop/setup/install/mac-install/) |
 | **AWS CLI** | **v2.32.0+** | [Install guide](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) |
 
@@ -253,7 +253,7 @@ The key takeaway: the agent can be jailbroken, the model can hallucinate, but th
 | Token script fails to open browser | Copy the URL from terminal output and open manually |
 | "Unauthorized" when invoking | Token expired (1 hour). Re-run `eval $(uv run scripts/cognito-user.py --login --export)` |
 | CDK deploy fails | Ensure Docker is running. Check credentials: `aws sts get-caller-identity` |
-| `node -v` shows version < 20 | Install Node 20+: `nvm install 20 && nvm use 20` |
+| `node -v` shows version < 22 | Install Node 22+: `nvm install 22 && nvm use 22` |
 | Port 3000 in use (token script) | Kill the process: `lsof -ti:3000 \| xargs kill` |
 
 ---

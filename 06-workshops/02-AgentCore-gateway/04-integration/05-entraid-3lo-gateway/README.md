@@ -6,7 +6,7 @@ Automated setup for an AgentCore MCP Gateway with EntraID inbound authentication
 
 - AWS CLI v2 configured with credentials for the target account
 - Azure CLI (`az`): `brew install azure-cli` (macOS) or [install guide](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli)
-- Node.js 18+ and npm
+- Node.js 22+ and npm
 - CDK CLI: `npm install -g aws-cdk`
 - `jq` installed
 - Access to a Microsoft Entra ID tenant (CIAM/External ID or standard)

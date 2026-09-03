@@ -30,7 +30,7 @@ making it a natural fit for automated visual QA:
 ```
 webapp_visual_testing.py
 │
-├── Part 1: Create harness with node:20-slim container
+├── Part 1: Create harness with node:22-slim container
 │              └─ update_harness(containerConfiguration)
 │
 ├── Part 2: ExecuteCommand to prepare the VM
@@ -96,7 +96,7 @@ npm install -g @aws/agentcore@preview
 agentcore create --name myqaagent --model-provider bedrock
 ```
 
-In the interactive wizard, choose a **Custom Environment** and specify `public.ecr.aws/docker/library/node:20-slim` as the container URI. After setup:
+In the interactive wizard, choose a **Custom Environment** and specify `public.ecr.aws/docker/library/node:22-slim` as the container URI. After setup:
 
 ```bash
 agentcore deploy

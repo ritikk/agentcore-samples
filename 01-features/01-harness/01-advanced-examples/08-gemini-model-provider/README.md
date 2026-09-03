@@ -20,7 +20,7 @@ it by ARN — the key never sits in the harness config.
 
 ## Prerequisites
 
-- **Node.js 20+** and the preview CLI:
+- **Node.js 22+** and the preview CLI:
   ```bash
   npm install -g @aws/agentcore@preview
   agentcore --version          # 1.0.0-preview.12 or later

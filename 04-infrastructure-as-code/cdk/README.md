@@ -21,7 +21,7 @@ Deploy Amazon Bedrock AgentCore resources using AWS CDK in Python or TypeScript.
 - AWS CDK v2.218.0+
 
 ### TypeScript Samples
-- Node.js 18+ and npm
+- Node.js 22+ and npm
 - AWS CDK v2.236.0+ (for BedrockAgentCore alpha support)
 - Docker installed and running
 

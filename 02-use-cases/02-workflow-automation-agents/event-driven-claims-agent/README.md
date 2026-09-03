@@ -54,7 +54,7 @@ See [docs/ARCHITECTURE.md](./docs/ARCHITECTURE.md) for full component diagrams, 
 - [Docker](https://www.docker.com/products/docker-desktop/) or [Finch](https://github.com/runfinch/finch) (container runtime)
 - Python 3.12+ with [uv](https://docs.astral.sh/uv/getting-started/installation/) (`pip install uv` or `brew install uv`)
 - [AWS CLI v2](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) configured (`aws configure`)
-- Node.js 18+
+- Node.js 22+
 
 ### Deploy
 

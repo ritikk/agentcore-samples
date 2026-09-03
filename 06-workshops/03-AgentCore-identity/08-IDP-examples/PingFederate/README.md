@@ -112,7 +112,7 @@ The `privateEndpoint` attribute on the OAuth2 credential provider tells AgentCor
 - [Python 3.12+](https://www.python.org/downloads/)
 - [Docker](https://docs.docker.com/get-docker/) (for building/pushing the PingFederate container image)
 - [agentcore-cli](https://github.com/aws/agentcore-cli) (`npm install -g @aws/agentcore`)
-- [Node.js 20+](https://nodejs.org/) (for agentcore-cli and CDK)
+- [Node.js 22+](https://nodejs.org/) (for agentcore-cli and CDK)
 - **PingFederate DevOps credentials** — [sign up here](https://devops.pingidentity.com/get-started/devopsRegistration/)
 - **A publicly trusted ACM certificate** — AgentCore Identity requires a publicly trusted TLS certificate to connect via VPC Lattice. The ALB itself remains internal.
 - AWS account with permissions to create VPC, ECS, VPC Lattice, Route 53, AgentCore Identity, and AgentCore Runtime resources

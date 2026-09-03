@@ -151,7 +151,7 @@ cd deployment
 ### Frontend
 - **React 18** - UI framework
 - **TypeScript** - Type safety
-- **Node 18** - Build tooling
+- **Node 22** - Build tooling
 
 ### Infrastructure
 - **AWS Fargate** - Serverless containers (ECS)
@@ -190,7 +190,7 @@ DATABASE_URL=postgresql://postgres:postgres@localhost:5432/sales_db
 - Docker and Docker Compose
 - AWS CLI configured with credentials
 - Brave Search API key (get one at https://brave.com/search/api/)
-- Node.js 18+ (for local frontend development)
+- Node.js 22+ (for local frontend development)
 - Python 3.11+ (for local backend development)
 
 **IAM Permissions:**

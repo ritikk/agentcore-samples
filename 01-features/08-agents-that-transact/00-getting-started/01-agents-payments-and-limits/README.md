@@ -88,7 +88,7 @@ sees the final `200`.
   pip install -r requirements.txt
   ```
 - **AgentCore CLI (optional)** — only needed for the inspect step below
-  (`agentcore status --type payment`). Install with `npm install -g @aws/agentcore` (Node.js 20+).
+  (`agentcore status --type payment`). Install with `npm install -g @aws/agentcore` (Node.js 22+).
   Everything the agents do in this tutorial is pure SDK.
 
 ## Walkthrough

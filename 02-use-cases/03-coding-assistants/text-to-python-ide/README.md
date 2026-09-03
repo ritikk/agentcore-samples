@@ -56,7 +56,7 @@ All resources are created in **us-east-1** by default.
 ## Prerequisites
 
 - **Python 3.10+**
-- **Node.js 18+**
+- **Node.js 22+**
 - **Docker Desktop** (must be running — required for runtime deployment)
 - **AWS CLI** configured with a profile that has `BedrockAgentCoreFullAccess` permissions
 - AWS account with Bedrock model access enabled (Claude Haiku 4.5)

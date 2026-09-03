@@ -69,7 +69,7 @@ This project uses **three CDK stacks**:
 ## Prerequisites
 
 - AWS CLI configured with valid credentials
-- Node.js 18+ installed
+- Node.js 22+ installed
 - AWS CDK CLI: `npm install -g aws-cdk`
 - Docker installed and running (for Lambda layer)
 

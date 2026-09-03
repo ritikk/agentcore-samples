@@ -36,7 +36,7 @@ The workflow covers the complete AP cycle from supplier onboarding through payme
 
 - AWS Account with admin access
 - AWS CLI configured (`aws configure`)
-- Node.js 18+ installed
+- Node.js 22+ installed
 - Docker installed and running
 - Python 3 with boto3: `pip3 install boto3`
 - Bedrock AgentCore SDK: `pip3 install bedrock-agentcore-starter-toolkit`
@@ -383,7 +383,7 @@ Found a bug or have a feature request?
 ### Development Setup
 
 1. **Prerequisites**
-   - Node.js 18+
+   - Node.js 22+
    - Python 3.9+
    - AWS CLI configured
    - AWS CDK installed

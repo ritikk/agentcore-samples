@@ -37,7 +37,7 @@ src/
 
 ### Prerequisites
 
-- Node.js 20.19+ or 22.12+ (recommended)
+- Node.js 22+ (recommended)
 - npm or yarn
 
 ### Installation

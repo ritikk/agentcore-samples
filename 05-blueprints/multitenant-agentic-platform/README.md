@@ -81,7 +81,7 @@ Frontend → API Gateway → infrastructure_costs → Cost Explorer (tenantId ta
 ## Prerequisites
 
 - AWS CLI configured with credentials
-- Node.js 18+ and npm
+- Node.js 22+ and npm
 - Python 3.10+
 - AWS CDK CLI (`npm install -g aws-cdk`)
 - CDK bootstrapped in your AWS account/region

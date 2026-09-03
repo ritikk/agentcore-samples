@@ -74,7 +74,7 @@ Before you run the quick-start, make sure you have all of this in place. Each it
 | Tool | Why | How to install |
 |---|---|---|
 | **Python 3.10+** | Frontend, helper scripts, agent | Your package manager |
-| **Node.js 20+** | AgentCore CLI (`@aws/agentcore`) is a Node CLI | `brew install node` / nvm |
+| **Node.js 22+** | AgentCore CLI (`@aws/agentcore`) is a Node CLI | `brew install node` / nvm |
 | **AWS CLI v2** | Credentials, bootstrap verification | [docs](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) |
 | **AWS CDK CLI** | AgentCore CLI deploys via CDK under the hood | `npm install -g aws-cdk` |
 | **AgentCore CLI** | Scaffolds + deploys the Runtime | `npm install -g @aws/agentcore` |

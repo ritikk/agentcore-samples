@@ -132,7 +132,7 @@ picks the right signer from the connector tied to the instrument.
 - **Python 3.10+**
 - **AWS Command Line Interface (AWS CLI) v2** configured with credentials (`aws configure`)
 - **AWS Cloud Development Kit (CDK) v2** installed globally (`npm install -g aws-cdk`); used to deploy the seller and the agent runtime
-- **Node.js 18+** — required by CDK
+- **Node.js 22+** — required by CDK
 - **A wallet provider account** — Coinbase Developer Platform (CDP) (API Key ID, API Key Secret, Wallet Secret) or Stripe via Privy (App ID, App Secret, Authorization Key ID, P-256 Authorization Private Key)
 - **Testnet USD Coin (USDC)** from the [Circle testnet faucet](https://faucet.circle.com/) on both **Base Sepolia** and **Solana Devnet**, because §5 creates one wallet per network
 

@@ -117,7 +117,7 @@ python policy_demo.py --section C   # Agent end-to-end only
 
 ### Step 1: Deploy Lambda Tools (`deploy.py`)
 
-Three Node.js 20.x Lambda functions serve as the backend tools. Each is zipped from `utils/*.js`
+Three Node.js 22.x Lambda functions serve as the backend tools. Each is zipped from `utils/*.js`
 and deployed via the Lambda API:
 
 ```python
@@ -133,7 +133,7 @@ buf.seek(0)
 
 lambda_client.create_function(
     FunctionName="ApplicationTool",
-    runtime="nodejs20.x",
+    runtime="nodejs22.x",
     Role=role_arn,
     Handler="index.handler",
     Code={"ZipFile": buf.read()},

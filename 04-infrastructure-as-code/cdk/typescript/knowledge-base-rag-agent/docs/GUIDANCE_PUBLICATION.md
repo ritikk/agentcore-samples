@@ -67,7 +67,7 @@ See [ARCHITECTURE.md](./ARCHITECTURE.md) for detailed architecture diagrams.
 ### Technology Stack
 - **Infrastructure**: AWS CDK (TypeScript) with AgentCore Alpha constructs
 - **Agent Framework**: Strands Agents SDK (Python)
-- **Backend**: Node.js 20.x, AWS SDK v3
+- **Backend**: Node.js 22.x, AWS SDK v3
 - **Frontend**: Next.js, React, TypeScript
 - **AI/ML**: Amazon Bedrock (Claude Sonnet 4)
 - **Vector Database**: OpenSearch Serverless
