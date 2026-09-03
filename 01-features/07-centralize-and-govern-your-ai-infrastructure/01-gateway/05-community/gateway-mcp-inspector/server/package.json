@@ -19,21 +19,21 @@
 	},
 	"devDependencies": {
 		"@types/cors": "^2.8.19",
-		"@types/express": "^5.0.0",
-		"tsx": "^4.19.0",
-		"typescript": "^5.6.2"
+		"@types/express": "^5.0.6",
+		"tsx": "^4.23.13",
+		"typescript": "^5.9.3"
 	},
 	"dependencies": {
-		"@aws-sdk/client-bedrock-agentcore": "^3.1018.0",
-		"@aws-sdk/client-bedrock-agentcore-control": "^3.1045.0",
-		"@aws-sdk/credential-providers": "^3.1045.0",
-		"@smithy/signature-v4": "^4.0.0",
-		"@smithy/hash-node": "^3.0.0",
-		"@smithy/protocol-http": "^4.0.0",
-		"@modelcontextprotocol/sdk": "^1.25.2",
-		"cors": "^2.8.5",
-		"express": "^5.1.0",
-		"shx": "^0.3.4",
+		"@aws-sdk/client-bedrock-agentcore": "^3.1125.0",
+		"@aws-sdk/client-bedrock-agentcore-control": "^3.1125.0",
+		"@aws-sdk/credential-providers": "^3.1125.0",
+		"@smithy/signature-v4": "^4.2.4",
+		"@smithy/hash-node": "^3.0.11",
+		"@smithy/protocol-http": "^4.1.8",
+		"@modelcontextprotocol/sdk": "^1.30.0",
+		"cors": "^2.8.6",
+		"express": "^5.2.1",
+		"shx": "^0.4.0",
 		"zod": "^3.25.76"
 	}
 }
