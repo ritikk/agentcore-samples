@@ -68,10 +68,10 @@ aws cloudformation describe-stacks --stack-name CDKToolkit
 # Check current Node.js version
 node --version
 
-# Install Node.js 18+ using nvm (recommended)
+# Install Node.js 22+ using nvm (recommended)
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
-nvm install 18
-nvm use 18
+nvm install 22
+nvm use 22
 
 # Or download from nodejs.org
 # Verify installation

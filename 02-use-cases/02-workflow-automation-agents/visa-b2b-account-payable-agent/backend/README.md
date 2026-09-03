@@ -4,7 +4,7 @@ Backend API for the RTP Overlay System - Accounts Payable & Procurement Manageme
 
 ## Tech Stack
 
-- **Runtime**: Node.js 20+ with TypeScript
+- **Runtime**: Node.js 22+ with TypeScript
 - **Framework**: Express.js
 - **Database**: PostgreSQL with TypeORM
 - **Authentication**: JWT tokens
@@ -15,7 +15,7 @@ Backend API for the RTP Overlay System - Accounts Payable & Procurement Manageme
 
 ### Prerequisites
 
-- Node.js 20+
+- Node.js 22+
 - PostgreSQL 15+
 - AWS Account (for S3)
 

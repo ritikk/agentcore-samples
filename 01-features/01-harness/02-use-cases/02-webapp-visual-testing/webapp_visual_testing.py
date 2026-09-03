@@ -52,7 +52,7 @@ args = parser.parse_args()
 
 # ── Configuration ─────────────────────────────────────────────────────────────
 MODEL_ID = "global.anthropic.claude-haiku-4-5-20251001-v1:0"
-NODE_CONTAINER = "public.ecr.aws/docker/library/node:20-slim"
+NODE_CONTAINER = "public.ecr.aws/docker/library/node:22-slim"
 
 # ── Setup ─────────────────────────────────────────────────────────────────────
 control = get_agentcore_control_client()

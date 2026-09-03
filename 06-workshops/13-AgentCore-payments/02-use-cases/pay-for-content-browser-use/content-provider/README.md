@@ -17,7 +17,7 @@ protocol. Used as the "seller" side of the **Pay for Content (Browser)** use cas
 ## Prerequisites
 
 - AWS CLI v2 configured (`aws configure`)
-- Node.js 18+
+- Node.js 22+
 - AWS CDK v2 (`npm install -g aws-cdk`)
 - A merchant wallet address to receive USDC payments (`0x...`)
 

@@ -40,7 +40,7 @@ Puppeteer **runs inside the same VM** as the web server, so `localhost:3000` jus
 | Part | What happens |
 |---|---|
 | **0** | Setup — IAM role, boto3 clients, load beta service models |
-| **1** | Create Harness with a **Node.js 20 container** attached |
+| **1** | Create Harness with a **Node.js 22 container** attached |
 | **2** | Prepare environment — `apt-get install chromium`, generate a self-contained TodoMVC app, start `npx serve` on port 3000, `npm install puppeteer-core` |
 | **3** | **Agent writes and runs the tests** — we describe the test steps in natural language, the agent writes a Puppeteer script, runs it, and saves screenshots |
 | **4** | Pull screenshots back via `ExecuteCommand` (base64-encoded) and display inline |

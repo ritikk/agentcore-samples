@@ -135,7 +135,7 @@ followed by combined multi-flow examples in `03-m2m-3lo/` and `04-entra-obo-mcp-
 
 - Python 3.10+
 - AWS CLI configured with credentials
-- Node.js 20+ and `@aws/agentcore` npm package (for `03-m2m-3lo/` only)
+- Node.js 22+ and `@aws/agentcore` npm package (for `03-m2m-3lo/` only)
 - AWS CDK (`npm install -g aws-cdk`) for `04-inbound-auth-pingfederate/` only
 - Bedrock model access: enable `claude-haiku-4-5` and/or `claude-sonnet-4-5` in the Bedrock console
 - identity provider accounts as needed (see individual sub-folder READMEs)

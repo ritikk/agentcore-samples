@@ -9,7 +9,7 @@ Complete deployment guide for the RTP Overlay System to AWS. This guide covers i
 ## Prerequisites
 
 - AWS CLI configured with valid credentials
-- Node.js 18+ installed
+- Node.js 22+ installed
 - **CDK CLI 2.102.0+** installed: `npm install -g aws-cdk@latest` (verify: `cdk --version`)
 - Docker installed and running (required for Lambda layer)
 - **Python 3.8+** installed

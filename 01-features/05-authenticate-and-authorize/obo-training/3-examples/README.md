@@ -26,7 +26,7 @@ All examples expect:
 
 Additional prerequisites for the `real-world/` mode (all use cases with `real-world/`):
 
-- **Node.js 20+**, **AWS CDK 2.1129.0+**, **AgentCore CLI (`@aws/agentcore`) 0.21.1+**
+- **Node.js 22+**, **AWS CDK 2.1129.0+**, **AgentCore CLI (`@aws/agentcore`) 0.21.1+**
 - **Bedrock model access** in the target region (Claude Sonnet 4.5 by default)
 
 ## How the examples are structured

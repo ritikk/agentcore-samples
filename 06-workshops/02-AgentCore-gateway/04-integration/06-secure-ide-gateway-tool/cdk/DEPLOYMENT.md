@@ -28,7 +28,7 @@ The Figma credential provider and the gateway target are created **after** deplo
 ## Prerequisites
 
 - AWS CLI configured with credentials that can manage Lambda, API Gateway, Cognito, IAM, DynamoDB, SSM, and Bedrock AgentCore
-- Node.js 18+ and [pnpm](https://pnpm.io/)
+- Node.js 22+ and [pnpm](https://pnpm.io/)
 - AWS CDK CLI (`pnpm add -g aws-cdk`, or use the bundled `pnpm cdk`)
 - Docker (required for Lambda bundling during `cdk deploy`)
 

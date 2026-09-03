@@ -68,7 +68,7 @@ class AgentCorePaymentsFunFactsSellerStack(Stack):
         seller_fn = _lambda.Function(
             self,
             "SellerFunction",
-            runtime=_lambda.Runtime.NODEJS_20_X,
+            runtime=_lambda.Runtime.NODEJS_22_X,
             architecture=_lambda.Architecture.ARM_64,
             handler="index.handler",
             # The deploy script runs `npm install` in the lambda/ folder

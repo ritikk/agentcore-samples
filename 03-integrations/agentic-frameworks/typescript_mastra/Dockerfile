@@ -1,5 +1,5 @@
 # Stage 1: Build
-FROM --platform=linux/arm64 public.ecr.aws/docker/library/node:20-alpine AS build
+FROM --platform=linux/arm64 public.ecr.aws/docker/library/node:22-alpine AS build
 
 WORKDIR /app
 
@@ -17,7 +17,7 @@ COPY src ./src
 RUN npm install typescript && npm run build
 
 # Stage 2: Runtime
-FROM --platform=linux/arm64 public.ecr.aws/docker/library/node:20-alpine
+FROM --platform=linux/arm64 public.ecr.aws/docker/library/node:22-alpine
 
 WORKDIR /app
 

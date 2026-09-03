@@ -34,7 +34,7 @@ The agent code is stateless and wallet-agnostic. All payment context (manager AR
 * Tutorial 01 completed (understand the local agent + plugin flow)
 * Wallet funded with testnet USDC from https://faucet.circle.com/
 * Python 3.10+
-* Node.js 20+ (for the AgentCore CLI)
+* Node.js 22+ (for the AgentCore CLI)
 * [AWS CDK](https://docs.aws.amazon.com/cdk/v2/guide/getting_started.html) installed
 * AWS CLI configured (`aws configure`)
 
@@ -86,7 +86,7 @@ App Backend (ManagementRole)              AgentCore Runtime (Execution Role)
 ## Quick Start (without notebook)
 
 ```bash
-# Install CLI (requires Node.js 20+)
+# Install CLI (requires Node.js 22+)
 npm install -g @aws/agentcore
 
 # Scaffold project

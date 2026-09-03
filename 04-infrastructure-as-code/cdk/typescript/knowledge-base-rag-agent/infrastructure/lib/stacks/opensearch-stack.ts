@@ -143,7 +143,7 @@ export class OpenSearchStack extends cdk.Stack {
     );
 
     const createVectorIndexFunction = new lambda.Function(this, 'CreateVectorIndexFunction', {
-      runtime: lambda.Runtime.NODEJS_20_X,
+      runtime: lambda.Runtime.NODEJS_22_X,
       handler: 'index.handler',
       code: lambda.Code.fromAsset(path.resolve(__dirname, '../../src/functions/vector-index')),
       layers: [commonLayer],
