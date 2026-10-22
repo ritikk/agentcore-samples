@@ -28,7 +28,7 @@ Cross-region inference profiles provide:
 | Claude Sonnet 4 | `us.anthropic.claude-sonnet-4-20250514-v1:0` | Latest Claude Sonnet (Default) | General purpose, best balance |
 | Claude 3.5 Sonnet v2 | `us.anthropic.claude-3-5-sonnet-20241022-v2:0` | Previous generation | Legacy compatibility |
 | Claude 3 Haiku | `us.anthropic.claude-3-haiku-20240307-v1:0` | Fast, cost-effective | Development, simple queries |
-| Claude 3 Opus | `us.anthropic.claude-3-opus-20240229-v1:0` | Highest quality | Complex reasoning tasks |
+| Claude Opus 4 | `us.anthropic.claude-opus-4-20250514-v1:0` | Highest quality | Complex reasoning tasks |
 
 ### Amazon Titan Models
 
