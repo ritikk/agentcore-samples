@@ -17,8 +17,7 @@ export const getCurrentTimeTool = createTool({
     timezone: z.string(),
     timestamp: z.number(),
   }),
-  execute: async ({ context }: { context: { timezone: string } }) => {
-    const { timezone } = context;
+  execute: async ({ timezone }: { timezone: string }) => {
 
     const now = new Date();
     const timestamp = now.getTime();
@@ -55,8 +54,7 @@ export const calculateTool = createTool({
     operation: z.string(),
     expression: z.string(),
   }),
-  execute: async ({ context }: { context: { operation: "add" | "subtract" | "multiply" | "divide", a: number, b: number } }) => {
-    const { operation, a, b } = context;
+  execute: async ({ operation, a, b }: { operation: "add" | "subtract" | "multiply" | "divide", a: number, b: number }) => {
 
     let result: number = 0;
     let expression: string = "";
@@ -107,8 +105,7 @@ export const generateRandomNumberTool = createTool({
     min: z.number(),
     max: z.number(),
   }),
-  execute: async ({ context }: { context: { min: number, max: number } }) => {
-    const { min, max } = context;
+  execute: async ({ min, max }: { min: number, max: number }) => {
 
     if (min > max) {
       throw new Error("Minimum value cannot be greater than maximum value");
@@ -129,6 +126,7 @@ export const generateRandomNumberTool = createTool({
  * A helpful assistant with access to various utility tools
  */
 export const utilityAgent = new Agent({
+  id: "utilityAgent",
   name: "utilityAgent",
   instructions: `You are a helpful assistant with access to several utility tools.
 

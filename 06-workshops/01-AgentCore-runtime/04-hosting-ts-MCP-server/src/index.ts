@@ -9,10 +9,9 @@ app.use(express.json());
 app.post('/mcp', async (req: Request, res: Response) => {
     const server = mcpServerCreate();
     try {
+      // Stateless mode: omit sessionIdGenerator
       const transport: StreamableHTTPServerTransport = new StreamableHTTPServerTransport({
-        sessionIdGenerator: undefined,
         enableJsonResponse: true
-    
       });
       await server.connect(transport);
       await transport.handleRequest(req, res, req.body);
