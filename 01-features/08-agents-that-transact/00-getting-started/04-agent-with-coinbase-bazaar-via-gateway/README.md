@@ -73,7 +73,7 @@ PaymentConnector. Only the `.env` values differ.
 - **Funded wallet with delegated signing** — the instrument must be `ACTIVE` (funded with testnet
   USDC and delegated-signing granted in Tutorial 00 or Tutorial 03). The script asserts this.
 - **AgentCore CLI** (this tutorial provisions the Gateway with it): `npm install -g @aws/agentcore`
-  (Node.js 20+).
+  (Node.js 22+).
 - **AWS CLI configured**: `aws sts get-caller-identity`.
 - **Region** — the SDK reads the region from the `AWS_REGION` env var (default `us-west-2`). Set
   `AWS_REGION` (in your shell or the shared `.env`) to your Tutorial 00 stack region so

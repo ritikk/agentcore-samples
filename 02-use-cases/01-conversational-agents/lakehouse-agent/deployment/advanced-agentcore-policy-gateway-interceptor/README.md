@@ -60,7 +60,7 @@ Required tooling:
   Cedar policies (`bedrock-agentcore:*`), update the Gateway, and attach IAM
   inline policies to the Gateway role.
 - AWS CLI v2 configured for the same account and region as the base deployment.
-- Node.js 18+ and npm.
+- Node.js 22+ and npm.
 - Python 3.10+ (for the pre-deploy and verification scripts) with the same
   virtual environment used for Phase 1.
 

@@ -113,11 +113,11 @@ export function applyNagSuppressions(stack: Stack): void {
   ]);
 
   // Suppress L1: Lambda Runtime Version
-  // Justification: Using latest stable Node.js 20 runtime
+  // Justification: Using latest stable Node.js 22 runtime
   NagSuppressions.addStackSuppressions(stack, [
     {
       id: 'AwsSolutions-L1',
-      reason: 'Using Node.js 20.x which is the latest stable LTS runtime',
+      reason: 'Using Node.js 22.x which is the latest stable LTS runtime',
     },
   ]);
 }

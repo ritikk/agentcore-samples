@@ -18,7 +18,7 @@ Complete step-by-step instructions for setting up the AgentCore Identity sample 
 
 3. **Development Environment**
    - Python 3.9 or higher
-   - Node.js 18+ (for CDK)
+   - Node.js 22+ (for CDK)
    - Git
    - Code editor (VS Code recommended)
 

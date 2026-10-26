@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import { ErrorBoundary } from '../../components/ErrorBoundary';
+import ErrorBoundary from '../../components/ErrorBoundary';
 
 // Component that throws an error for testing
 const ThrowError = ({ shouldThrow }: { shouldThrow: boolean }) => {
@@ -65,7 +65,7 @@ describe('ErrorBoundary Component', () => {
       </ErrorBoundary>
     );
 
-    expect(screen.queryByText(/test error/i)).not.toBeInTheDocument();
+    expect(screen.queryByText(/error details \(development only\)/i)).not.toBeInTheDocument();
     expect(screen.getByText(/something went wrong/i)).toBeInTheDocument();
 
     process.env.NODE_ENV = originalEnv;
@@ -78,7 +78,7 @@ describe('ErrorBoundary Component', () => {
       </ErrorBoundary>
     );
 
-    const retryButton = screen.getByRole('button', { name: /try again/i });
+    const retryButton = screen.getByRole('button', { name: /return to home page/i });
     expect(retryButton).toBeInTheDocument();
   });
 });

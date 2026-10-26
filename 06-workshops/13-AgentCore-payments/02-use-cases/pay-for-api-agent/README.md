@@ -132,7 +132,7 @@ picks the right signer from the connector tied to the instrument.
 - **Python 3.10+** with a Jupyter kernel. If you hit "Running cells requires the ipykernel package", install it once: `python3 -m pip install ipykernel --user`. Any Jupyter frontend works — JupyterLab (4.0+), classic Jupyter Notebook (7.0+), VS Code, or Kiro.
 - **AWS Command Line Interface (AWS CLI) v2** configured with credentials (`aws configure`)
 - **AWS Cloud Development Kit (CDK) v2** installed globally (`npm install -g aws-cdk`); used by the notebook to deploy the seller
-- **Node.js 18+** — required by CDK
+- **Node.js 22+** — required by CDK
 - **A wallet provider account** — Coinbase Developer Platform (CDP) (API Key ID, API Key Secret, Wallet Secret) or Stripe via Privy (App ID, App Secret, Authorization Key ID, P-256 Authorization Private Key)
 - **Testnet USD Coin (USDC)** from the [Circle testnet faucet](https://faucet.circle.com/) on both **Base Sepolia** and **Solana Devnet**, because §5 creates one wallet per network
 

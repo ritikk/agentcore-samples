@@ -75,7 +75,7 @@ Management / ProcessPayment / ResourceRetrieval **4-role separation**, see the b
   ```bash
   pip install -r requirements.txt
   ```
-- **AgentCore CLI** (Node.js 20+) — this tutorial runs `agentcore` commands. These tutorials were
+- **AgentCore CLI** (Node.js 22+) — this tutorial runs `agentcore` commands. These tutorials were
   validated against the 1.0.0-preview line; run `agentcore --version` to check yours:
   ```bash
   npm install -g @aws/agentcore

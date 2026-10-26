@@ -45,7 +45,7 @@ export class ApiProxyConstruct extends Construct {
 
     // Create the Lambda function for the proxy
     this.proxyFunction = new lambda.Function(this, 'ProxyFunction', {
-      runtime: lambda.Runtime.NODEJS_18_X,
+      runtime: lambda.Runtime.NODEJS_22_X,
       handler: 'index.handler',
       code: lambda.Code.fromInline(`
 const https = require('https');

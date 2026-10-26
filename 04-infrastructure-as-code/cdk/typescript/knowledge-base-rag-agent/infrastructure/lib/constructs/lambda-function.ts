@@ -22,7 +22,7 @@ export class AgentCoreLambda extends Construct {
 
     this.function = new lambda.Function(this, 'Function', {
       functionName: props.functionName,
-      runtime: lambda.Runtime.NODEJS_18_X,
+      runtime: lambda.Runtime.NODEJS_22_X,
       handler: props.handler,
       code: lambda.Code.fromAsset(props.sourcePath),
       environment: props.environment,

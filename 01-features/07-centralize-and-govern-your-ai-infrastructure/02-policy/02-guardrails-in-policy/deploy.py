@@ -175,7 +175,7 @@ def deploy_lambda(lambda_client, function_name: str, js_path: str, role_arn: str
     try:
         resp = lambda_client.create_function(
             FunctionName=function_name,
-            Runtime="nodejs20.x",
+            Runtime="nodejs22.x",
             Role=role_arn,
             Handler="index.handler",
             Code={"ZipFile": zip_bytes},

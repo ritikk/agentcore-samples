@@ -117,7 +117,7 @@ Results are also visible in:
 ## Prerequisites
 
 - Python 3.10+
-- Node.js 18+
+- Node.js 22+
 - AWS CLI configured with credentials (`aws sts get-caller-identity` should work). Recommended region: **us-east-1** (`export AWS_DEFAULT_REGION=us-east-1`)
 - Model access enabled for Claude Haiku 4.5 in Amazon Bedrock
 - [CloudWatch Transaction Search](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/observability-configure.html) enabled — **required** for Traces, Evaluations, and Optimization to work. After enabling, wait 10-15 minutes before using these feature so the Bedrock AgentCore dashboard in CloudWatch can become available. Only traces from invocations *after* enabling will be indexed.

@@ -199,7 +199,7 @@ Add Permissions in the Access Token: Yes
    ```
    Name: Add Custom Claims
    Trigger: Login / Post Login
-   Runtime: Node 18
+   Runtime: Node 22
    ```
 
 ### 4.2 Action Code

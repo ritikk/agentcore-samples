@@ -6,7 +6,7 @@
 
 To get started, you will need:
 
-- Node.js 20.x or later
+- Node.js 22.x or later
 - uv for Python agents ([install](https://docs.astral.sh/uv/getting-started/installation/))
 
 Then, **install agentcore-cli**:

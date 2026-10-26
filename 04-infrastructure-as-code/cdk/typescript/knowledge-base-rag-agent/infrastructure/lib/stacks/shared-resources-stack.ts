@@ -41,7 +41,7 @@ export class SharedResourcesStack extends cdk.Stack {
     this.commonLayer = new lambda.LayerVersion(this, 'CommonLayer', {
       layerVersionName: 'AgentCoreTemplate-CommonLayer',
       code: lambda.Code.fromAsset(path.join(__dirname, '../../src/functions/layers/common')),
-      compatibleRuntimes: [lambda.Runtime.NODEJS_20_X, lambda.Runtime.NODEJS_18_X],
+      compatibleRuntimes: [lambda.Runtime.NODEJS_22_X],
       description: 'Common dependencies for Knowledge Base RAG Agent Lambda functions',
     });
 

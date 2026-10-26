@@ -18,7 +18,7 @@ Usage:
 
 Prerequisites:
     - A valid email address
-    - Node.js 18+ and git on your local machine (for the Privy reference frontend)
+    - Node.js 22+ and git on your local machine (for the Privy reference frontend)
     - pip install -r requirements.txt
 """
 
