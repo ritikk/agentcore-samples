@@ -1,5 +1,5 @@
-import { render, screen } from '@testing-library/react';
-import { Layout } from '../../components/Layout';
+import { fireEvent, render, screen } from '@testing-library/react';
+import Layout from '../../components/Layout';
 
 // Mock the AuthContext
 jest.mock('../../contexts/AuthContext', () => ({
@@ -39,7 +39,8 @@ describe('Layout Component', () => {
       </Layout>
     );
 
-    expect(screen.getByText('testuser')).toBeInTheDocument();
+    // The header shows the first initial of the user name in the account avatar
+    expect(screen.getByRole('button', { name: /account of current user/i })).toHaveTextContent('T');
   });
 
   it('renders sign out button', () => {
@@ -49,7 +50,8 @@ describe('Layout Component', () => {
       </Layout>
     );
 
-    expect(screen.getByRole('button', { name: /sign out/i })).toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button', { name: /account of current user/i }));
+    expect(screen.getByRole('menuitem', { name: /sign out/i })).toBeInTheDocument();
   });
 
   it('has proper accessibility attributes', () => {
