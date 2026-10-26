@@ -27,7 +27,7 @@ Bedrock Agent application.
 ### Prerequisites
 
 - AWS CLI configured
-- Node.js 18+ installed
+- Node.js 22+ installed
 - AWS CDK CLI installed (`npm install -g aws-cdk`)
 
 ### Commands

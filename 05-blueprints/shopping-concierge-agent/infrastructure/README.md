@@ -52,7 +52,7 @@ Web UI hosting infrastructure:
    ```
    This creates Cognito, DynamoDB, and CloudFormation exports required by these stacks.
 
-3. **Node.js 18+** and npm installed
+3. **Node.js 22+** and npm installed
 
 4. **Docker** installed and running
 

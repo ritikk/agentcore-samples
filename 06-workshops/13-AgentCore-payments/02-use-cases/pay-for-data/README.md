@@ -91,7 +91,7 @@ Override with the `HEURIST_AGENT_IDS` environment variable.
 - Coinbase CDP project with **Delegated signing** enabled, and a per-wallet delegation grant approved via the WalletHub URL returned at instrument creation
 - Python 3.11+
 - AWS credentials with Bedrock and AgentCore access in `us-west-2`
-- Node.js 20+ (for the `@aws/agentcore` CLI)
+- Node.js 22+ (for the `@aws/agentcore` CLI)
 - Docker (running, for `agentcore deploy` container build)
 - [AWS CDK](https://docs.aws.amazon.com/cdk/v2/guide/getting_started.html) installed globally
 

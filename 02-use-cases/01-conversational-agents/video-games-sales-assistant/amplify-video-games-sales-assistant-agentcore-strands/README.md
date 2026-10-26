@@ -26,7 +26,7 @@ The application consists of two main components:
 
 Before you begin, ensure you have:
 
-- [Node.js version 18+](https://nodejs.org/en/download/package-manager)
+- [Node.js version 22+](https://nodejs.org/en/download/package-manager)
 - [pnpm](https://pnpm.io/installation)
 - [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html) configured with credentials
 - A deployed Amazon Bedrock AgentCore runtime (from the CDK stack in this repository)

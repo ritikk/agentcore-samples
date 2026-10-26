@@ -51,7 +51,7 @@ App Backend                          AgentCore Runtime
 - **Tutorial 00 completed** — the shared `.env` (one directory up, `00-getting-started/.env`) is populated with `PAYMENT_MANAGER_ARN`, `USER_ID`, `INSTRUMENT_ID`, `AWS_REGION`, etc.
 - **Tutorial 01 completed** — you understand the local agent + plugin flow.
 - **Funded wallet** — the instrument from Tutorial 00 has testnet USDC and delegated signing granted ([faucet.circle.com](https://faucet.circle.com/)).
-- **AgentCore CLI** (Node.js 20+): `npm install -g @aws/agentcore`
+- **AgentCore CLI** (Node.js 22+): `npm install -g @aws/agentcore`
 - **AWS CDK** (used by `agentcore deploy`): `npm install -g aws-cdk`
 - **Python 3.10+** and AWS CLI configured (`aws sts get-caller-identity`).
 
@@ -260,7 +260,7 @@ CloudWatch GenAI observability dashboard: `https://<region>.console.aws.amazon.c
 
 | Error | Cause | Fix |
 |---|---|---|
-| `agentcore: command not found` | AgentCore CLI not installed | `npm install -g @aws/agentcore` (Node.js 20+) |
+| `agentcore: command not found` | AgentCore CLI not installed | `npm install -g @aws/agentcore` (Node.js 22+) |
 | Deploy build fails on import (`strands_tools` / `dotenv` / payments plugin) | Project `pyproject.toml` missing the agent's dependencies | Add the Step 4 dependencies and `rm -f app/PaymentAgent/uv.lock`, then redeploy |
 | Deploy fails with CDK bootstrap error | Account/region not bootstrapped | `cdk bootstrap aws://<account-id>/<region>` |
 | `Missing required fields in payload` | Payload missing one of `payment_manager_arn`, `user_id`, `payment_session_id`, `payment_instrument_id` | Include all four fields in the invoke JSON (this agent is payload-driven) |

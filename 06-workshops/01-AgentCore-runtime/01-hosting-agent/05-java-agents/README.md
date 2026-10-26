@@ -33,6 +33,6 @@ These tutorials use the [spring-ai-agentcore](https://github.com/spring-ai-commu
 * Java 21 (Amazon Corretto recommended)
 * Maven 3.9+
 * Docker
-* Node.js 18+ and npm (for CDK)
+* Node.js 22+ and npm (for CDK)
 * AWS CLI configured with appropriate credentials
 * AWS CDK CLI (`npm install -g aws-cdk`)

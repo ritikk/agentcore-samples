@@ -5,7 +5,7 @@
 Before starting deployment, ensure you have:
 
 - AWS CLI configured with valid credentials
-- Node.js 18+ installed
+- Node.js 22+ installed
 - **CDK CLI 2.102.0+** installed: `npm install -g aws-cdk@latest`
 - Docker installed and running
 - **Python 3.8+** installed

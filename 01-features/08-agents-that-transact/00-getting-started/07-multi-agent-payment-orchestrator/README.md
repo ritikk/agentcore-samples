@@ -92,7 +92,7 @@ specialist receives its own plugin scoped to its own budget.
 - **Both wallets funded** with testnet USDC from [faucet.circle.com](https://faucet.circle.com/)
   (Base Sepolia), with delegated signing granted — both instruments must be `ACTIVE`.
 - **Python 3.10+** and AWS CLI configured (`aws sts get-caller-identity`).
-- **Node.js 20+ and the AgentCore CLI** (the runtime deploy uses it):
+- **Node.js 22+ and the AgentCore CLI** (the runtime deploy uses it):
   ```bash
   npm install -g @aws/agentcore
   ```
@@ -243,7 +243,7 @@ Confirm these keys exist in `00-getting-started/.env`: `PAYMENT_MANAGER_ARN`, `U
 | Instrument not `ACTIVE` | Wallet unfunded or delegated signing not granted | Fund at [faucet.circle.com](https://faucet.circle.com/) (Base Sepolia). Privy: open `localhost:3000`, log in as `LINKED_EMAIL`, choose **Connect agent**. Coinbase: enable Delegated Signing in the CDP Portal |
 | Demo 2 failover doesn't trigger | The endpoint cost is below the tiny $0.0005 budget, so no rejection occurs | Point at a pricier endpoint — the demo uses `https://x402-test.genesisblock.ai/api/market-news` (~$0.002) |
 | `{"error": "PAYMENT_MANAGER_ARN is not set ..."}` at invoke | The runtime environment is missing the ARN | Add `PAYMENT_MANAGER_ARN` and `AWS_REGION` to `app/PaymentOrchestrator/.env` (Step 3), then `agentcore deploy -y` |
-| `agentcore: command not found` | AgentCore CLI not installed | `npm install -g @aws/agentcore` (Node.js 20+) |
+| `agentcore: command not found` | AgentCore CLI not installed | `npm install -g @aws/agentcore` (Node.js 22+) |
 
 ## Clean Up
 

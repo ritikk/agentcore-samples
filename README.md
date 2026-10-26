@@ -110,7 +110,7 @@ The [AgentCore CLI](https://github.com/aws/agentcore-cli) is the recommended way
 ### Step 1: Prerequisites
 
 - An [AWS account](https://signin.aws.amazon.com/signin?redirect_uri=https%3A%2F%2Fportal.aws.amazon.com%2Fbilling%2Fsignup%2Fresume&client_id=signup) with credentials configured (`aws configure`)
-- [Node.js 20.x](https://nodejs.org/) or later
+- [Node.js 22.x](https://nodejs.org/) or later
 - [`uv`](https://docs.astral.sh/uv/) (for Python agents) or Node.js (for TypeScript agents)
 - Model Access: Anthropic Claude 4.0 enabled in [Amazon Bedrock console](https://docs.aws.amazon.com/bedrock/latest/userguide/model-access-modify.html)
 - AWS Permissions:

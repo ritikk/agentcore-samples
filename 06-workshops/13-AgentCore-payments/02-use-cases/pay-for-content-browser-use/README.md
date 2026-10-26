@@ -161,7 +161,7 @@ CLEANUP
 
 - AWS account with Amazon Bedrock AgentCore access
 - Python 3.10+ and Jupyter Notebook (or JupyterLab)
-- Node.js 20+ (for the AgentCore CLI and content-provider CDK)
+- Node.js 22+ (for the AgentCore CLI and content-provider CDK)
 - AWS CLI v2 configured with credentials (`aws configure`)
 - AWS CDK v2 installed (used by the AgentCore CLI under the hood)
 - AgentCore CLI installed: `npm install -g @aws/agentcore`
