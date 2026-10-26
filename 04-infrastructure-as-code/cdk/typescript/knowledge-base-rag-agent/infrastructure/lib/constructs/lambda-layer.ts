@@ -18,7 +18,7 @@ export class AgentCoreLambdaLayer extends Construct {
     this.layer = new lambda.LayerVersion(this, 'Layer', {
       layerVersionName: props.layerName,
       description: props.description || 'Bedrock Agent Lambda Layer',
-      compatibleRuntimes: props.compatibleRuntimes || [lambda.Runtime.NODEJS_18_X],
+      compatibleRuntimes: props.compatibleRuntimes || [lambda.Runtime.NODEJS_22_X],
       code: lambda.Code.fromAsset(props.sourcePath),
       removalPolicy: cdk.RemovalPolicy.DESTROY,
     });

@@ -100,7 +100,7 @@ export class BedrockKnowledgeBasePermissions extends Construct {
   private createOpenSearchPolicyLambda() {
     // Create a Lambda function to create the OpenSearch data access policy
     const fn = new cdk.aws_lambda.Function(this, 'OpenSearchPolicyLambda', {
-      runtime: cdk.aws_lambda.Runtime.NODEJS_20_X,
+      runtime: cdk.aws_lambda.Runtime.NODEJS_22_X,
       handler: 'index.handler',
       code: cdk.aws_lambda.Code.fromInline(`
         const AWS = require('aws-sdk');

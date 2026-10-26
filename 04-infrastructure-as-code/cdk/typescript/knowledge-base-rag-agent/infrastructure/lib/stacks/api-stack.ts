@@ -195,7 +195,7 @@ export class ApiStack extends cdk.Stack {
     // Using NodejsFunction for esbuild-based bundling (no Docker required)
     this.chatFunction = new NodejsFunction(this, 'ChatFunction', {
       functionName: 'AgentCoreApi-Chat',
-      runtime: lambda.Runtime.NODEJS_20_X,
+      runtime: lambda.Runtime.NODEJS_22_X,
       handler: 'handler',
       entry: path.join(__dirname, '../../src/functions/chat/index.ts'),
       environment: {
@@ -308,7 +308,7 @@ export class ApiStack extends cdk.Stack {
     // Create a simple health check Lambda for testing
     const healthCheckLambda = new lambda.Function(this, 'HealthCheckFunction', {
       functionName: 'AgentCoreApi-HealthCheck',
-      runtime: lambda.Runtime.NODEJS_20_X,
+      runtime: lambda.Runtime.NODEJS_22_X,
       handler: 'index.handler',
       code: lambda.Code.fromInline(`
         exports.handler = async (event) => {

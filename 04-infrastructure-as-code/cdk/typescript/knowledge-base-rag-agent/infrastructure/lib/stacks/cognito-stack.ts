@@ -246,7 +246,7 @@ export class CognitoStack extends cdk.Stack {
 
     // Lambda function to create initial user
     const createUserFunction = new lambda.Function(this, 'CreateInitialUserFunction', {
-      runtime: lambda.Runtime.NODEJS_20_X,
+      runtime: lambda.Runtime.NODEJS_22_X,
       handler: 'index.handler',
       code: lambda.Code.fromAsset(path.resolve(__dirname, '../../src/functions/create-initial-user')),
       layers: [commonLayer],

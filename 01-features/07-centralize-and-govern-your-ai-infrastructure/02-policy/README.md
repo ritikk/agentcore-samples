@@ -133,7 +133,7 @@ buf.seek(0)
 
 lambda_client.create_function(
     FunctionName="ApplicationTool",
-    runtime="nodejs20.x",
+    runtime="nodejs22.x",
     Role=role_arn,
     Handler="index.handler",
     Code={"ZipFile": buf.read()},

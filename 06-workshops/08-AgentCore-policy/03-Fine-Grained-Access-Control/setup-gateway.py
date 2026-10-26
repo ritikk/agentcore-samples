@@ -229,7 +229,7 @@ def create_refund_lambda(region: str, function_name: str = "RefundLambda") -> st
             # Create Lambda function with Node.js 20.x runtime
             response = lambda_client.create_function(
                 FunctionName=function_name,
-                Runtime="nodejs20.x",
+                Runtime="nodejs22.x",
                 Role=role_arn,
                 Handler="index.handler",
                 Code={"ZipFile": zip_content},
