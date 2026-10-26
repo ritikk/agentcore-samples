@@ -3,7 +3,7 @@
 Mirrors the agentcore-payments house-standard seller pattern
 (backend/lambdas/sellers/crypto-price):
 
-  - Node.js 20 ARM64 AWS Lambda function with pre-installed
+  - Node.js 22 ARM64 AWS Lambda function with pre-installed
     ``node_modules`` packaged into the asset (the deploy script runs
     ``npm install`` before ``cdk deploy``).
   - Two env vars for payout — ``SELLER_WALLET_ADDRESS`` (EVM / Base
