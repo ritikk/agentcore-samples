@@ -24,8 +24,8 @@ models:
   # ========================================
 
   - name: "us_claude_3_5_sonnet"
-    model_id: "us.anthropic.claude-3-5-sonnet-20240620-v1:0"
-    display_name: "Claude 3.5 Sonnet (US)"
+    model_id: "us.anthropic.claude-sonnet-5-5"
+    display_name: "Claude Sonnet 5.5 (US)"
     region: "us"
     knowledge_cutoff_date: "2024-04-01"
     pricing_model:
@@ -82,8 +82,8 @@ models:
   # ========================================
 
   - name: "eu_claude_3_5_sonnet"
-    model_id: "eu.anthropic.claude-3-5-sonnet-20240620-v1:0"
-    display_name: "Claude 3.5 Sonnet (EU)"
+    model_id: "eu.anthropic.claude-sonnet-5-5"
+    display_name: "Claude Sonnet 5.5 (EU)"
     region: "eu"
     knowledge_cutoff_date: "2024-04-01"
     pricing_model:
@@ -140,8 +140,8 @@ models:
   # ========================================
 
   - name: "apac_claude_3_5_sonnet"
-    model_id: "apac.anthropic.claude-3-5-sonnet-20240620-v1:0"
-    display_name: "Claude 3.5 Sonnet (APAC)"
+    model_id: "global.anthropic.claude-sonnet-5-5"
+    display_name: "Claude Sonnet 5.5 (Global)"
     region: "apac"
     knowledge_cutoff_date: "2024-04-01"
     pricing_model:
