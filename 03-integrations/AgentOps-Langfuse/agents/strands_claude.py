@@ -14,7 +14,7 @@ streamable_http_mcp_client = MCPClient(lambda: streamablehttp_client("https://la
 
 # Function to initialize Bedrock model
 def get_bedrock_model():
-    model_id = os.getenv("BEDROCK_MODEL_ID", "anthropic.claude-3-haiku-20240307-v1:0")
+    model_id = os.getenv("BEDROCK_MODEL_ID", "us.anthropic.claude-haiku-5-5")
     region = os.getenv("AWS_DEFAULT_REGION", "us-west-2")
 
     bedrock_model = BedrockModel(model_id=model_id, region_name=region, temperature=0.0, max_tokens=4096)
