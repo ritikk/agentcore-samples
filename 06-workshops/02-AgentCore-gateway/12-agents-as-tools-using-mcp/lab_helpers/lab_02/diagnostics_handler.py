@@ -61,7 +61,7 @@ def lambda_handler(event, context):
         from lab_helpers import mock_data
 
         # Get model ID from environment variable (set by Lambda configuration)
-        MODEL_ID = os.getenv("MODEL_ID", "global.anthropic.claude-sonnet-4-20250514-v1:0")
+        MODEL_ID = os.getenv("MODEL_ID", "global.anthropic.claude-sonnet-5-5")
 
         # ===================================================================
         # DEFINE DIAGNOSTIC TOOLS

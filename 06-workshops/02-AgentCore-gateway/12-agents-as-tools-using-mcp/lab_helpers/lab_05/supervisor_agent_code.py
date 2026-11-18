@@ -36,7 +36,7 @@ logger = logging.getLogger("bedrock_agentcore.app")
 
 # Environment variables (set by AgentCore Runtime)
 AWS_REGION = os.environ.get("AWS_REGION", "us-west-2")
-MODEL_ID = os.environ.get("MODEL_ID", "global.anthropic.claude-sonnet-4-20250514-v1:0")
+MODEL_ID = os.environ.get("MODEL_ID", "global.anthropic.claude-sonnet-5-5")
 
 # Gateway ID parameter paths
 DIAGNOSTICS_GATEWAY_PARAM = "/aiml301/lab-02/gateway-id"

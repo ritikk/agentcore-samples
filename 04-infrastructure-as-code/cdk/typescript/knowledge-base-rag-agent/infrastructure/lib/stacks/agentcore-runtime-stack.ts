@@ -21,8 +21,8 @@ export class AgentCoreRuntimeStack extends cdk.Stack {
 
     const paramPrefix = '/AgentCoreTemplate';
 
-    // Use cross-region inference profile for Claude Sonnet 4 (latest model)
-    const modelId = props.modelId || 'us.anthropic.claude-sonnet-4-20250514-v1:0';
+    // Use cross-region inference profile for Claude Sonnet 5.5 (latest model)
+    const modelId = props.modelId || 'us.anthropic.claude-sonnet-5-5';
 
     // Get OpenSearch collection endpoint for RAG
     const collectionEndpoint = ssm.StringParameter.valueForStringParameter(
