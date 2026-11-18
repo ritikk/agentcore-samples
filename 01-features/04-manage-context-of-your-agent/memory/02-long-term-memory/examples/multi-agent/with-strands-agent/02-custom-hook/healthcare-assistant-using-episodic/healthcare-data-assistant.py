@@ -107,7 +107,7 @@ MEMORY_NAME = "healthcare_episodic_memory"
 PATIENT_ID = "b2055b4d-ac17-4d94-8c5b-3395e4c334dd"
 region = "us-east-1"  # Replace with your AWS region
 SESSION_ID = f"session_{datetime.now().strftime('%Y%m%d%H%M%S')}"
-MODEL_ID = "global.anthropic.claude-sonnet-4-20250514-v1:0"  # Replace with your Model ID
+MODEL_ID = "global.anthropic.claude-sonnet-5-5"  # Replace with your Model ID
 
 print("Memory Configuration:")
 print(f"  Memory Name: {MEMORY_NAME}")

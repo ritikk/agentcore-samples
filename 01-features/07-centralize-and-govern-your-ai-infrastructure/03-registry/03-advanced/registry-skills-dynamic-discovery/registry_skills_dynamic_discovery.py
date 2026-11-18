@@ -235,7 +235,7 @@ print(f"  {C.GREEN}✅ search_and_load_skill tool ready.{C.RESET}")
 # ── 4.2 Create the Agent ──────────────────────────────────────────────────────
 print(f"\n{C.BOLD}=== 4.2 Create the Agent ==={C.RESET}")
 
-MODEL_ID = "us.anthropic.claude-sonnet-4-20250514-v1:0"
+MODEL_ID = "us.anthropic.claude-sonnet-5-5"
 
 model = BedrockModel(model_id=MODEL_ID, region_name=AWS_REGION)
 agent = Agent(

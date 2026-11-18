@@ -115,7 +115,7 @@ def lambda_handler(event, context):
         from lab_helpers.lab_01.fault_injection import initialize_fault_injection
         from lab_helpers.config import AWS_REGION, AWS_PROFILE, MODEL_ID, WORKSHOP_NAME
 
-        MODEL_ID = os.getenv("MODEL_ID", "us.anthropic.claude-sonnet-4-20250514-v1:0")
+        MODEL_ID = os.getenv("MODEL_ID", "us.anthropic.claude-sonnet-5-5")
 
         # Initialize AWS clients and retrieve infrastructure resource IDs from SSM
 

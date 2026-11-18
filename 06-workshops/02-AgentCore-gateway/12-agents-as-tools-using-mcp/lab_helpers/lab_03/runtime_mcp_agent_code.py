@@ -60,7 +60,7 @@ def get_aws_region():
 # Environment variables (set by AgentCore Runtime)
 AWS_REGION = get_aws_region()
 logger.info(f"🌍 Using AWS Region: {AWS_REGION}")
-MODEL_ID = os.environ.get("MODEL_ID", "us.anthropic.claude-sonnet-4-20250514-v1:0")
+MODEL_ID = os.environ.get("MODEL_ID", "us.anthropic.claude-sonnet-5-5")
 AWS_ACCESS_KEY_ID = "none"
 AWS_SECRET_ACCESS_KEY = "none"  # pragma: allowlist secret
 

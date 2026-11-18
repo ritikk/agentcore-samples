@@ -81,7 +81,7 @@ os.environ["BYPASS_TOOL_CONSENT"] = "true"
 os.environ["PYTHON_REPL_INTERACTIVE"] = "false"
 
 REGION = "us-west-2"
-MODEL_ID = "us.anthropic.claude-sonnet-4-20250514-v1:0"
+MODEL_ID = "us.anthropic.claude-sonnet-5-5"
 KNOWN_CUSTOMERS = ["customer_001", "customer_002", "customer_003"]
 
 agentcore_client = boto3.client("bedrock-agentcore", region_name=REGION)

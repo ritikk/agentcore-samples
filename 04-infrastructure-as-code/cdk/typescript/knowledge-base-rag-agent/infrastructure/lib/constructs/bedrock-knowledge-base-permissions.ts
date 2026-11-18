@@ -69,8 +69,11 @@ export class BedrockKnowledgeBasePermissions extends Construct {
           resources: [
             // Titan embedding model for knowledge base
             `arn:aws:bedrock:${props.region}::foundation-model/amazon.titan-embed-text-v1`,
-            // Claude Sonnet 4 model for agent responses
-            `arn:aws:bedrock:${props.region}::foundation-model/anthropic.claude-sonnet-4-20250514-v1:0`,
+            // Claude Sonnet 5.5 model for agent responses (any region, since the
+            // cross-region inference profile can route requests to other regions)
+            'arn:aws:bedrock:*::foundation-model/anthropic.claude-sonnet-5-5',
+            // Claude Sonnet 5.5 cross-region inference profile
+            `arn:aws:bedrock:${props.region}:${cdk.Stack.of(this).account}:inference-profile/us.anthropic.claude-sonnet-5-5`,
           ],
         }),
       ],

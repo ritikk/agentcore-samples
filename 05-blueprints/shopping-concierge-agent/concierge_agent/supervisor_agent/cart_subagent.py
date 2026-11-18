@@ -122,7 +122,7 @@ def get_cart_tools_client() -> MCPClient:
 # =============================================================================
 
 bedrock_model = BedrockModel(
-    model_id="us.anthropic.claude-sonnet-4-20250514-v1:0",
+    model_id="us.anthropic.claude-sonnet-5-5",
     region_name=REGION,
     temperature=0.1,
 )
