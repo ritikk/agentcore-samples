@@ -16,7 +16,7 @@ Amazon Bedrock AgentCore Runtime provides a secure, serverless hosting environme
 
 ## Prerequisites
 
-- **Java 17** or higher, [download](https://www.oracle.com/java/technologies/downloads/)
+- **Java 25** or higher, [download](https://www.oracle.com/java/technologies/downloads/)
 - **Maven 3.6+**, [download](https://maven.apache.org/download.cgi)
 - **AWS account**: You need an active AWS account with appropriate permissions
   - [Create an AWS account](https://aws.amazon.com/account/)
