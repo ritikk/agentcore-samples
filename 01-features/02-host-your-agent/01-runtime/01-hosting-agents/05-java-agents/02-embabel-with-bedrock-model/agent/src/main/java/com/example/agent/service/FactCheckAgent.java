@@ -100,7 +100,7 @@ public class FactCheckAgent {
                 """.formatted(claimsList);
 
         String raw = browserChatClient.prompt(prompt)
-                .options(org.springframework.ai.chat.prompt.ChatOptions.builder().maxTokens(2048).build())
+                .options(org.springframework.ai.chat.prompt.ChatOptions.builder().maxTokens(2048))
                 .call().content();
 
         try {

@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.5.7</version>
+		<version>4.1.3</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.agentswithek</groupId>
@@ -28,7 +28,40 @@
 	</scm>
 	<properties>
 		<java.version>25</java.version>
+		<guava.version>33.8.0-jre</guava.version>
+		<bouncycastle.version>1.87</bouncycastle.version>
+		<org-json.version>20260814</org-json.version>
 	</properties>
+	<!-- Override vulnerable transitive versions pulled in by google-adk -->
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>com.google.guava</groupId>
+				<artifactId>guava</artifactId>
+				<version>${guava.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.bouncycastle</groupId>
+				<artifactId>bcprov-jdk18on</artifactId>
+				<version>${bouncycastle.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.bouncycastle</groupId>
+				<artifactId>bcpkix-jdk18on</artifactId>
+				<version>${bouncycastle.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.bouncycastle</groupId>
+				<artifactId>bcutil-jdk18on</artifactId>
+				<version>${bouncycastle.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.json</groupId>
+				<artifactId>json</artifactId>
+				<version>${org-json.version}</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
 	<dependencies>
 		<!-- Spring Boot Web Starter -->
 		<dependency>
@@ -53,7 +86,7 @@
 		<dependency>
 			<groupId>com.google.adk</groupId>
 			<artifactId>google-adk</artifactId>
-			<version>0.3.0</version>
+			<version>1.15.0</version>
 		</dependency>
 
 		<!-- Test Dependencies -->
