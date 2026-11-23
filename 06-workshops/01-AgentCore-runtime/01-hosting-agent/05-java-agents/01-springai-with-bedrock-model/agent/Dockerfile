@@ -1,5 +1,5 @@
 # Build stage
-FROM amazoncorretto:21-al2023 AS builder
+FROM amazoncorretto:25-al2023 AS builder
 ARG MAVEN_VERSION=3.9.9
 RUN dnf install -y tar gzip && dnf clean all && \
     curl -fsSL https://archive.apache.org/dist/maven/maven-3/${MAVEN_VERSION}/binaries/apache-maven-${MAVEN_VERSION}-bin.tar.gz \
@@ -11,7 +11,7 @@ COPY src ./src
 RUN mvn clean package -DskipTests
 
 # Runtime stage
-FROM amazoncorretto:21-alpine
+FROM amazoncorretto:25-alpine
 WORKDIR /app
 
 RUN addgroup -g 1000 agent && adduser -u 1000 -G agent -D agent
