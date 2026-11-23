@@ -1,5 +1,5 @@
 # Build stage
-FROM amazoncorretto:21-al2023 AS builder
+FROM amazoncorretto:25-al2023 AS builder
 WORKDIR /app
 COPY pom.xml .
 COPY src ./src
@@ -12,7 +12,7 @@ WORKDIR /app
 ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    openjdk-21-jre-headless curl ca-certificates gnupg \
+    openjdk-25-jre-headless curl ca-certificates gnupg \
     && curl -fsSL https://deb.nodesource.com/setup_22.x | bash - \
     && apt-get install -y --no-install-recommends nodejs \
     && npx playwright install --with-deps chromium \

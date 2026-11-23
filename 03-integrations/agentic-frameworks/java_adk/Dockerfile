@@ -1,6 +1,6 @@
 # Stage 1: Build the application
 # Using Amazon ECR Public Gallery to avoid Docker Hub rate limits
-FROM --platform=linux/arm64 public.ecr.aws/docker/library/maven:3.9-amazoncorretto-17 AS build
+FROM --platform=linux/arm64 public.ecr.aws/docker/library/maven:3.9-amazoncorretto-25 AS build
 
 WORKDIR /app
 
@@ -14,7 +14,7 @@ RUN mvn clean package -DskipTests
 
 # Stage 2: Create the runtime image
 # Using Amazon ECR Public Gallery to avoid Docker Hub rate limits
-FROM --platform=linux/arm64 public.ecr.aws/amazoncorretto/amazoncorretto:17-al2023
+FROM --platform=linux/arm64 public.ecr.aws/amazoncorretto/amazoncorretto:25-al2023
 
 WORKDIR /app
 

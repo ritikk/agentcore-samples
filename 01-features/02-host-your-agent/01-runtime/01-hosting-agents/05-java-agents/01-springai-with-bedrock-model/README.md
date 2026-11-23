@@ -34,7 +34,7 @@ This tutorial uses the [spring-ai-agentcore](https://github.com/spring-ai-commun
 
 ## Prerequisites
 
-* Java 21 (Amazon Corretto recommended)
+* Java 25 (Amazon Corretto recommended)
 * Maven 3.9+
 * Docker
 * Node.js 18+ and npm (for CDK)
